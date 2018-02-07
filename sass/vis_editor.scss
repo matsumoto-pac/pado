@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@import 'vars';
+@import 'mixin';
+@import 'mixin_wpcont';
+@import 'default';
+body#tinymce {
+  &.post-type-post {
+    @include wp_cont;
+  }
+}

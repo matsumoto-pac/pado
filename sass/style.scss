@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@import 'vars';
+@import 'mixin';
+@import "animate";
+@import 'default';
+@import 'wp-theme';
+@import "transformicons";
+@import "jquery.slick";
+@import "jquery.slick-theme";
+
+$type: sp pc;
+@media only screen and (max-width:$bp_sp) {
+	$type: sp;
+	@import '_common';
+	@import '_top';
+	@import '_404';
+}
+
+@media print, screen and (min-width:($bp_sp+1)) {
+	$type: pc;
+	@import '_common';
+  @import '_top';
+	@import '_404';
+}

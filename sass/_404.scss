@@ -1,0 +1,22 @@
+/**
+* 404
+**/
+
+.error404 {
+  #main {
+    text-align: center;
+    
+    .ttl {
+      font-size: (24em/16);
+    }
+    .desc {
+      margin-top: (9em/18);
+      font-size: (18em/16);
+    }
+    .lnk {
+      margin-top: (9em/18);
+      font-size: (18em/16);
+      text-decoration: underline;
+    }
+  }
+}

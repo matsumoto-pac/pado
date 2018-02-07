@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+@mixin pc_center {
+	width: $site_width;
+	margin-right: auto;
+	margin-left: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+@mixin center {
+	margin-right: auto;
+	margin-left: auto;
+}
+@mixin clearfix {
+	*zoom: 1;
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+@mixin rgba-background($color, $alpha) {
+  $rgba: rgba($color, $alpha);
+  $ie-hex-str: ie-hex-str($rgba);
+  background-color: $rgba;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str},endColorstr=#{$ie-hex-str});
+}
+@mixin trans-animate {
+  transition-duration: .2s;
+}

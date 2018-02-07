@@ -1,0 +1,11 @@
+*.xml
+
+*/_notes/
+
+css/
+
+fonts/
+
+images/
+
+node_modules/

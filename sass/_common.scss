@@ -1,0 +1,308 @@
+/*============================
+#header
+============================*/
+#header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  
+/*============================
+#h_logo
+============================*/
+	#h_logo {
+    padding: (10em/16) (20em/16);
+	}
+	.ham-btn {
+    
+	}
+	.h_nav {
+    display: flex;
+    justify-content: space-between;
+		
+    .g_nav,
+    .entry_nav {
+      display: flex;
+      justify-content: space-between;
+      
+      li {
+        a {
+          padding: (26em/14) (10em/14);
+          font-size: (14em/16);
+          font-weight: 600;
+          color: #2c2c2c;
+          line-height: 1;
+          display: block;
+          white-space: nowrap;
+          @include trans-animate;
+
+          &:hover {
+            color: #444;
+          }
+        }
+      }
+		}
+		.g_nav {
+      
+    }
+		.entry_nav {
+      ul {
+        li {
+        }
+      }
+		}
+	}
+}
+
+/*============================
+#main
+============================*/
+#main {
+  .sec {
+    .col_2 {
+      display: flex;
+      justify-content: space-between;
+      
+      &-right {
+        flex-direction: row-reverse;
+      }
+      
+      .col {
+        &:first-child {
+          width: 365px;
+        }
+      }
+    }
+    
+		.ttl_dot {
+      margin-bottom: (60em/48);
+		  font-size: (48em/16);
+      line-height: (69em/48);
+      text-align: center;
+      
+      &::after {
+        content: '';
+        width: (48em/48);
+        height: (8em/48);
+        margin: (42em/48) auto 0;
+        background-image: url(../images/common/bg_title.png);
+        background-size: contain;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        display: block;
+;      }
+    }
+    
+		.ttl_en-ja {
+      margin-bottom: (48em/16);
+      color: #000;
+      
+      span {
+        line-height: 1.2;
+        display: block;
+        
+        &.en {
+          font-family: 'Montserrat', sans-serif;
+          font-size: (56em/16);
+          font-weight: 800;
+        }
+        &.ja {
+          margin-top: (14em/16);
+          font-size: (16em/16);
+          font-weight: 600;
+        }
+      }
+		}
+		.btn_more {
+      margin-top: (70em/16);
+      a {
+        width: if($type==sp, (555%/$sp_wid*100), 353px);
+        @include center;
+        padding: (24em/15) (24em/15) (24em/15) (12em/15);
+        font-size: (15em/16);
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+        line-height: 1;
+        letter-spacing: .08em;
+        border: #000 2px solid;
+        background-color: #000;
+        box-sizing: border-box;
+        display: block;
+        position: relative;
+        @include trans-animate;
+              
+        &::after {
+          content: '';
+          width: (19em/15);
+          height: (19em/15);
+          background-image: url(../images/common/bg_btn_more.png);
+          background-size: contain;
+          background-position: center center;
+          background-repeat: no-repeat;
+          display: block;
+          position: absolute;
+          right: (82em/15);
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        
+        &:hover {
+          color: #000;
+          background-color: #fff;
+        }
+      }
+		}
+  }
+
+/*============================
+#sec_entry
+============================*/
+	#sec_entry {
+    padding: (83em/16) 0 (100em/16);
+    background-color: #999;
+    background-image: url(../images/common/mainimg_entry.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    
+		.cont {
+      
+			.btns {
+        ul {
+          width: (969%/$site_wid*100);
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+          
+          li {
+            flex-grow: 1;
+            
+            a {
+              padding: (40em/19);
+              font-size: (19em/16);
+              font-weight: 700;
+              text-align: center;
+              line-height: 1;
+              display: block;
+              @include trans-animate;
+              
+              &:hover {
+                background-color: inherit;
+              }
+            }
+          }
+        }
+			}
+		}
+	}
+}
+
+/*============================
+#footer
+============================*/
+#footer {
+  background-color: #fff;
+	.f_cont {
+    display: flex;
+    justify-content: space-between;
+    
+		.f_nav {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        
+        li {
+          padding: (35em/16) 0 (32em/16);
+          line-height: 1;
+          
+          a {
+            padding: (12em/12);
+            font-size: (12em/16);
+            font-weight: 600;
+            display: block;
+            white-space: nowrap;
+            
+            &.site_link {
+              &::after {
+                content: '';
+                width: (14em/12);
+                height: (13em/12);
+                margin-left: (6em/16);
+                background-image: url(../images/common/ico_blank.png);
+                background-size: contain;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                display: inline-block;
+              }
+            }
+          }
+        }
+      }
+		}
+		.f_logo {
+      padding: (30em/16) (27em/16) (29em/16) (27em/16); 
+		}
+	}
+
+/*============================
+#copy
+============================*/
+	#copy {
+    padding: (26em/16);
+    font-size: (10em/16);
+    text-align: center;
+    background-color: #000;
+    
+    small {
+      font-size: 1em;
+      color: #fff;
+    }
+	}
+}
+
+
+
+/*============================
+#common class
+============================*/
+
+// text-align
+.align {
+  &_center {
+    text-align: center;
+  }
+  &_right {
+    text-align: right;
+  }
+}
+
+//color
+.color {
+  &_blue {
+    color: $site_blue !important;
+  }
+  &_white {
+    color: #fff !important;
+  }
+}
+
+//background-color
+.bc_blue {
+  background-color: $site_blue;
+}
+.bc_blue_deep {
+  background-color: $site_blue_deep;
+}
+a {
+  &.bc_blue,
+  &.bc_blue_deep {
+    box-sizing: border-box;
+    border-width: 2px;
+    border-style: solid;
+  }
+  &.bc_blue {
+    border-color: $site_blue;
+  }
+  &.bc_blue_deep {
+    border-color: $site_blue_deep;
+  }
+}
