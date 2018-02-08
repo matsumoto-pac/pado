@@ -1,0 +1,85 @@
+
+/*============================
+value
+============================*/
+#value{
+  .cover{
+  background: url("../images/value/img_value_04.jpg") no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height:(336em/16);
+  }
+  .vision{
+    width: (800em/16);
+    margin: 0 auto;
+    box-sizing:border-box;
+    border: solid 6px #000;
+    position: relative;
+    text-align: center;
+    margin-top: (140em/16);
+    margin-bottom: (60em/16);
+    font-weight:bold;
+    padding-top: (30em/16);
+    padding-bottom: (30em/16);
+    line-height:1;
+    &::before{
+      content:"VISION";
+      font-family: 'Montserrat', sans-serif;
+      font-size:(20em/16);
+      font-weight:800;
+      position: absolute;
+      left: (16em/16);
+      top: (-35em/16);
+    }
+    p{
+      font-size:(30em/16);
+      margin-bottom:(20em/16);
+    }
+    p + p{
+      font-size:(16em/16);
+    }
+    + p{
+    font-size:(18em/16);
+    text-align:center;
+    font-weight:bold;
+  }
+  }
+}
+.underlayer{
+  #sec_01,#sec_02,#sec_03,#sec_04{
+    padding:0;
+    background:none;
+  }
+  .ttl_en-ja{
+      margin-bottom: (48em/16);
+      color: #000;
+
+      span {
+        line-height: 1.2;
+        display: block;
+
+        &.en {
+          font-family: 'Montserrat', sans-serif;
+          font-size: (55.94em/16);
+          font-weight: 800;
+        }
+        &.ja {
+          margin-top: (14em/16);
+          font-size: (16em/16);
+          font-weight: 600;
+        }
+      }
+
+      &::after {
+        content: '';
+        width: (48em/16);
+        height: (8em/16);
+        margin: (42em/48) auto 0;
+        background-image: url(../images/common/bg_title.png);
+        background-size: contain;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        display: block;
+;      }
+  }
+}

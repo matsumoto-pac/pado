@@ -13,6 +13,7 @@ $type: sp pc;
 	$type: sp;
 	@import '_common';
 	@import '_top';
+	@import '_page_value';
 	@import '_404';
 }
 
@@ -20,5 +21,6 @@ $type: sp pc;
 	$type: pc;
 	@import '_common';
   @import '_top';
+  @import '_page_value';
 	@import '_404';
 }
