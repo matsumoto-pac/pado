@@ -3,11 +3,19 @@
 value
 ============================*/
 #value{
+  .pado_txt{
+    font-size:(16em/16);
+    line-height:2.8;
+    font-weight:bold;
+  }
   .cover{
   background: url("../images/value/img_value_04.jpg") no-repeat;
     background-position: top center;
     background-size: cover;
     height:(336em/16);
+  }
+  #sec_02{
+    padding-top: (75em/16);
   }
   .vision{
     width: (800em/16);
@@ -16,11 +24,11 @@ value
     border: solid 6px #000;
     position: relative;
     text-align: center;
-    margin-top: (140em/16);
-    margin-bottom: (60em/16);
+    margin-top: (128em/16);
+    margin-bottom: (58.4em/16);
     font-weight:bold;
-    padding-top: (30em/16);
-    padding-bottom: (30em/16);
+    padding-top: (32em/16);
+    padding-bottom: (32em/16);
     line-height:1;
     &::before{
       content:"VISION";
@@ -28,21 +36,75 @@ value
       font-size:(20em/16);
       font-weight:800;
       position: absolute;
-      left: (16em/16);
+      left: (11.2em/16);
       top: (-35em/16);
     }
     p{
       font-size:(30em/16);
-      margin-bottom:(20em/16);
+      margin-bottom:0;
     }
     p + p{
       font-size:(16em/16);
+      letter-spacing:.03em;
     }
     + p{
     font-size:(18em/16);
     text-align:center;
     font-weight:bold;
+    margin-bottom:(54.4em/16);
+    letter-spacing:.03em;
   }
+  }
+  #sec_03{
+    ul{
+      width:(1100em/16);
+      text-align:center;
+      font-weight:bold;
+      box-sizing:border-box;
+      margin: 0 auto;
+      margin-bottom:(155em/16);
+      padding-top:(81em/16);
+      padding-bottom:(72em/16);
+      padding-left: (136em/16);
+      padding-right: (128em/16);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display:flex;
+      -webkit-box-pack:center;
+      -ms-flex-pack:center;
+      justify-content:space-around;
+      background:#eeeeee;
+      position:relative;
+      &::before{
+        content:"VALUE";
+        font-family: 'Montserrat', sans-serif;
+      font-size:(20em/16);
+      font-weight:800;
+      position: absolute;
+      left: (136em/16);
+      top: (16em/16);
+      }
+      &::after{
+        content: url(../images/value/bg_value_01.png);
+        width:(116em/16);
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+      li{
+        width:(227em/16);
+        figure{
+          margin:0;
+          padding: 0;
+          figcaption{
+            margin-top:(16em/16);
+          }
+        }
+      }
+    }
   }
 }
 .underlayer{
@@ -64,7 +126,7 @@ value
           font-weight: 800;
         }
         &.ja {
-          margin-top: (14em/16);
+          margin-top: (6em/16) !important;
           font-size: (16em/16);
           font-weight: 600;
         }
@@ -73,13 +135,13 @@ value
       &::after {
         content: '';
         width: (48em/16);
-        height: (8em/16);
-        margin: (42em/48) auto 0;
+        height: (12.8em/16);
+        margin: (40em/16) auto 0 !important;
         background-image: url(../images/common/bg_title.png);
         background-size: contain;
         background-position: 50% 50%;
         background-repeat: no-repeat;
         display: block;
-;      }
+        }
   }
 }
