@@ -93,6 +93,9 @@ environment
       &:nth-child(3),&:last-child{
         margin-right:0;
       }
+      figcaption{
+        margin-top:(15em/15);
+      }
     }
   }
   .training{
@@ -130,7 +133,7 @@ environment
       }
       div{
         width:(280em/15);
-        letter-spacing:-.035em;
+        letter-spacing:-.06em;
         h3{
           font-size:18px;
           font-weight:bold;

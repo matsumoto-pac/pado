@@ -55,7 +55,7 @@ Template Name: 新卒採用情報
             <ul>
               <li>
                 <h3>
-                  <span class="recruit_ttl">一次選考:エントリーシート</span>
+                  <span class="recruit_ttl">一次選考&nbsp;:&nbsp;エントリーシート</span>
                   <span class="recruit_cap">エントリーシートをお送りいただきます</span>
                 </h3>
                 <p>STEP<span>3</span></p>
@@ -72,7 +72,7 @@ Template Name: 新卒採用情報
             <ul>
               <li>
                 <h3>
-                  <span class="recruit_ttl">二次選考:グループワーク</span>
+                  <span class="recruit_ttl">二次選考&nbsp;:&nbsp;グループワーク</span>
                   <span class="recruit_cap">グループワークに参加いただきます</span>
                 </h3>
                 <p>STEP<span>4</span></p>
@@ -88,7 +88,7 @@ Template Name: 新卒採用情報
             <ul>
               <li>
                 <h3>
-                  <span class="recruit_ttl">三次選考:個人面接</span>
+                  <span class="recruit_ttl">三次選考&nbsp;:&nbsp;個人面接</span>
                   <span class="recruit_cap">個人面接を行います</span>
                 </h3>
                 <p>STEP<span>5</span></p>
@@ -105,7 +105,7 @@ Template Name: 新卒採用情報
             <ul>
               <li>
                 <h3>
-                  <span class="recruit_ttl">最終選考:役員面接</span>
+                  <span class="recruit_ttl">最終選考&nbsp;:&nbsp;役員面接</span>
                   <span class="recruit_cap">最終選考の役員面接を行います</span>
                 </h3>
                 <p>STEP<span>6</span></p>
