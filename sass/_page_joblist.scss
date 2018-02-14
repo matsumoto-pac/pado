@@ -1,0 +1,157 @@
+
+/*============================
+business
+============================*/
+#joblist{
+  .cover{
+  background: url("../images/joblist/img_joblist_02.jpg") no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height:(336em/16);
+  }
+  #sec_02{
+    padding-top: (75em/16);
+  }
+  ul.job_area{
+    width:(1100em/16);
+    font-weight:bold;
+    margin:(37em/16) auto (36em/16);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display:flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap:wrap;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    li{
+      width:(530em/16);
+      margin-top:(38em/16);
+      box-sizing:border-box;
+      border: solid 3px #000;
+      position:relative;
+      &:first-child{
+        margin-top:0;
+      }
+      &:nth-child(2){
+        margin-top:0;
+      }
+      a{
+        padding:(40em/16) (30em/16) 0;
+        display:block;
+        min-height:(159em/14);
+      h3{
+        font-size:17px;
+        margin-bottom:(17em/17);
+        span{
+          display:block;
+          font-weight:bold;
+          line-height:1.8;
+        }
+      }
+      p{
+        font-size:13px;
+        font-weight:normal;
+        line-height:1.7;
+        span{
+          display:block;
+          font-size:13px;
+          font-weight:normal;
+        }
+      }
+      figure{
+        position:absolute;
+        top:0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+      }
+      }
+    }
+  }
+  .joblist_ttl{
+    line-height: 1;
+    text-align: center;
+    .category{
+      font-size: (20em/16);
+      font-weight:bold;
+      display: block;
+      margin-bottom:(20em/16);
+    }
+    .work_location{
+      font-size:(13em/16);
+      display:block;
+      margin-bottom:(27em/16);
+    }
+  }
+  dl{
+    width: (1100em/14);
+    margin: 0 auto (48em/16);
+    box-sizing:border-box;
+    border-left: solid 2px #000;
+    border-top: solid 2px #000;
+    border-right: solid 2px #000;
+    background:#f6f6f6;
+    font-size:(14em/16);
+    line-height:2;
+    dt{
+      width:(170em/14);
+      display:block;
+      float: left;
+      clear:left;
+      background:#f6f6f6;
+      box-sizing:border-box;
+      padding: (14em/14) 0 (17em/14) (30em/14);
+      font-weight:bold;
+    }
+    dd{
+      width:(926em/14);
+      display:inline-block;
+      border-bottom:solid 2px #000;
+      background:#fff;
+      box-sizing:border-box;
+      padding: (14em/14) (200em/14) (17em/14) (28em/14);
+      position: relative;
+      &::before{
+        content:" ";
+        width:(170em/14);
+        display:block;
+        border-bottom:solid 2px #000;
+        position:absolute;
+        left:(-170em/14);
+        bottom: -2px;
+      }
+    }
+  }
+  .btn_more{
+    clear:both;
+    margin-bottom: (125em/16);
+  }
+}
+ul.category{
+    width:(1100em/16);
+    font-weight:bold;
+    margin:0 auto;
+    letter-spacing: -4em;
+    text-align:center;
+    box-sizing:border-box;
+    border:solid 3px #000;
+    li{
+      width:(217em/16);
+      display:inline-block;
+      letter-spacing:0;
+      box-sizing:border-box;
+      border-right: solid 3px #000;
+      &:last-child{
+        border-right:none;
+      }
+      a{
+        line-height:1;
+        padding:(17em/15) 0;
+        font-size:15px;
+        display:block;
+        width:100%;
+      }
+    }
+  }

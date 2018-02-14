@@ -14,6 +14,11 @@ $type: sp pc;
 	@import '_common';
 	@import '_top';
 	@import '_page_value';
+	@import '_page_joblist';
+	@import '_page_people';
+	@import '_page_recruit';
+	@import '_page_business';
+	@import '_page_environment';
 	@import '_404';
 }
 
@@ -22,5 +27,10 @@ $type: sp pc;
 	@import '_common';
   @import '_top';
   @import '_page_value';
+  @import '_page_joblist';
+  @import '_page_people';
+  @import '_page_recruit';
+  @import '_page_business';
+	@import '_page_environment';
 	@import '_404';
 }
