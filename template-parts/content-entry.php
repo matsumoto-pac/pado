@@ -16,11 +16,11 @@
     <div class="btns">
       <ul>
         <li>
-          <a href="" class="bc_blue_deep">
+          <a href="" class="bc_blue_deep_alpha">
             新卒エントリー
           </a>
         </li><li>
-          <a href="" class="bc_blue">
+          <a href="" class="bc_blue_alpha">
             中途エントリー
           </a>
         </li>

@@ -6,6 +6,14 @@
   justify-content: space-between;
   background-color: #fff;
   
+  @if($type==sp) {
+    width: 100%;
+    position: fixed !important;
+  } @else {
+    align-items: center;
+  }
+  
+  
 /*============================
 #h_logo
 ============================*/
@@ -13,43 +21,56 @@
     padding: (10em/16) (20em/16);
 	}
 	.ham-btn {
-    
+    @if($type==sp) {
+      background-color: $site_blue;
+      display: flex;
+      align-items: center;
+      
+      .tcon-menu--xcross {
+        min-width: 56px;
+      }
+    }
 	}
 	.h_nav {
-    display: flex;
-    justify-content: space-between;
-		
-    .g_nav,
-    .entry_nav {
+    
+    @if($type==sp) {
+      display: none;  // とりあえず非表示 todo:スマホ時の表示を定義
+    } @else {
       display: flex;
       justify-content: space-between;
       
-      li {
-        a {
-          padding: (26em/14) (10em/14);
-          font-size: (14em/16);
-          font-weight: 600;
-          color: #2c2c2c;
-          line-height: 1;
-          display: block;
-          white-space: nowrap;
-          @include trans-animate;
+      .g_nav,
+      .entry_nav {
+        display: flex;
+        justify-content: space-between;
 
-          &:hover {
-            color: #444;
+        li {
+          a {
+            padding: (26em/14) (10em/14);
+            font-size: (14em/16);
+            font-weight: 600;
+            color: #2c2c2c;
+            line-height: 1;
+            display: block;
+            white-space: nowrap;
+            @include trans-animate;
+
+            &:hover {
+              color: #444;
+            }
           }
         }
       }
-		}
-		.g_nav {
-      
-    }
-		.entry_nav {
-      ul {
-        li {
+      .g_nav {
+
+      }
+      .entry_nav {
+        ul {
+          li {
+          }
         }
       }
-		}
+    }
 	}
 }
 
@@ -57,25 +78,29 @@
 #main
 ============================*/
 #main {
+  overflow: hidden;
   .sec {
     .col_2 {
-      display: flex;
-      justify-content: space-between;
-      
-      &-right {
-        flex-direction: row-reverse;
-      }
-      
-      .col {
-        &:first-child {
-          width: 365px;
+      @if($type==sp) {
+        
+      } @else {
+        display: flex;
+        justify-content: space-between;
+        
+        &-right {
+          flex-direction: row-reverse;
+        }
+        .col {
+          &:first-child {
+            width: 365px;
+          }
         }
       }
     }
     
 		.ttl_dot {
       margin-bottom: (60em/48);
-		  font-size: (48em/16);
+      font-size: if($type==sp, (48em/11/2), (48em/16));
       line-height: (69em/48);
       text-align: center;
       
@@ -95,6 +120,7 @@
 		.ttl_en-ja {
       margin-bottom: (48em/16);
       color: #000;
+      text-align: center;
       
       span {
         line-height: 1.2;
@@ -102,12 +128,12 @@
         
         &.en {
           font-family: 'Montserrat', sans-serif;
-          font-size: (56em/16);
+          font-size: if($type==sp, (52em/11/2), (52em/16));
           font-weight: 800;
         }
         &.ja {
           margin-top: (14em/16);
-          font-size: (16em/16);
+          font-size: if($type==sp, (20em/11/2), (16em/16));
           font-weight: 600;
         }
       }
@@ -155,9 +181,59 @@
   }
 
 /*============================
+.list_info
+============================*/
+  .list_info {
+    ul {
+      margin: (17em/16/2*-1) 0;
+      
+      li {
+        margin: (17em/16/2) (10em/16/2*-1);
+        display: flex;
+        justify-content: space-between;
+        
+        span {
+          margin: 0  (10em/16/2);
+          padding: (5em/16) 0;
+          line-height: 16px;
+        }
+        .info_date {
+          font-family: 'Montserrat', sans-serif;
+          font-size: (16em/18);
+        }
+        .info_cat {
+          padding-left: (13em/16);
+          padding-right: (13em/16);
+          font-size: (12em/18);
+          font-weight: 600;
+          color: #fff;
+          
+          &.cat {
+            &_recruit {
+              background-color: $site_blue;
+            }
+          }
+        }
+        .info_desc {
+          font-size: (13em/18);
+          font-weight: 600;
+        }
+        a {
+          text-decoration: underline;
+          
+          &:hover {
+            color: #555;
+          }
+        }
+      }
+    }
+  }
+
+/*============================
 #sec_entry
 ============================*/
 	#sec_entry {
+    margin-top: (116em/16);
     padding: (83em/16) 0 (100em/16);
     background-color: #999;
     background-image: url(../images/common/mainimg_entry.jpg);
@@ -165,10 +241,9 @@
     background-size: cover;
     
 		.cont {
-      
 			.btns {
         ul {
-          width: (969%/$site_wid*100);
+          width: if($type==sp, (650%/$sp_wid*100), (969%/$site_wid*100));
           margin: 0 auto;
           display: flex;
           justify-content: center;
@@ -177,8 +252,8 @@
             flex-grow: 1;
             
             a {
-              padding: (40em/19);
-              font-size: (19em/16);
+              padding: if($type==sp, (30em/26), (40em/19));
+              font-size: if($type==sp, (26em/11/2), (19em/16));
               font-weight: 700;
               text-align: center;
               line-height: 1;
@@ -202,21 +277,25 @@
 #footer {
   background-color: #fff;
 	.f_cont {
-    display: flex;
-    justify-content: space-between;
+    @if($type==sp) {} @else {
+      display: flex;
+      justify-content: space-between;
+    }
     
 		.f_nav {
+      padding-top: if($type==sp, (30em/11/2), 0);
       ul {
         display: flex;
-        justify-content: space-between;
+        justify-content: if($type==sp, space-around, space-between);
+        flex-wrap: if($type==sp, wrap, inherit);
         
         li {
-          padding: (35em/16) 0 (32em/16);
+          padding: if($type==sp, 0, (35em/16) 0 (32em/16));
           line-height: 1;
           
           a {
             padding: (12em/12);
-            font-size: (12em/16);
+            font-size: if($type==sp, (19em/11/2), (12em/16));
             font-weight: 600;
             display: block;
             white-space: nowrap;
@@ -240,6 +319,11 @@
 		}
 		.f_logo {
       padding: (30em/16) (27em/16) (29em/16) (27em/16); 
+      text-align: if($type==sp, center, inherit);
+      
+      img {
+        width: if($type==sp, (204px/2), auto);
+      }
 		}
 	}
 
@@ -248,7 +332,7 @@
 ============================*/
 	#copy {
     padding: (26em/16);
-    font-size: (10em/16);
+    font-size: if($type==sp, (14em/11/2), (10em/16));
     text-align: center;
     background-color: #000;
     
@@ -292,17 +376,27 @@
 .bc_blue_deep {
   background-color: $site_blue_deep;
 }
+.bc_blue_alpha {
+  @include rgba-background($site_blue, 0.9);
+}
+.bc_blue_deep_alpha {
+  @include rgba-background($site_blue_deep, 0.9);
+}
 a {
   &.bc_blue,
-  &.bc_blue_deep {
+  &.bc_blue_deep,
+  &.bc_blue_alpha,
+  &.bc_blue_deep_alpha {
     box-sizing: border-box;
     border-width: 2px;
     border-style: solid;
   }
-  &.bc_blue {
+  &.bc_blue,
+  &.bc_blue_alpha {
     border-color: $site_blue;
   }
-  &.bc_blue_deep {
+  &.bc_blue_deep,
+  &.bc_blue_deep_alpha {
     border-color: $site_blue_deep;
   }
 }

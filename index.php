@@ -2,6 +2,7 @@
   <section id="mainvis">
     <div class="cont">
       <h1 class="ttl">“make a CHALLENGE”</h1>
+<?php if(false): ?>
       <div class="btns">
         <ul>
           <li>
@@ -15,6 +16,7 @@
           </li>
         </ul>
       </div>
+<?php endif; ?>
       <div class="scroll">
         <div class="mouse">
           <span class="boule"></span>
@@ -113,41 +115,14 @@
         </h3>
       </div>
       <div class="col">
-        <div class="list_info">
-          <?php
-            $the_query = new WP_Query(array(
-              'post_type'	=> 'post'
-            ));
-            if ( $the_query->have_posts() ) :
-          ?>
-            <ul>
-              <?php
-                while ( $the_query->have_posts() ) : $the_query->the_post();
-                  //カテゴリ取得
-                  $category = get_the_category();
-                  $cat_name = $category[0]->cat_name;
-                  $cat_slug = $category[0]->category_nicename;
-              ?>
-                <li>
-                  <span class="date"><?php echo get_the_date(); ?></span>
-                  <span class="cat cat_<?php echo $cat_slug ?>"><?php echo $cat_name ?></span>
-                  <a href=""><?php the_title(); ?></a>
-                </li>
-              <?php
-                endwhile;
-             ?>
-            </ul>
-          <?php
-            endif;
-          ?>
-        </div>
+        <?php get_template_part( 'template-parts/content-list_info' ); ?>
       </div>
     </div>
-            <p class="btn_more">
-              <a href="">
-                さらに見る
-              </a>
-            </p>
+    <p class="btn_more">
+      <a href="">
+        さらに見る
+      </a>
+    </p>
   </section>
   <?php get_template_part( 'template-parts/content-entry' ); ?>
 <?php get_footer(); ?>

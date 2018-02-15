@@ -21,6 +21,16 @@
     slidesToScroll: 3,
     //prevArrow: '.btn_people_prev',
     //nextArrow: '.btn_people_next'
+    
+    responsive: [
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+    ]
   });
 })(jQuery);
 
