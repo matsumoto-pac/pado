@@ -42,7 +42,7 @@ recruit
           background:#4ebeee;
           color:#fff;
           line-height:1;
-          position: if($type==sp, (static), relative);
+          position: relative;
           top:(57em/16);
           left: 0;
           text-align: if($type==sp, (center), left);
@@ -55,6 +55,8 @@ recruit
               position:absolute;
               top:0;
               left:0;
+
+              margin: if($type==sp, (0 auto), auto);
               background: #fff;
               color: #4ebeee;
               line-height:1;
