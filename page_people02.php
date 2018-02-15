@@ -12,18 +12,18 @@ Template Name: ぱどの人々（下層）
   </section>
   <section id="sec_02" class="sec">
     <div class="people_area">
-        <div>
+        <div class="bg_pp_light_blue">
           <h2>
             <span class="name">谷口&nbsp;夕貴</span>
             <span class="name_en">YUKI TANIGUCHI</span>
           </h2>
           <p class="occupations">営業部 / 平成23年4月入社</p>
-          <p>自己紹介文があればはいる自己紹介文があればはいる自己紹介文があればはいる自己紹介文があればはいる自己紹介文があればはいる自己紹介文があればはいる自己紹介文があればはいる自己紹介文があればはいる自己紹介文があればはいる自己紹介文があればはいる自己紹介文があればはいる自己紹介文があればはいる</p>
+          <p>自己紹介文があればはいる自己紹介文があればはいる自己紹介文があればはいる自己紹介文があればはいる自己紹介文があればはいる自己紹介文があればはいる自己紹介文があれば</p>
         </div>
 
       </div>
     <h2 class="align_center">
-        <span class="people_ttl">RIZAPグループとなった今も創業当時から<br>変わらないもの</span>
+        <span class="people_ttl">RIZAPグループとなった今も<br class="pc_br">創業当時から<br>変わらないもの</span>
       </h2>
 
   </section>
