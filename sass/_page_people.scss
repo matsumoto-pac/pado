@@ -13,7 +13,7 @@ people
     padding-top: (75em/16);
   }
   .people_area{
-    width:(1100em/16);
+    width: if($type==sp, (710%/$sp_wid*100), (1100em/16));
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -27,12 +27,15 @@ people
     -webkit-align-content:space-between;
     align-content:space-between;
     li{
-      width:(346em/16);
+      width: if($type==sp, (350%/$sp_wid*100), (346em/16));
       padding-bottom: (20em/16);
       position:relative;
-      margin-top: (63em/16) ;
-      &:first-child,&:nth-child(2),&:nth-child(3){
+      margin-top: if($type==sp, (40em/16), (63em/16));
+      &:first-child,&:nth-child(2){
         margin-top:0;
+      }
+      &:nth-child(3){
+        margin-top: if($type==sp, (40em/16), 0);
       }
       figure{
         width:100%;
@@ -41,7 +44,7 @@ people
         figcaption{
           font-size:14px;
           line-height:1.6;
-          padding:(18em/14) (35em/14) (14em/14) (27em/14);
+          padding: if($type==sp, (18em/14) (35%/14) (14em/14) (25%/14), (18em/14) (35em/14) (14em/14) (27em/14));
         }
         span{
           font-size:12px;
@@ -50,18 +53,9 @@ people
           top:0;
           right:0;
           color: #fff;
-          width:(96em/12);
+          width: if($type==sp, (50em/$sp_wid*100), (96em/12));
           padding:(10em/12) 0;
           line-height:1;
-          }
-          .bg_pp_blue{
-            background:#00acdd;
-          }
-          .bg_pp_yellow{
-            background:#f6ae3a;
-          }
-          .bg_pp_green{
-            background:#a7cf52;
           }
       }
       .neme{
@@ -69,11 +63,11 @@ people
         font-weight: bold;
         display:block;
         margin-bottom:(10em/18);
-        margin-left: (27em/18);
+        margin-left: if($type==sp, (27%/18), (27em/18));
       }
       .occupations{
         font-size:12px;
-        margin-left: (27em/12);
+        margin-left: if($type==sp, (27%/12), (27em/12));
       }
     }
   }
@@ -86,11 +80,10 @@ people
     height:(603em/16);
   }
   .people_area{
-      width:(1100em/16);
-      margin:(-175em/16) auto (44em/16);
+      width: if($type==sp, (652%/$sp_wid*100), (1100em/16));
+      margin: if($type==sp, (-70em/16) auto (60em/16), (-175em/16) auto (70em/16));
       div{
-        width:(550em/14);
-        background:#00acdd;
+        width: if($type==sp, (750%/$sp_wid*100), (550em/14));
         color:#fff;
         font-size:14px;
         box-sizing:border-box;
@@ -122,63 +115,63 @@ people
         font-size:15px;
       }
       .midashi{
-        width:(1100em/22);
+        width: if($type==sp, (652%/$sp_wid*100), (1100em/22));
         font-size:22px;
         font-weight:bold;
         margin: 0 auto;
         display:block;
         + p{
-        margin: (40em/15) auto (53em/15);
-        width:(1100em/15);
+        margin: if($type==sp, ((40em/16) auto 0), (40em/15) auto (50em/15));
+        width: if($type==sp, (652%/$sp_wid*100), (1100em/15));
         display:block;
       }
       }
 
       .col_2-img_l{
-        width:(1412em/16);
+        width: if($type==sp, (652%/$sp_wid*100), (1412em/16));
         margin:0 auto (71em/16);
         box-sizing:border-box;
-        padding-right: (146em/16);
+        padding-right: if($type==sp, (0),  (146em/16));
         figure{
-          margin:0;
+          margin:if($type==sp, ((40em/16) auto ), 0);
           padding: 0;
-          float: left;
+          float:if($type==sp, (none), left);
         }
         div{
-          float:right;
-          width:(582em/15);
+          float: if($type==sp, (none), right);
+          width: if($type==sp, (750%/$sp_wid*100), (582em/15));
         }
       }
       .col_2-img_r{
-        width:(1412em/16);
-        margin:0 auto (65em/16);
+        width:if($type==sp, (652%/$sp_wid*100), (1412em/16));
+        margin:if($type==sp, (0 auto ), 0 auto (65em/16));
         box-sizing:border-box;
-        padding-left: (146em/16);
+        padding-left: if($type==sp, (0), (146em/16));
         figure{
-          margin:0;
+          margin:if($type==sp, ((40em/16) auto), 0);
           padding: 0;
-          float: right;
+          float:if($type==sp, (none), right);
         }
         div{
-          float:left;
-          width:(582em/15);
+          float:if($type==sp, (none), left);
+          width: if($type==sp, (750%/$sp_wid*100), (582em/15));
         }
         + p{
-        margin: 0 auto (35em/15);
-        width:(1100em/15);
-        display:block;
+          margin:if($type==sp, (0 auto (40em/16)), 0 auto (35em/15));
+          width: if($type==sp, (652%/$sp_wid*100), (1100em/15));
+          display:block;
       }
       }
 
       .komidashi{
         font-size:20px;
         font-weight:bold;
-        margin-bottom:(50em/20);
+        margin-bottom: if($type==sp, (0), (50em/20));
       }
     }
 }
 ul.tag{
-  width: (1100em/16);
+  width: if($type==sp, (710%/$sp_wid*100), (1100em/16));
   margin: (20em/16) auto (83em/16);
   letter-spacing: -.4em;
   text-align:center;
@@ -203,14 +196,14 @@ ul.tag{
 }
 .keyword{
   font-size:13px;
-    width:(1100em/13);
-    font-weight:bold;
-    margin:0 auto (42em/13);
-    letter-spacing: -.4em;
-    text-align:left;
-    box-sizing:border-box;
-    position:relative;
-    padding-left:(86em/13);
+  width: if($type==sp, (652%/$sp_wid*100), (1100em/13));
+  font-weight:bold;
+  margin:0 auto (42em/13);
+  letter-spacing: -.4em;
+  text-align: if($type==sp, (center), left);
+  box-sizing:border-box;
+  position:relative;
+  padding-left:(86em/13);
     ul{
 
       &::before{
@@ -227,7 +220,7 @@ ul.tag{
     text-align:center;
     vertical-align: middle;
     letter-spacing:0;
-    margin:0 (4em/13);
+    margin: if($type==sp, (0 (4em/13) (11em/13)) ,0 (4em/13));
     a{
       width:100%;
       text-align:center;
@@ -241,6 +234,24 @@ ul.tag{
     }
 
   }
+}
+.bg_pp_light_blue{
+  background:#00acdd;
+}
+.bg_pp_yellow{
+  background:#f6ae3a;
+}
+.bg_pp_green{
+  background:#a7cf52;
+}
+.bg_pp_pink{
+  background:#e8518d;
+}
+.bg_pp_blue{
+  background:#2e52d7;
+}
+.bg_gray{
+  background:#f5f5f5;
 }
 .clearfix {
     zoom: 1;

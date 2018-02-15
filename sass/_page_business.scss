@@ -115,13 +115,13 @@ business
         figure{
           margin:0;
           padding: 0;
-          width:(587em/16);
+          width: if($type==sp, (750%/$sp_wid*100), (587em/16));
           float: left;
         }
         p{
           float:right;
           font-size:16px;
-          width:(628em/16);
+          width: if($type==sp, (750%/$sp_wid*100), (628em/16));
           line-height:2.6;
         }
       }
@@ -133,13 +133,13 @@ business
         figure{
           margin:0;
           padding: 0;
-          width:(587em/16);
+          width: if($type==sp, (750%/$sp_wid*100), (587em/16));
           float: right;
         }
         p{
           float:left;
           font-size:16px;
-          width:(628em/16);
+          width: if($type==sp, (750%/$sp_wid*100), (628em/16));
           line-height:2.6;
         }
         + p{

@@ -85,7 +85,7 @@
   </section>
   <section id="sec_03" class="sec">
     <div class="cont col_2 col_2-right">
-      <div class="col bg_gray bg_shift">        
+      <div class="col bg_gray bg_shift">
         <h3 class="ttl_en-ja align_right">
           <span class="en">PADO&nbsp;VALUE</span>
           <span class="ja">ぱどバリュー</span>

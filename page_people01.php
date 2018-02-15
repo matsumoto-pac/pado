@@ -53,7 +53,7 @@ Template Name: ぱどの人々
         <a href="#">
         <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/people/img_people_01.jpg" alt="">
           <figcaption class="people_ttl">RIZAPグループとなった今も社員3人の時代から変わらないもの</figcaption>
-          <span class="bg_pp_blue">営業</span>
+          <span class="bg_pp_light_blue">営業</span>
         </figure>
         <h3>
           <span class="neme">谷口&nbsp;夕貴</span>
@@ -89,7 +89,7 @@ Template Name: ぱどの人々
         <a href="#">
         <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/people/img_people_01.jpg" alt="">
           <figcaption class="people_ttl">RIZAPグループとなった今も社員3人の時代から変わらないもの</figcaption>
-          <span class="bg_pp_blue">営業</span>
+          <span class="bg_pp_pink">営業事務</span>
         </figure>
         <h3>
           <span class="neme">谷口&nbsp;夕貴</span>
@@ -101,7 +101,7 @@ Template Name: ぱどの人々
         <a href="#">
         <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/people/img_people_01.jpg" alt="">
           <figcaption class="people_ttl">RIZAPグループとなった今も社員3人の時代から変わらないもの</figcaption>
-          <span class="bg_pp_yellow">配布スタッフ</span>
+          <span class="bg_pp_yellow">編集スタッフ</span>
         </figure>
         <h3>
           <span class="neme">谷口&nbsp;夕貴</span>

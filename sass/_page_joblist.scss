@@ -130,16 +130,20 @@ business
   }
 }
 ul.category{
-    width:(1100em/16);
+    width: if($type==sp, (750%/$sp_wid*100), (1100em/16));
     font-weight:bold;
     margin:0 auto;
-    letter-spacing: -4em;
+    letter-spacing: -.4em;
     text-align:center;
     box-sizing:border-box;
     border:solid 3px #000;
+    border-left: if($type==sp, (none), solid 3px #000);
+    border-bottom:solid 3px #000;
+    border-right: if($type==sp, (none), solid 3px #000);
     li{
-      width:(217em/16);
+      width: if($type==sp, (150%/$sp_wid*100), (217em/16));
       display:inline-block;
+      vertical-align:middle;
       letter-spacing:0;
       box-sizing:border-box;
       border-right: solid 3px #000;
@@ -150,6 +154,7 @@ ul.category{
         line-height:1;
         padding:(17em/15) 0;
         font-size:15px;
+        word-break: keep-all;
         display:block;
         width:100%;
       }
