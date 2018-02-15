@@ -3,9 +3,13 @@
     <div class="f_cont">
       <nav class="f_nav">
         <ul>
-          <li>
+          <li class="pc">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
               ホーム
+            </a>
+          </li><li class="sp">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+              トップ
             </a>
           </li><li>
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
