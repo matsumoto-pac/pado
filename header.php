@@ -29,27 +29,27 @@
             ホーム
           </a>
         </li><li>
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+          <a href="<?php echo esc_url( home_url( '/value/' ) ); ?>">
             ぱどバリュー
           </a>
         </li><li>
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+          <a href="<?php echo esc_url( home_url( '/business/' ) ); ?>">
             事業内容
           </a>
         </li><li>
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+          <a href="<?php echo esc_url( home_url( '/environment/' ) ); ?>">
             働く環境
           </a>
         </li><li>
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+          <a href="<?php echo esc_url( home_url( '/people/' ) ); ?>">
             ぱどの人々
           </a>
         </li><li class="sp">
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+          <a href="<?php echo esc_url( home_url( '/recruit/' ) ); ?>">
             新卒採用情報
           </a>
         </li><li class="sp">
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+          <a href="<?php echo esc_url( home_url( '/joblist/' ) ); ?>">
             中途募集要項
           </a>
         </li><li>
@@ -64,11 +64,11 @@
       </ul>
       <ul class="entry_nav">
         <li>
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="bc_blue_deep">
+          <a href="<?php echo esc_url( home_url( '/recruit/' ) ); ?>" class="bc_blue_deep">
             新卒エントリー
           </a>  
         </li><li>
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="bc_blue">
+          <a href="<?php echo esc_url( home_url( '/joblist/' ) ); ?>" class="bc_blue">
             中途エントリー
           </a>  
         </li>
