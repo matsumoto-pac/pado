@@ -301,6 +301,9 @@
             white-space: nowrap;
             
             &.site_link {
+              position: relative;
+              padding-right: (26em/12);
+              
               &::after {
                 content: '';
                 width: (14em/12);
@@ -311,6 +314,9 @@
                 background-position: 50% 50%;
                 background-repeat: no-repeat;
                 display: inline-block;
+                position: absolute;
+                right: 0;
+                bottom: (12em/12);
               }
             }
           }
