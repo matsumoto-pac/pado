@@ -5,7 +5,7 @@ if ( ! function_exists( 'my_theme_default_setup' ) ) :
     //---------------------
     // フロントエンドUI
     //---------------------
-    
+
     //Include css/js
     function my_include_files() {
       wp_enqueue_script( 'jquery' );
@@ -16,7 +16,7 @@ if ( ! function_exists( 'my_theme_default_setup' ) ) :
       wp_enqueue_style( 'my-style', get_template_directory_uri() . '/css/style.css', "", '20180206' );
     }
     add_action( 'wp_enqueue_scripts', 'my_include_files' );
-    
+
     //OGP
     function the_seo($post) {
       $ogp = '';
@@ -67,20 +67,20 @@ if ( ! function_exists( 'my_theme_default_setup' ) ) :
       //$ogp .= '<meta name="twitter:site" content="@kerger2">';
       echo $seo . $ogp;
     }
-    
+
 		//SEOtitleタグ
 		add_theme_support( 'title-tag' );
-		
+
 		//アイキャッチをサポート
-		add_theme_support( 'post-thumbnails', array('people'));
+		add_theme_support( 'post-thumbnails', array('people','joblist'));
 		register_post_type(
 			'people',
 			array(
 			  // 'supports'に'thumbnail'を追記
-			  'supports' => array('title','editor','thumbnail') 
+			  'supports' => array('title','editor','thumbnail')
 			)
 		);
-		
+
 		//html5対応
 		add_theme_support( 'html5', array(
 			'search-form',
@@ -93,7 +93,7 @@ if ( ! function_exists( 'my_theme_default_setup' ) ) :
 
   //google analytics
   function my_js_function_foot() {
-    echo 
+    echo
     "<script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -198,14 +198,14 @@ if ( ! function_exists( 'my_theme_default_setup' ) ) :
 
   //ビジュアルエディタcss
   add_editor_style("./css/vis_editor.css");
-  
+
   //wysiwygエディタの「見出し１」を削除する
   function custom_editor_settings( $initArray ){
     $initArray['block_formats'] = "段落=p; 見出し2=h2; 見出し3=h3; 見出し4=h4;";
     return $initArray;
   }
   add_filter( 'tiny_mce_before_init', 'custom_editor_settings' );
-  
+
   //「投稿」のラベル変更
   function custom_post_labels( $labels ) {
     $labels->name = 'お知らせ'; // 投稿
@@ -247,11 +247,11 @@ if ( ! function_exists( 'my_theme_default_setup' ) ) :
     );
   }
   add_action( 'init', 'create_custom_post_type' );
-  
+
   //---------------------
   // バックエンド機能
   //---------------------
-  
+
   //アイキャッチを必須入力
   /*
   add_action( 'admin_head-post-new.php', 'post_edit_required' );
@@ -388,4 +388,5 @@ if ( ! function_exists( 'my_theme_default_setup' ) ) :
 endif;
 add_action( 'after_setup_theme', 'my_theme_default_setup' );
 
-?>
+//カスタムフィールド・カスタム投稿
+require_once "functions-custom.php";
