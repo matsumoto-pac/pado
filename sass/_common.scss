@@ -5,15 +5,15 @@
   display: flex;
   justify-content: space-between;
   background-color: #fff;
-  
+
   @if($type==sp) {
     width: 100%;
     position: fixed !important;
   } @else {
     align-items: center;
   }
-  
-  
+
+
 /*============================
 #h_logo
 ============================*/
@@ -25,20 +25,20 @@
       background-color: $site_blue;
       display: flex;
       align-items: center;
-      
+
       .tcon-menu--xcross {
         min-width: 56px;
       }
     }
 	}
 	.h_nav {
-    
+
     @if($type==sp) {
       display: none;  // とりあえず非表示 todo:スマホ時の表示を定義
     } @else {
       display: flex;
       justify-content: space-between;
-      
+
       .g_nav,
       .entry_nav {
         display: flex;
@@ -82,11 +82,11 @@
   .sec {
     .col_2 {
       @if($type==sp) {
-        
+
       } @else {
         display: flex;
         justify-content: space-between;
-        
+
         &-right {
           flex-direction: row-reverse;
         }
@@ -97,13 +97,13 @@
         }
       }
     }
-    
+
 		.ttl_dot {
       margin-bottom: (60em/48);
       font-size: if($type==sp, (48em/11/2), (48em/16));
       line-height: (69em/48);
       text-align: center;
-      
+
       &::after {
         content: '';
         width: (48em/48);
@@ -116,16 +116,16 @@
         display: block;
 ;      }
     }
-    
+
 		.ttl_en-ja {
       margin-bottom: (48em/16);
       color: #000;
       text-align: center;
-      
+
       span {
         line-height: 1.2;
         display: block;
-        
+
         &.en {
           font-family: 'Montserrat', sans-serif;
           font-size: if($type==sp, (52em/11/2), (52em/16));
@@ -156,7 +156,7 @@
         display: block;
         position: relative;
         @include trans-animate;
-              
+
         &::after {
           content: '';
           width: (19em/15);
@@ -171,7 +171,7 @@
           top: 50%;
           transform: translateY(-50%);
         }
-        
+
         &:hover {
           color: #000;
           background-color: #fff;
@@ -186,12 +186,12 @@
   .list_info {
     ul {
       margin: (17em/16/2*-1) 0;
-      
+
       li {
         margin: (17em/16/2) (10em/16/2*-1);
         display: flex;
         justify-content: space-between;
-        
+
         span {
           margin: 0  (10em/16/2);
           padding: (5em/16) 0;
@@ -207,7 +207,7 @@
           font-size: (12em/18);
           font-weight: 600;
           color: #fff;
-          
+
           &.cat {
             &_recruit {
               background-color: $site_blue;
@@ -220,7 +220,7 @@
         }
         a {
           text-decoration: underline;
-          
+
           &:hover {
             color: #555;
           }
@@ -239,7 +239,7 @@
     background-image: url(../images/common/mainimg_entry.jpg);
     background-position: 50% 50%;
     background-size: cover;
-    
+
 		.cont {
 			.btns {
         ul {
@@ -247,10 +247,10 @@
           margin: 0 auto;
           display: flex;
           justify-content: center;
-          
+
           li {
             flex-grow: 1;
-            
+
             a {
               padding: if($type==sp, (30em/26), (40em/19));
               font-size: if($type==sp, (26em/11/2), (19em/16));
@@ -259,7 +259,7 @@
               line-height: 1;
               display: block;
               @include trans-animate;
-              
+
               &:hover {
                 background-color: inherit;
               }
@@ -281,29 +281,29 @@
       display: flex;
       justify-content: space-between;
     }
-    
+
 		.f_nav {
       padding-top: if($type==sp, (30em/11/2), 0);
       ul {
         display: flex;
         justify-content: if($type==sp, space-around, space-between);
         flex-wrap: if($type==sp, wrap, inherit);
-        
+
         li {
           padding: if($type==sp, 0, (35em/16) 0 (32em/16));
           line-height: 1;
-          
+
           a {
             padding: (12em/12);
             font-size: if($type==sp, (19em/11/2), (12em/16));
             font-weight: 600;
             display: block;
             white-space: nowrap;
-            
+
             &.site_link {
               position: relative;
               padding-right: (26em/12);
-              
+
               &::after {
                 content: '';
                 width: (14em/12);
@@ -324,9 +324,9 @@
       }
 		}
 		.f_logo {
-      padding: (30em/16) (27em/16) (29em/16) (27em/16); 
+      padding: (30em/16) (27em/16) (29em/16) (27em/16);
       text-align: if($type==sp, center, inherit);
-      
+
       img {
         width: if($type==sp, (204px/2), auto);
       }
@@ -341,7 +341,7 @@
     font-size: if($type==sp, (14em/11/2), (10em/16));
     text-align: center;
     background-color: #000;
-    
+
     small {
       font-size: 1em;
       color: #fff;
@@ -404,5 +404,81 @@ a {
   &.bc_blue_deep,
   &.bc_blue_deep_alpha {
     border-color: $site_blue_deep;
+  }
+}
+.info_more{
+  margin-top:(80em/16) !important;
+  a{
+    width: if($type==sp, (555%/$sp_wid*100), 285px);
+    @include center;
+      padding: (24em/15) (24em/15) (24em/15) (12em/15);
+      margin: if($type==sp, 0 auto, 0);
+      font-size: (15em/16);
+      font-weight: 600;
+      color: #000;
+      text-align: center;
+      line-height: 1;
+      letter-spacing: .08em;
+      border: #000 3px solid;
+      background-color: #fff;
+      box-sizing: border-box;
+      display: block;
+      position: relative;
+      @include trans-animate;
+      &::after{
+      content: '';
+      width: (19em/15);
+      height: (19em/15);
+      background-image: url(../images/common/bg_btn_info.png);
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+      display: block;
+      position: absolute;
+      left: (25em/15);
+      top: 50%;
+      transform: translateY(-50%);
+      }
+      &:hover{
+        background-color: #eeeeee;
+      }
+  }
+}
+.pagenation{
+  ul{
+    text-align: center;
+    letter-spacing:-.4em;
+    .prev,.next{
+        display:none;
+      }
+    li{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 23.48px;
+      display:inline-block;
+      width:(50em/23.48);
+      height:(50em/23.48);
+      letter-spacing:0;
+      line-height:2.2;
+      border: #000 2px solid;
+      margin: (36em/23.48) (8em/23.48) (100em/23.48);
+      background-color:#000;
+      color:#fff;
+
+      a{
+        width:100%;
+        height:100%;
+        @include center;
+        background-color:#000;
+        color:#fff;
+        display:block;
+        font-size: 23.48px;
+        @include trans-animate;
+        &:hover{
+        background-color: #fff;
+        color:#000;
+
+      }
+      }
+    }
   }
 }

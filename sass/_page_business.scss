@@ -17,13 +17,14 @@ business
     padding: (75em/16) 0 0;
   }
   .cont{
-    width: (1100em/16);
+    width: if($type==sp, (650%/$sp_wid*100), (1100em/16));
     margin:0 auto;
     p{
       font-size: 16px;
       line-height:2.6;
       margin-bottom:(40em/16);
       letter-spacing:-.011em;
+      padding: if($type==sp, (0 (95%/16) 0 (95%/16)), 0 0 0 0);
       span{
           font-weight:bold;
         }
@@ -33,11 +34,11 @@ business
     }
     ul{
       letter-spacing: -.4em;
-      width:(1100em/16);
+      width: if($type==sp, (750%/$sp_wid*100), (1100em/16));
       margin-bottom:(38em/16);
       background: #eeeeee;
       box-sizing:border-box;
-      padding: (37em/16) (91em/16) (19em/16) (96em/16);
+      padding: if($type==sp, ((21em/16) (56%/16) (10em/16) (56%/16)), (37em/16) (91em/16) (19em/16) (96em/16));
       display: -webkit-box;
       display: -ms-flexbox;
       display:flex;
@@ -50,7 +51,7 @@ business
       -webkit-align-content:space-between;
       align-content:space-between;
       li{
-        width:(285em/16);
+        width: if($type==sp, (238%/$sp_wid*100), (285em/16));
         margin-bottom:(22em/16);
         }
     }
@@ -66,29 +67,33 @@ business
   }
   #sec_04{
     ul{
-      width:(1100em/16);
+      width: if($type==sp, (650%/$sp_wid*100), (1100em/16));
       margin: 0 auto (117em/16);
       background: #eeeeee;
       box-sizing:border-box;
-      padding: (48em/16) (48em/16) 0;
+      padding: if($type==sp, ((51em/16) 0 0), (48em/16) (48em/16) 0);
       letter-spacing:-.4em;
       text-align:center;
       li{
         display:inline-block;
         vertical-align:top;
-        margin:0 (32em/16) (70em/16);
-        width:(270em/16);
+        margin: if($type==sp, (0 (95%/16) (62em/16) 0), 0 (32em/16) (70em/16) 0);
+        width: if($type==sp, (315%/$sp_wid*100), (270em/16));
         letter-spacing:0;
+        &:nth-child(2),&:nth-child(4){
+          margin-right: if($type==sp, 0, (32em/16));
+        }
         figcaption{
-          width:(270em/16);
+          width: if($type==sp, 100%, (270em/16));
           display:table;
-          height: (70em/16);
+          height: if($type==sp, (120em/16), (70em/16));
           span{
           font-size:18px;
           font-weight:bold;
           text-align:center;
           vertical-align:middle;
           display:table-cell;
+          letter-spacing: if($type==sp, -.1em, 0);
         }
         }
         p{
@@ -106,41 +111,50 @@ business
   font-weight: bold;
   text-align: center;
   margin-bottom:(45em/28);
+  padding: 0 8% 0;
 }
 .col_2-img_l{
-        width:(1412em/16);
+        width: if($type==sp, (650%/$sp_wid*100), (1412em/16));
         margin:0 auto (71em/16);
         box-sizing:border-box;
-        padding-right: (146em/16);
+        padding-right: if($type==sp, 0, (146em/16));
         figure{
           margin:0;
           padding: 0;
           width: if($type==sp, (750%/$sp_wid*100), (587em/16));
-          float: left;
+          float: if($type==sp, none, left);
         }
         p{
-          float:right;
+          float: if($type==sp, none, right);
           font-size:16px;
           width: if($type==sp, (750%/$sp_wid*100), (628em/16));
           line-height:2.6;
+          box-sizing:border-box;
+          padding: if($type==sp, (0 (95%/16) 0 (95%/16)), 0 0 0 0);
+          margin-bottom: if($type==sp, (45em/16), 0);
+          text-align: if($type==sp, center, left);
         }
       }
       .col_2-img_r{
-        width:(1412em/16);
+        width: if($type==sp, (650%/$sp_wid*100), (1412em/16));
         margin:0 auto (65em/16);
         box-sizing:border-box;
-        padding-left: (146em/16);
+        padding-left: if($type==sp, 0, (146em/16));
         figure{
           margin:0;
           padding: 0;
           width: if($type==sp, (750%/$sp_wid*100), (587em/16));
-          float: right;
+          float: if($type==sp, none, right);
         }
         p{
-          float:left;
+          float: if($type==sp, none, left);
           font-size:16px;
           width: if($type==sp, (750%/$sp_wid*100), (628em/16));
           line-height:2.6;
+          box-sizing:border-box;
+          padding: if($type==sp, (0 (95%/16) 0 (95%/16)), 0 0 0 0);
+          margin-bottom: if($type==sp, (45em/16), 0);
+          text-align: if($type==sp, center, left);
         }
         + p{
         margin: 0 auto (35em/15);

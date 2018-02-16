@@ -14,7 +14,7 @@ recruit
     height:(336em/16);
   }
   #sec_02{
-    padding: (75em/16) 0 (285em/16);
+    padding: if($type==sp, (75em/16) 0 (175em/16), (75em/16) 0 (285em/16));
   }
   .recruit_area{
     width: if($type==sp, (750%/$sp_wid*100), (1100em/16));
@@ -55,7 +55,8 @@ recruit
               position:absolute;
               top:0;
               left:0;
-
+              right: if($type==sp, (0), none);
+              display:block;
               margin: if($type==sp, (0 auto), auto);
               background: #fff;
               color: #4ebeee;
@@ -81,7 +82,7 @@ recruit
       font-size: 14px;
       line-height:2.6;
       box-sizing:border-box;
-      padding:(90em/14) (20em/14) 0 (55em/14);
+      padding: if($type==sp, ((70em/14) (20em/14) 0 ), (90em/14) (20em/14) 0 (55em/14));
     }
     }
     .col_left{
@@ -91,15 +92,17 @@ recruit
       }
       .mynavi{
         float: if($type==sp, (none), right);
-        width:(509em/16);
+        width: if($type==sp, (650%/$sp_wid*100), (509em/16));
+        margin: if($type==sp, ((-129em/16) auto (35em/16)), auto);
         ul{
-          width:(551em/16);
+          width: if($type==sp, (750%/$sp_wid*100), (551em/16));
           background:#4ebeee;
           color:#fff;
           line-height:1;
           position:relative;
           top:(42em/16);
-          left: (-43em/16);
+          left: if($type==sp, (0), (-43em/16));
+          text-align: if($type==sp, (center), left);
           li{
             position:relative;
             padding: (85em/16) (55em/16) (60em/16);
@@ -109,6 +112,9 @@ recruit
               position:absolute;
               top:0;
               left:0;
+              right: if($type==sp, (0), none);
+              display:block;
+              margin: if($type==sp, (0 auto), auto);
               background: #fff;
               color: #4ebeee;
               line-height:1;
@@ -133,7 +139,7 @@ recruit
       font-size: 14px;
       line-height:2.6;
       box-sizing:border-box;
-      padding:(90em/14) (55em/14) 0 (20em/14) ;
+      padding: if($type==sp, ((70em/14) (20em/14) 0 ), (90em/14) (20em/14) 0 (55em/14));
     }
     + p{
         text-align:right;

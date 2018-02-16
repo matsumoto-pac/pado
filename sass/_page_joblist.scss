@@ -4,7 +4,7 @@ business
 ============================*/
 #joblist{
   .cover{
-  background: url("../images/joblist/img_joblist_02.jpg") no-repeat;
+  background: if($type==sp, url("../images/joblist/sp_img_joblist_02.jpg"), url("../images/joblist/img_joblist_02.jpg") no-repeat);
     background-position: top center;
     background-size: cover;
     height:(336em/16);
@@ -13,7 +13,7 @@ business
     padding-top: (75em/16);
   }
   ul.job_area{
-    width:(1100em/16);
+    width: if($type==sp, (650%/$sp_wid*100), (1100em/16));
     font-weight:bold;
     margin:(37em/16) auto (36em/16);
     display: -webkit-box;
@@ -26,7 +26,7 @@ business
     -webkit-justify-content: space-between;
     justify-content: space-between;
     li{
-      width:(530em/16);
+      width: if($type==sp, (750%/$sp_wid*100), (530em/16));
       margin-top:(38em/16);
       box-sizing:border-box;
       border: solid 3px #000;
@@ -35,15 +35,14 @@ business
         margin-top:0;
       }
       &:nth-child(2){
-        margin-top:0;
+        margin-top: if($type==sp, (47em/16), (0));
       }
       a{
-        padding:(40em/16) (30em/16) 0;
+        padding: if($type==sp, (48em/16) (185em/16) (45.44em/16) (28em/16), (40em/16) (200em/16) (45.44em/16) (30em/16));
         display:block;
-        min-height:(159em/14);
       h3{
         font-size:17px;
-        margin-bottom:(17em/17);
+        margin-bottom:(15.3em/17);
         span{
           display:block;
           font-weight:bold;
@@ -61,6 +60,7 @@ business
         }
       }
       figure{
+        width: if($type==sp, (196%/$sp_wid*100), auto);
         position:absolute;
         top:0;
         right: 0;
@@ -74,31 +74,31 @@ business
     line-height: 1;
     text-align: center;
     .category{
-      font-size: (20em/16);
+      font-size: if($type==sp, (26em/16), (20em/16));
       font-weight:bold;
       display: block;
       margin-bottom:(20em/16);
     }
     .work_location{
-      font-size:(13em/16);
+      font-size: if($type==sp, (20em/16), (13em/16));
       display:block;
       margin-bottom:(27em/16);
     }
   }
   dl{
-    width: (1100em/14);
+    width: if($type==sp, (650%/$sp_wid*100), (1100em/14));
     margin: 0 auto (48em/16);
     box-sizing:border-box;
     border-left: solid 2px #000;
     border-top: solid 2px #000;
     border-right: solid 2px #000;
     background:#f6f6f6;
-    font-size:(14em/16);
+    font-size: if($type==sp, (24em/16), (14em/16));
     line-height:2;
     dt{
-      width:(170em/14);
+      width: if($type==sp, (750%/$sp_wid*100), (170em/14));
       display:block;
-      float: left;
+      float: if($type==sp, (none), left);
       clear:left;
       background:#f6f6f6;
       box-sizing:border-box;
@@ -106,15 +106,15 @@ business
       font-weight:bold;
     }
     dd{
-      width:(926em/14);
+      width: if($type==sp, (750%/$sp_wid*100), (926em/14));
       display:inline-block;
       border-bottom:solid 2px #000;
       background:#fff;
       box-sizing:border-box;
-      padding: (14em/14) (200em/14) (17em/14) (28em/14);
+      padding: if($type==sp, ((14em/14) (28em/14) (17em/14) (28em/14)), (14em/14) (200em/14) (17em/14) (28em/14));
       position: relative;
       &::before{
-        content:" ";
+        content:if($type==sp, (none), " ");
         width:(170em/14);
         display:block;
         border-bottom:solid 2px #000;

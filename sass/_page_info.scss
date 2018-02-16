@@ -1,0 +1,110 @@
+
+/*============================
+info
+============================*/
+#info{
+  .cover{
+  background: url("../images/information/img_info_01.jpg") no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height:(336em/16);
+  }
+  #sec_02{
+    padding: (75em/16) 0 0;
+  }
+  .cont{
+    width: if($type==sp, (750%/$sp_wid*100), (1100em/16));
+    margin:0 auto;
+    .list_info{
+      ul{
+        li{
+          margin:0 auto;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: block;
+          -webkit-box-pack: none;
+          -ms-flex-pack: none;
+          justify-content: none;
+          background:#fff;
+          letter-spacing: -.04em;
+          padding: if($type==sp, ((55em/18) (100%/18) (70em/18) (100%/18)), (26em/14) (50em/14) (31em/14) (19em/14));
+          &:nth-child(even){
+            background:#f7f7f7;
+          }
+          span{
+            margin: 0;
+            letter-spacing:0;
+            font-size: if($type==sp, 24px, 14px);
+          }
+          .info_date{
+            width: if($type==sp, (38em/$sp_wid*100), (118em/14));
+            text-align: if($type==sp, left, center);
+            display:inline-block;
+          }
+          .info_cat{
+            width:(74em/14);
+            font-size: if($type==sp, 18px, 14px);
+          }
+          .info_desc{
+            padding: if($type==sp, (25em/18) 0 0 0, 0 0 0 (19em/14));
+            font-size: if($type==sp, 20px, 14px);
+            text-decoration: none;
+            display: if($type==sp, block, inline-block);
+            box-sizing:border-box;
+            width: if($type==sp, (750%/$sp_wid*100), (810em/14));
+          }
+        }
+      }
+    }
+  }
+}
+#info02{
+  .cont{
+    width: if($type==sp, (750%/$sp_wid*100), (1100em/16));
+    margin:0 auto;
+    p{
+      width: if($type==sp, (650%/$sp_wid*100), 100%);
+      font-size: if($type==sp, 16px, 16px);
+      margin: if($type==sp, (75em/16) auto, (40em/16) auto );
+    }
+    .list_info{
+      width: if($type==sp, (650%/$sp_wid*100), (1100em/16));
+      margin: 0 auto;
+        ul{
+          li{
+            margin:0 auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: block;
+            -webkit-box-pack: none;
+            -ms-flex-pack: none;
+            justify-content: none;
+            background:#fff;
+            letter-spacing: -.04em;
+            span{
+              margin: 0;
+              letter-spacing:0;
+              font-size: if($type==sp, 24px, 14px);
+            }
+            .info_date{
+              width: if($type==sp, (38em/$sp_wid*100), (90em/14));
+              text-align:left;
+              display:inline-block;
+            }
+            .info_cat{
+              width:(74em/14);
+              font-size: if($type==sp, 18px, 14px);
+            }
+            .info_desc{
+              padding: if($type==sp, (34em/20) 0 (34em/20) 0, (22em/22) 0 (24em/22) 0);
+              font-size: if($type==sp, 20px, 22px);
+              text-decoration: none;
+              display:block;
+              box-sizing:border-box;
+              width: if($type==sp, (650%/$sp_wid*100), 100%);
+            }
+          }
+        }
+      }
+    }
+}
