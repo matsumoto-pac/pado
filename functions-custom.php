@@ -91,16 +91,13 @@ function select_to_radio_cat_joblist() {
 add_image_size('joblist_thumbnail', 170, 194, true);
 
 //スラッグ名が日本語だったら自動的にid付与へ変更
-function auto_post_slug($slug, $post_ID, $post_status, $post_type) {
-	if (!strcmp($post_type, "joblist")) {
-		if (preg_match('/(%[0-9a-f]{2})+/', $slug)) {
-			// $slug = utf8_uri_encode($post_type) . '-' . $post_ID;
-			$slug = $post_ID;
+function auto_post_slug( $slug, $post_ID, $post_status, $post_type ) {
+		if ( preg_match( '/(%[0-9a-f]{2})+/', $slug ) ) {
+				$slug = $post_ID;
 		}
 		return $slug;
-	}
 }
-add_filter('wp_unique_post_slug', 'auto_post_slug', 10, 4);
+add_filter( 'wp_unique_post_slug', 'auto_post_slug', 10, 4  );
 
 //Pagenation
 function pagination($pages = '', $range = 10) {
