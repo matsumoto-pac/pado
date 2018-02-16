@@ -59,6 +59,15 @@ info
   }
 }
 #info02{
+  .cover{
+  background: url("../images/information/img_info_01.jpg") no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height:(336em/16);
+  }
+  #sec_02{
+    padding: (75em/16) 0 0;
+  }
   .cont{
     width: if($type==sp, (750%/$sp_wid*100), (1100em/16));
     margin:0 auto;

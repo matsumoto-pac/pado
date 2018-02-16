@@ -4,7 +4,7 @@ Template Name: お知らせ
 */
 ?>
 <?php get_header(); ?>
-<article id="value" class="underlayer">
+<article id="info" class="underlayer">
   <section id="sec_01" class="sec">
     <div class="cover">
 
@@ -12,19 +12,15 @@ Template Name: お知らせ
   </section>
   <section id="sec_02" class="sec">
     <h2 class="ttl_en-ja align_center">
-        <span class="en"></span>
-        <span class="ja"></span>
+        <span class="en">INFORMATION</span>
+        <span class="ja">お知らせ</span>
       </h2>
-      <div class="desc align_center">
+      <div class="cont">
+        <?php get_template_part( 'template-parts/content-list_info' ); ?>
       </div>
 
   </section>
-  <section id="sec_03" class="sec">
-    <div class="cont">
-      <div>
-      </div>
-    </div>
-  </section>
+
   </article>
   <?php get_template_part( 'template-parts/content-entry' ); ?>
 <?php get_footer(); ?>
