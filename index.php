@@ -147,7 +147,7 @@
       </div>
     </div>
     <p class="btn_more">
-      <a href="">
+      <a href="home_url( '/info/' )">
         さらに見る
       </a>
     </p>

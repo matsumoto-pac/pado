@@ -18,13 +18,6 @@ info
     .list_info{
       ul{
         li{
-          margin:0 auto;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: block;
-          -webkit-box-pack: none;
-          -ms-flex-pack: none;
-          justify-content: none;
           background:#fff;
           letter-spacing: -.04em;
           font-size:(16em/16);
@@ -33,19 +26,15 @@ info
             background:#f7f7f7;
           }
           span{
-            margin: 0;
-            letter-spacing:0;
+            padding-right: (20em/16);
+            padding-left: (20em/16);
             font-size: if($type==sp, (24em/16), (16em/16));
           }
           .info_date{
-            width:(97em/17);
-            font-weight:bold;
-            display:inline-block;
+            font-weight: 600;
           }
           .info_cat{
-            width:(88em/13);
             font-size: if($type==sp, (18em/16), (13em/16));
-            font-weight:500;
           }
           .info_desc{
             padding: if($type==sp, (25em/20) 0 0 0, 0 0 0 (19em/16));
