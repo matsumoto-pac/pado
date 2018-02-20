@@ -4,6 +4,13 @@ Template Name: お知らせ（下層）
 */
 ?>
 <?php get_header(); ?>
+<?php
+  $category = get_the_category();
+  $cat_name = $category[0]->cat_name;
+  $cat_slug = $category[0]->category_nicename;
+  $cat_id = $category[0]->cat_ID;
+  $cat_url = get_category_link($cat_id);
+?>
 <article id="info02" class="underlayer">
   <section id="sec_01" class="sec">
     <div class="cover">
@@ -17,24 +24,22 @@ Template Name: お知らせ（下層）
       </h2>
       <div class="cont">
         <div class="list_info">
-      <ul>
+          <ul>
               <li>
-          <span class="info_date">2018.2.16</span>
-          <span class="info_cat cat_recruit">採用情報</span>
-          <a class="info_desc" href="">テキストテキストテキストテキストテキストテキストテキスト</a>
-        </li>
-</ul>
-  </div>
-        <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/information/img_info_02.jpg" alt=""></figure>
-        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
-          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <span class="info_date"><?php the_date(); ?></span>
+                <span class="info_cat cat_<?php echo $cat_slug; ?>"><?php echo $cat_name; ?></span>
+                <span class="info_desc"><?php the_title(); ?></span>
+              </li>
+          </ul>
+        </div>
+        <figure><?php the_post_thumbnail(); ?></figure>
+        <p><?php the_content(); ?></p>
           <p class="info_more">
             <a href="./">
               お知らせ一覧
             </a>
           </p>
       </div>
-
   </section>
 
   </article>
