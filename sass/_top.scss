@@ -7,7 +7,22 @@
     position: absolute;
     z-index: 999;
     background-color: inherit;
+    
+    .h_nav {
+      .g_nav{
+        li {
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
   }
+
+
+  /*============================
+  common
+  ============================*/
 
   p{
     font-size: if($type==sp, (22em/16), (16em/16));
