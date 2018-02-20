@@ -9,9 +9,6 @@
 
 <div class="list_info">
   <?php
-    $the_query = new WP_Query(array(
-      'post_type'	=> 'post'
-    ));
     if ( $the_query->have_posts() ) :
   ?>
     <ul>
@@ -35,7 +32,7 @@
           </span>
           <span class="info_desc">
             <?php if(get_the_content() != NULL): ?>
-              <a href="<?php echo $cat_url; ?>">
+              <a href="<?php the_permalink(); ?>">
                 <?php the_title(); ?>
               </a>
             <?php else: ?>
@@ -48,6 +45,8 @@
      ?>
     </ul>
   <?php
-    endif;
+		else:
+			echo "<p>" . wpautop('投稿が見つかりませんでした。'), "</p>";
+		endif;
   ?>
 </div>

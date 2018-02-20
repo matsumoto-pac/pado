@@ -1,7 +1,7 @@
 <?php get_header(); ?>
   <section id="mainvis">
     <div class="cont">
-      <h1 class="ttl">“make a CHALLENGE”</h1>
+      <h2 class="ttl">“make a CHALLENGE”</h2>
 <?php if(false): ?>
       <div class="btns">
         <ul>
@@ -143,7 +143,13 @@
         </h3>
       </div>
       <div class="col">
-        <?php get_template_part( 'template-parts/content-list_info' ); ?>
+        <?php
+          $the_query = new WP_Query(array(
+            'post_type'	=> 'post'
+          ));
+          set_query_var('the_query', $the_query);
+          get_template_part( 'template-parts/content-list_info' );
+        ?>
       </div>
     </div>
     <p class="btn_more">
