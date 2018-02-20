@@ -31,3 +31,30 @@
 @mixin trans-animate {
   transition-duration: .2s;
 }
+@mixin link_bdr {
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #300;
+    transform: scaleX(0);
+    transform-origin: right center;
+    -webkit-transition: background-color 150ms ease-out, -webkit-transform 600ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: background-color 150ms ease-out, -webkit-transform 600ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: background-color 150ms ease-out, transform 600ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: background-color 150ms ease-out, transform 600ms cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 600ms cubic-bezier(0.19, 1, 0.22, 1);
+    right: 16px;
+    left: 16px;
+  }
+}
+@mixin link_hov_bdr {
+  &:hover {
+    &::after {
+      background-color: $site_blue;
+      transform: scaleX(1);
+      transform-origin: left center;
+    }
+  }
+}

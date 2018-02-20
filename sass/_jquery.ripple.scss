@@ -1,0 +1,46 @@
+/*============================
+# .js-ripple
+============================*/
+
+.js-ripple {
+  position: relative;
+  overflow: hidden;
+}
+.js-ripple__circle {
+  position: absolute;
+  background-color: #f7f5f0;
+  border-radius: 50%;
+  pointer-events: none;
+  width: 150px;
+  height: 150px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
+}
+
+.js-ripple__circle.is-show {
+  -webkit-animation: ripple 1s cubic-bezier(0.19, 1, 0.22, 1);
+          animation: ripple 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@-webkit-keyframes ripple {
+  from {
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes ripple {
+  from {
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0;
+  }
+}

@@ -32,6 +32,31 @@
       },
     ]
   });
+  
+  //ripple
+  var $rip_elem = $('.js-ripple');
+  $rip_elem.each(function() {
+    var $this = $(this);
+    var $circle = $this.find('.js-ripple__circle');
+
+    $this.on('mouseenter mousemove', function(e) {
+      if (!$circle.hasClass('is-show') && e.target == $this[0]) {
+        var x  = e.offsetX;
+        var y  = e.offsetY;
+        var w  = $circle.width();
+        var h  = $circle.height();
+
+        $circle.css({
+          left: x - w / 2,
+          top: y - h / 2
+        });
+
+        $circle.clearQueue().addClass('is-show').delay(1000).queue(function() {
+          $circle.clearQueue().removeClass('is-show');
+        });
+      }
+    });
+  })
 })(jQuery);
 
 //Transformicons

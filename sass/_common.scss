@@ -56,10 +56,13 @@ p {
             line-height: 1;
             display: block;
             white-space: nowrap;
+            position: relative;
             @include trans-animate;
-
-            &:hover {
-              color: #444;
+            @include link_bdr;
+            @include link_hov_bdr;
+            
+            &.current {
+              @include link_bdr;
             }
           }
         }
@@ -73,15 +76,10 @@ p {
             padding: (26em/14) (24.5em/14);
             font-size: (14em/16);
             font-weight: 600;
-            color: #2c2c2c;
             line-height: 1;
             display: block;
             white-space: nowrap;
             @include trans-animate;
-
-            &:hover {
-              color: #444;
-            }
           }
         }
       }
@@ -281,6 +279,8 @@ p {
               font-weight: 700;
               text-align: center;
               line-height: 1;
+              border-width: 2px;
+              border-style: solid;
               display: block;
               @include trans-animate;
 
@@ -415,12 +415,10 @@ p {
 }
 a {
   &.bc_blue,
-  &.bc_blue_deep,
   &.bc_blue_alpha,
+  &.bc_blue_deep,
   &.bc_blue_deep_alpha {
-    box-sizing: border-box;
-    border-width: 2px;
-    border-style: solid;
+    color: $site_navy;
   }
   &.bc_blue,
   &.bc_blue_alpha {

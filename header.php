@@ -52,12 +52,14 @@
       </ul>
       <ul class="entry_nav">
         <li>
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="bc_blue_deep">
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="bc_blue_deep js-ripple">
             新卒エントリー
+            <span class="js-ripple__circle header__entry_ripple"></span>
           </a>  
         </li><li>
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="bc_blue">
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="bc_blue js-ripple">
             中途エントリー
+            <span class="js-ripple__circle header__entry_ripple"></span>
           </a>  
         </li>
       </ul>
