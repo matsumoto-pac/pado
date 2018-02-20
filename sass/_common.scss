@@ -212,43 +212,51 @@ p {
   .list_info {
     ul {
       margin: (17em/16/2*-1) 0;
+      display: table;
 
       li {
-        margin: (17em/16/2) (10em/16/2*-1);
-        display: flex;
-        justify-content: space-between;
+        display: table-row;
 
         span {
-          margin: 0  (10em/16/2);
-          padding: (5em/16) 0;
+          margin: 0  ;
+          padding: (17em/16/2) (10em/16/2);
           line-height: 16px;
+          display: table-cell;
         }
         .info_date {
           font-family: 'Montserrat', sans-serif;
           font-size: (16em/18);
+          font-weight: 600;
+          word-break: keep-all;
         }
         .info_cat {
-          padding-left: (13em/16);
-          padding-right: (13em/16);
-          font-size: (12em/18);
-          font-weight: 600;
-          color: #fff;
+          font-size: (12em/16);
+          a {
+            padding: (7em/12) (12em/12);
+            font-weight: 600;
+            color: #fff;
+            line-height: 1;
+            display: block;
+            word-break: keep-all;
 
-          &.cat {
-            &_recruit {
-              background-color: $site_blue;
+            &.cat {
+              &_recruit {
+                background-color: $site_blue;
+              }
             }
           }
         }
         .info_desc {
           font-size: (13em/18);
           font-weight: 600;
-        }
-        a {
-          text-decoration: underline;
+          
+          a {
+            font-size: 1em;
+            text-decoration: underline;
 
-          &:hover {
-            color: #555;
+            &:hover {
+              color: #555;
+            }
           }
         }
       }
@@ -289,7 +297,7 @@ p {
               @include trans-animate;
 
               &:hover {
-                background-color: inherit;
+                @include rgba-background($site_blue_deep, 0.3);
               }
             }
           }
@@ -345,7 +353,7 @@ p {
                 display: inline-block;
                 position: absolute;
                 right: (6em/12);
-                bottom: (14.4em/12);
+                bottom: (12em/12);
               }
             }
           }

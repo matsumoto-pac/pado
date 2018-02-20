@@ -24,8 +24,8 @@
       ?>
         <li>
           <span class="info_date"><?php echo get_the_date(); ?></span>
-          <span class="info_cat cat_<?php echo $cat_slug ?>"><?php echo $cat_name ?></span>
-          <a class="info_desc" href=""><?php the_title(); ?></a>
+          <span class="info_cat"><a href="" class="cat_<?php echo $cat_slug ?>"><?php echo $cat_name ?></a></span>
+          <span class="info_desc"><a href=""><?php the_title(); ?></a></span>
         </li>
       <?php
         endwhile;

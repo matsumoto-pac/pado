@@ -277,29 +277,7 @@
 
         .list_info {
           width:if($type==sp, 0 (650%/$sp_wid*100), (675em/16));
-
           margin:if($type==sp, 0 auto, (34em/16) auto 0);
-          li{
-            flex-wrap:if($type==sp, wrap, nowrap);
-            .info_date {
-          width:(78em/16);
-          text-align:center;
-          font-weight: bold !important;
-          font-size:(16em/16);
-          }
-          .info_cat {
-            padding-left: (15em/13);
-            padding-right: (15em/13);
-            font-size:(13em/16);
-          }
-          .info_desc{
-            width:if($type==sp, (750%/$sp_wid*100), (504em/16));
-            text-decoration: none;
-            font-size:(16em/16);
-            font-weight: 500 !important;
-          }
-          }
-
         }
       }
     }
