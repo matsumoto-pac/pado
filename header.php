@@ -11,11 +11,11 @@
 </head>
 <body <?php body_class(); ?>>
   <header id="header" class="sb-slidebar sb-right sb-style-overlay">
-    <p id="h_logo">
+    <h1 id="h_logo">
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/common/logo_01.png" alt="<?php echo bloginfo('name'); ?>">
+        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/common/logo_01<?php if(is_front_page()){ echo '_top'; } ?>.png" alt="<?php echo bloginfo('name'); ?>">
       </a>
-    </p>
+    </h1>
     <div class="ham-btn open sp">
       <button type="button" class="tcon tcon-menu--xcross sb-toggle-right" aria-label="toggle menu">
         <span class="tcon-menu__lines" aria-hidden="true"></span>
