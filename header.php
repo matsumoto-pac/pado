@@ -25,27 +25,27 @@
     <nav class="h_nav">
       <ul class="g_nav">
         <li>
-          <a href="<?php echo esc_url( home_url( '/value/' ) ); ?>">
+          <a href="<?php echo esc_url( home_url( '/value/' ) ); ?>" class="<?php if ( is_page('value') ) { echo 'current'; } ?>">
             ぱどバリュー
           </a>
         </li><li>
-          <a href="<?php echo esc_url( home_url( '/business/' ) ); ?>">
+          <a href="<?php echo esc_url( home_url( '/business/' ) ); ?>" class="<?php if ( is_page('business') ) { echo 'current'; } ?>">
             事業内容
           </a>
         </li><li>
-          <a href="<?php echo esc_url( home_url( '/environment/' ) ); ?>">
+          <a href="<?php echo esc_url( home_url( '/environment/' ) ); ?>" class="<?php if ( is_page('environment') ) { echo 'current'; } ?>">
             働く環境
           </a>
         </li><li>
-          <a href="<?php echo esc_url( home_url( '/people/' ) ); ?>">
+          <a href="<?php echo esc_url( home_url( '/people/' ) ); ?>" class="<?php if ( is_page('people') ) { echo 'current'; } ?>">
             ぱどの人々
           </a>
         </li><li>
-          <a href="<?php echo esc_url( home_url( '/recruit/' ) ); ?>">
+          <a href="<?php echo esc_url( home_url( '/recruit/' ) ); ?>" class="<?php if ( is_page('recruit') ) { echo 'current'; } ?>">
             新卒採用情報
           </a>
         </li><li>
-          <a href="<?php echo esc_url( home_url( '/joblist/' ) ); ?>">
+          <a href="<?php echo esc_url( home_url( '/joblist/' ) ); ?>" class="<?php if ( is_post_type_archive('joblist') ) { echo 'current'; } ?>">
             中途募集要項
           </a>
         </li>
