@@ -32,6 +32,7 @@
   transition-duration: .2s;
 }
 @mixin link_bdr {
+  outline:none;
   &::after {
     content: '';
     position: absolute;
@@ -50,11 +51,9 @@
   }
 }
 @mixin link_hov_bdr {
-  &:hover {
-    &::after {
-      background-color: $site_blue;
-      transform: scaleX(1);
-      transform-origin: left center;
-    }
+  &::after {
+    background-color: $site_blue;
+    transform: scaleX(1);
+    transform-origin: left center;
   }
 }

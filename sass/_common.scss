@@ -59,10 +59,14 @@ p {
             position: relative;
             @include trans-animate;
             @include link_bdr;
-            @include link_hov_bdr;
+            &:hover {
+              @include link_hov_bdr;
+              color: $site_blue;
+            }
             
             &.current {
               @include link_bdr;
+              @include link_hov_bdr;
             }
           }
         }
