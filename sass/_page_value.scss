@@ -9,7 +9,6 @@ value
     margin: 0 auto;
     font-size: if($type==sp, (22em/16), (16em/16));
     line-height:2.8;
-    font-weight:bold;
   }
   .cover{
     background: if($type==sp, (url("../images/value/sp_img_value_04.jpg")), url("../images/value/img_value_04.jpg") no-repeat);
@@ -22,16 +21,14 @@ value
   }
   .vision{
     width: if($type==sp, (650%/$sp_wid*100), (800em/16));
-    margin: 0 auto;
+    margin: (116.8em/16) auto (56em/16);
     box-sizing:border-box;
     border: solid 6px #000;
     position: relative;
     text-align: center;
-    margin-top: (128em/16);
-    margin-bottom: (58.4em/16);
     font-weight:bold;
     padding-top: (32em/16);
-    padding-bottom: (32em/16);
+    padding-bottom: (36em/16);
     line-height:1;
     &::before{
       content:"VISION";
@@ -39,8 +36,8 @@ value
       font-size: if($type==sp, (30em/16), (20em/16));
       font-weight:800;
       position: absolute;
-      left: (20em/16);
-      top: (-35em/16);
+      left: (14em/20);
+      top: (-42em/20);
     }
     p{
       font-size: if($type==sp, (38em/16), (30em/16));
@@ -65,12 +62,8 @@ value
       text-align:center;
       font-weight:bold;
       box-sizing:border-box;
-      margin: 0 auto;
-      margin-bottom:(155em/16);
-      padding-top: if($type==sp,(98em/16), (81em/16));
-      padding-bottom: (72em/16);
-      padding-left: if($type==sp, (153%/16), (136em/16));
-      padding-right: if($type==sp, (153%/16), (128em/16));
+      margin: 0 auto (155em/16);
+      padding: if($type==sp,(98em/16) (153%/16) (60.8em/16), (81em/16) (128em/16) (68.8em/16) (136em/16));
       display: -webkit-box;
       display: -ms-flexbox;
       display:flex;
@@ -110,7 +103,7 @@ value
           margin:0;
           padding: 0;
           figcaption{
-            margin-top:(16em/16);
+            margin-top:(11.2em/16);
             font-size: if($type==sp, (24em/16), (16em/16));
           }
         }
@@ -122,12 +115,15 @@ value
   }
 }
 .underlayer{
+  #sec_01{
+    margin-top: if($type==sp, (57em/16), 0);
+  }
   #sec_01,#sec_02,#sec_03,#sec_04{
     padding:0;
     background:none;
   }
   .ttl_en-ja{
-      margin-bottom: (48em/16);
+      margin-bottom: (75em/16) !important;
       color: #000;
 
       span {
@@ -136,12 +132,12 @@ value
 
         &.en {
           font-family: 'Montserrat', sans-serif;
-          font-size: if($type==sp, (51.93em/16), (55.94em/16)) !important;
+          font-size: if($type==sp, (48em/16), (55.94em/16)) !important;
           font-weight: 800;
         }
         &.ja {
           margin-top: (6em/16) !important;
-          font-size: (16em/16);
+          font-size: if($type==sp, (22em/16), (16em/16));
           font-weight: 600;
         }
       }
@@ -150,7 +146,7 @@ value
         content: '';
         width: (48em/16);
         height: (12.8em/16);
-        margin: (19em/16) auto 0 !important;
+        margin: (14.4em/16) auto 0 !important;
         background-image: url(../images/common/bg_title.png);
         background-size: contain;
         background-position: 50% 50%;

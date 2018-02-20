@@ -22,7 +22,7 @@ environment
     text-align:center;
     p{
       padding: if($type==sp, 0 (50%/16), 0);
-      font-size:16px;
+      font-size: if($type==sp, (22em/16), (16em/16));
       line-height:2.6;
     }
     .environment_area{
@@ -45,9 +45,9 @@ environment
           li{
             background: url("../images/environment/bg_environment_01.png") no-repeat;
             background-position:left 8px;
-            padding-left:(20em/14);
-            font-size:14px;
-            margin-bottom:(20em/14);
+            padding-left: if($type==sp, (20em/22), (20em/14));
+            font-size: if($type==sp, (22em/16), (14em/16));
+            margin-bottom: if($type==sp, (20em/22), (20em/14));
           }
         }
       }
@@ -72,9 +72,9 @@ environment
         }
         figcaption{
             display:table;
-            font-size:18px;
+            font-size:if($type==sp, (21.6em/16), (18em/16));
             width: if($type==sp, 100%, (198em/18));
-            height: if($type==sp, (90em/18), (76em/18));
+            height: if($type==sp, (90em/21.6), (76em/18));
             span{
               display:table-cell;
               vertical-align:middle;
@@ -84,7 +84,7 @@ environment
     }
   }
   .promotion{
-    margin: if($type==sp, (50em/16) auto (115em/16), (62em/16) auto (140em/16));
+    margin: if($type==sp, (50em/16) auto (115em/16), (62em/16) auto (107.2em/16));
     display: -webkit-box;
     display: -ms-flexbox;
     display:flex;
@@ -97,10 +97,10 @@ environment
     -webkit-align-content:space-between;
     align-content:space-between;
     li{
-      font-size:15px;
+      font-size: if($type==sp, (20em/16), (15em/16));
       letter-spacing:0;
       width: if($type==sp, (350%/$sp_wid*100), (321em/15));
-      margin-bottom:(46em/15);
+      margin-bottom:if($type==sp, (46em/20), (46em/14));
 
 
       figcaption{
@@ -109,7 +109,7 @@ environment
     }
   }
   .training{
-    margin-top: if($type==sp, (50em/16) auto (10em/16),  (70em/16) 0 (150em/16));
+    margin: if($type==sp, (50em/16) auto (10em/16),  (54em/16) 0 (99.2em/16));
     text-align:left;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -123,9 +123,9 @@ environment
     -webkit-align-content:space-between;
     align-content:space-between;
     li{
-      font-size:15px;
+      font-size: if($type==sp, (20em/16), (15em/16));
       width: if($type==sp, (750%/$sp_wid*100), 46.8%);
-      margin-bottom:(49em/15);
+      margin-bottom: if($type==sp, (49em/20), (49em/15));
       display: -webkit-box;
       display: -ms-flexbox;
       display:flex;
@@ -144,19 +144,20 @@ environment
         width: if($type==sp, (425%/$sp_wid*100), 54%);
         letter-spacing: if($type==sp, -.1em,-.06em);
         h3{
-          font-size:18px;
+          font-size: if($type==sp, (16em/16), (18em/16));
           font-weight:bold;
           line-height:2.5;
         }
         p{
           line-height:2.1;
           padding:0;
+          font-size: if($type==sp, (16em/16), (15em/16));
         }
       }
     }
   }
   .commendation{
-    margin-bottom:(150em/16);
+    margin: if($type==sp, (54.4em/16) auto 0, (54.4em/16) auto (150em/16));
     text-align:left;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -170,9 +171,9 @@ environment
     -webkit-align-content:space-between;
     align-content:space-between;
     li{
-      font-size:15px;
-      width: if($type==sp, (550%/$sp_wid*100), (494em/15));
-      margin: if($type==sp, 0 auto (120em/15), 0 auto 0);
+      font-size: if($type==sp, (20em/16), (15em/16));
+      width: if($type==sp, (650%/$sp_wid*100), (495em/15));
+      margin: if($type==sp, 0 auto (120em/20), 0 );
       display: -webkit-box;
       display: -ms-flexbox;
       display:flex;
@@ -184,15 +185,19 @@ environment
       justify-content: space-between;
       -webkit-align-content:flex-start;
       align-content:flex-start;
+      &:last-child{
+        margin-bottom:0;
+      }
       figcaption{
-        font-size:18px;
+        font-size:if($type==sp, (22em/16), (18em/16));
         font-weight:bold;
         line-height:1;
         text-align:center;
-        margin:(20em/18) 0;
+        margin:if($type==sp, (20em/22) 0, (20em/18) 0);
       }
         p{
           line-height:2.1;
+          font-size: if($type==sp, (16em/16), (15em/16));
         }
     }
   }

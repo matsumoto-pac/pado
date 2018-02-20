@@ -14,19 +14,21 @@ recruit
     height:(336em/16);
   }
   #sec_02{
-    padding: if($type==sp, (75em/16) 0 (175em/16), (75em/16) 0 (285em/16));
+    padding: if($type==sp, (75em/16) 0 0, (75em/16) 0 (169.6em/16));
   }
   .recruit_area{
     width: if($type==sp, (750%/$sp_wid*100), (1100em/16));
     margin: 0 auto;
     .recruit_ttl{
-      font-size:34px;
+      font-size:(34em/16);
       font-weight: bold;
       display: block;
       margin-bottom: (25em/36);
+      line-height: if($type==sp, 1.6, 1);
     }
     .recruit_cap{
-      font-size:16px;
+      font-size:(16em/16);
+      line-height: if($type==sp, 1.6, 1);
     }
     .col_right{
       figure{
@@ -50,8 +52,8 @@ recruit
             position:relative;
             padding: (85em/16) (55em/16) (60em/16);
             p{
-              font-size:15px;
-              width:(118em/15);
+              font-size: if($type==sp, (22em/16), (16em/16));
+              width:(118em/16);
               position:absolute;
               top:0;
               left:0;
@@ -61,7 +63,7 @@ recruit
               background: #fff;
               color: #4ebeee;
               line-height:1;
-              padding:(12em/15) 0;
+              padding:(12em/16) 0;
               text-align: center;
               font-family: 'Montserrat', sans-serif;
               font-weight:bold;
@@ -75,14 +77,14 @@ recruit
         + figure{
         float:none;
         width:(136em/16);
-        margin: if($type==sp, (0 auto  (68em/16)), (532em/16) auto (68em/16));
+        margin: if($type==sp, (0 auto  (68em/16)), (540.8em/16) auto (60.8em/16));
       }
       }
       p{
-      font-size: 14px;
-      line-height:2.6;
+      font-size: if($type==sp, (22em/16), (15em/16));
+      line-height:2.5;
       box-sizing:border-box;
-      padding: if($type==sp, ((70em/14) (20em/14) 0 ), (90em/14) (20em/14) 0 (55em/14));
+      padding: if($type==sp, ((70em/22) 5% 0 ), (75em/15) (15em/15) 0 (55em/15));
     }
     }
     .col_left{
@@ -107,8 +109,8 @@ recruit
             position:relative;
             padding: (85em/16) (55em/16) (60em/16);
             p{
-              font-size:15px;
-              width:(118em/15);
+              font-size: if($type==sp, (22em/16), (16em/16));
+              width:(118em/16);
               position:absolute;
               top:0;
               left:0;
@@ -118,7 +120,7 @@ recruit
               background: #fff;
               color: #4ebeee;
               line-height:1;
-              padding:(12em/15) 0;
+              padding:(12em/16) 0;
               text-align: center;
               font-family: 'Montserrat', sans-serif;
               font-weight:bold;
@@ -132,19 +134,20 @@ recruit
         + figure{
         float:none;
         width:(136em/16);
-        margin: if($type==sp, (0 auto  (68em/16)), (532em/16) auto (68em/16));
+        margin: if($type==sp, (0 auto  (68em/16)), (540.8em/16) auto (60.8em/16));
       }
       }
       p{
-      font-size: 14px;
-      line-height:2.6;
+      font-size: if($type==sp, (22em/16), (15em/16));
+      line-height:2.5;
       box-sizing:border-box;
-      padding: if($type==sp, ((70em/14) (20em/14) 0 ), (90em/14) (20em/14) 0 (55em/14));
+      padding: if($type==sp, ((70em/22) 5% 0 ), (65em/15) (51em/15) 0 (22.5em/15));
     }
     + p{
         text-align:right;
         font-size:12px;
         margin-top: (25em/12);
+        padding: if($type==sp, 0 6.66%, 0);
       }
     }
 

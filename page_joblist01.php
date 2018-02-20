@@ -25,12 +25,11 @@ Template Name: 募集要項
     <ul class="job_area">
       <li>
         <a href="#">
-        <h3>
-          <span class="category_ttl">ぱどんなさん（ぱど配布スタッフ）</span>
-          <span class="office">品川支店</span>
-        </h3>
-        <p>勤務地：東京都品川区上大崎2-13-17<span>目黒区東急ビル2F</span></p>
-        <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/joblist/img_joblist_01.jpg" alt=""></figure>
+            <h3>
+              <span class="category_ttl">ぱどんなさん（ぱど配布スタッフ）</span>
+              <span class="office">品川支店</span>
+            </h3>
+            <p>勤務地：東京都品川区上大崎2-13-17<span>目黒区東急ビル2F</span></p>
         </a>
       </li>
       <li>
@@ -40,7 +39,6 @@ Template Name: 募集要項
           <span class="office">品川支店</span>
         </h3>
         <p>勤務地：東京都品川区上大崎2-13-17<span>目黒区東急ビル2F</span></p>
-        <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/joblist/img_joblist_01.jpg" alt=""></figure>
         </a>
       </li>
       <li>
@@ -50,7 +48,6 @@ Template Name: 募集要項
           <span class="office">品川支店</span>
         </h3>
         <p>勤務地：東京都品川区上大崎2-13-17<span>目黒区東急ビル2F</span></p>
-        <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/joblist/img_joblist_01.jpg" alt=""></figure>
         </a>
       </li>
       <li>
@@ -60,7 +57,6 @@ Template Name: 募集要項
           <span class="office">品川支店</span>
         </h3>
         <p>勤務地：東京都品川区上大崎2-13-17<span>目黒区東急ビル2F</span></p>
-        <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/joblist/img_joblist_01.jpg" alt=""></figure>
         </a>
       </li>
       <li>
@@ -70,7 +66,6 @@ Template Name: 募集要項
           <span class="office">品川支店</span>
         </h3>
         <p>勤務地：東京都品川区上大崎2-13-17<span>目黒区東急ビル2F</span></p>
-        <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/joblist/img_joblist_01.jpg" alt=""></figure>
         </a>
       </li>
       <li>
@@ -80,7 +75,6 @@ Template Name: 募集要項
           <span class="office">品川支店</span>
         </h3>
         <p>勤務地：東京都品川区上大崎2-13-17<span>目黒区東急ビル2F</span></p>
-        <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/joblist/img_joblist_01.jpg" alt=""></figure>
         </a>
       </li>
       <li>
@@ -90,7 +84,6 @@ Template Name: 募集要項
           <span class="office">品川支店</span>
         </h3>
         <p>勤務地：東京都品川区上大崎2-13-17<span>目黒区東急ビル2F</span></p>
-        <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/joblist/img_joblist_01.jpg" alt=""></figure>
         </a>
       </li>
       <li>
@@ -100,10 +93,16 @@ Template Name: 募集要項
           <span class="office">品川支店</span>
         </h3>
         <p>勤務地：東京都品川区上大崎2-13-17<span>目黒区東急ビル2F</span></p>
-        <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/joblist/img_joblist_01.jpg" alt=""></figure>
         </a>
       </li>
     </ul>
+    <div class="pagenation">
+<ul>
+<li class="active">1</li>
+<li><a href='http://redgreen.heteml.jp/pado/joblist/page/2'>2</a></li>
+<li class="next"><a href="http://redgreen.heteml.jp/pado/joblist/page/2">Next</a></li>
+</ul>
+</div>
   </section>
   </article>
   <?php get_template_part( 'template-parts/content-entry' ); ?>

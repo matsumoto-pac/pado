@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-between;
   background-color: #fff;
+  z-index: 9999;
 
   @if($type==sp) {
     width: 100%;
@@ -13,11 +14,14 @@
     align-items: center;
   }
 
-
+p {
+  font-size: if($type==sp, (22em/16), (16em/16));
+}
 /*============================
 #h_logo
 ============================*/
 	#h_logo {
+    width:if($type==sp, (147em/16), (169em/16));
     padding: (10em/16) (20em/16);
 	}
 	.ham-btn {
@@ -39,14 +43,34 @@
       display: flex;
       justify-content: space-between;
 
-      .g_nav,
+      .g_nav{
+        display: flex;
+        justify-content: space-between;
+
+        li {
+          a {
+            padding: (26em/14) (14.98em/14);
+            font-size: (14em/16);
+            font-weight: 600;
+            color: #2c2c2c;
+            line-height: 1;
+            display: block;
+            white-space: nowrap;
+            @include trans-animate;
+
+            &:hover {
+              color: #444;
+            }
+          }
+        }
+      }
       .entry_nav {
         display: flex;
         justify-content: space-between;
 
         li {
           a {
-            padding: (26em/14) (10em/14);
+            padding: (26em/14) (24.5em/14);
             font-size: (14em/16);
             font-weight: 600;
             color: #2c2c2c;
@@ -108,7 +132,7 @@
         content: '';
         width: (48em/48);
         height: (8em/48);
-        margin: (42em/48) auto 0;
+        margin: (19.2em/48) auto 0;
         background-image: url(../images/common/bg_title.png);
         background-size: contain;
         background-position: 50% 50%;
@@ -118,7 +142,7 @@
     }
 
 		.ttl_en-ja {
-      margin-bottom: (48em/16);
+      margin-bottom: (45.6em/16);
       color: #000;
       text-align: center;
 
@@ -128,24 +152,24 @@
 
         &.en {
           font-family: 'Montserrat', sans-serif;
-          font-size: if($type==sp, (52em/11/2), (52em/16));
+          font-size: if($type==sp, (48em/16), (52em/16));
           font-weight: 800;
         }
         &.ja {
-          margin-top: (14em/16);
-          font-size: if($type==sp, (20em/11/2), (16em/16));
+          margin-top: (6.4em/16);
+          font-size: if($type==sp, (22em/16), (16em/16));
           font-weight: 600;
         }
       }
 		}
 		.btn_more {
-      margin-top: (70em/16);
+      margin-top: (60em/16);
       a {
         width: if($type==sp, (555%/$sp_wid*100), 353px);
         @include center;
-        padding: (24em/15) (24em/15) (24em/15) (12em/15);
-        font-size: (15em/16);
-        font-weight: 600;
+        padding: (24em/17.6) (24em/17.6) (24em/17.6) (12em/17.6);
+        font-size: if($type==sp, (12.13em/16), (16em/16));
+        font-weight: bold;
         color: #fff;
         text-align: center;
         line-height: 1;
@@ -159,15 +183,15 @@
 
         &::after {
           content: '';
-          width: (19em/15);
-          height: (19em/15);
+          width: (19em/17.6);
+          height: (19em/17.6);
           background-image: url(../images/common/bg_btn_more.png);
           background-size: contain;
           background-position: center center;
           background-repeat: no-repeat;
           display: block;
           position: absolute;
-          right: (82em/15);
+          right: (82em/17.6);
           top: 50%;
           transform: translateY(-50%);
         }
@@ -234,7 +258,7 @@
 ============================*/
 	#sec_entry {
     margin-top: (116em/16);
-    padding: (83em/16) 0 (100em/16);
+    padding: (72em/16) 0 (100em/16);
     background-color: #999;
     background-image: url(../images/common/mainimg_entry.jpg);
     background-position: 50% 50%;
@@ -288,14 +312,15 @@
         display: flex;
         justify-content: if($type==sp, space-around, space-between);
         flex-wrap: if($type==sp, wrap, inherit);
+        margin-left: if($type==sp, 0, (16em/16));
 
         li {
           padding: if($type==sp, 0, (35em/16) 0 (32em/16));
           line-height: 1;
 
           a {
-            padding: (12em/12);
-            font-size: if($type==sp, (19em/11/2), (12em/16));
+            padding: if($type==sp, (20em/15),  (12em/12));
+            font-size: if($type==sp, (15em/16), (12em/16));
             font-weight: 600;
             display: block;
             white-space: nowrap;
@@ -315,8 +340,8 @@
                 background-repeat: no-repeat;
                 display: inline-block;
                 position: absolute;
-                right: 0;
-                bottom: (12em/12);
+                right: (6em/12);
+                bottom: (14.4em/12);
               }
             }
           }
@@ -361,7 +386,7 @@
     text-align: center;
   }
   &_right {
-    text-align: right;
+    text-align: if($type==sp, center,  right);
   }
 }
 
@@ -407,18 +432,17 @@ a {
   }
 }
 .info_more{
-  margin-top:(80em/16) !important;
+  margin-top:(72em/16) !important;
   a{
-    width: if($type==sp, (555%/$sp_wid*100), 285px);
+    width: if($type==sp, (655%/$sp_wid*100), 285px);
     @include center;
-      padding: (24em/15) (24em/15) (24em/15) (12em/15);
+      padding: (20em/16) (24em/16) (23.2em/16) (27.2em/16);
       margin: if($type==sp, 0 auto, 0);
-      font-size: (15em/16);
+      font-size: (16em/16);
       font-weight: 600;
       color: #000;
       text-align: center;
       line-height: 1;
-      letter-spacing: .08em;
       border: #000 3px solid;
       background-color: #fff;
       box-sizing: border-box;
@@ -427,15 +451,15 @@ a {
       @include trans-animate;
       &::after{
       content: '';
-      width: (19em/15);
-      height: (19em/15);
+      width: (19em/16);
+      height: (19em/16);
       background-image: url(../images/common/bg_btn_info.png);
       background-size: contain;
       background-position: center center;
       background-repeat: no-repeat;
       display: block;
       position: absolute;
-      left: (25em/15);
+      left: (20.8em/16);
       top: 50%;
       transform: translateY(-50%);
       }
@@ -481,4 +505,7 @@ a {
       }
     }
   }
+}
+.align-left{
+  text-align: if($type==sp, center, left);
 }
