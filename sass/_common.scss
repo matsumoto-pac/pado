@@ -13,7 +13,7 @@
   }
 
   p {
-    font-size: if($type==sp, (22em/16), (16em/16));
+    font-size: if($type==sp, (22em/11/2), (16em/16));
   }
 /*============================
 #h_logo
@@ -112,6 +112,18 @@
 ============================*/
 #main {
   overflow: hidden;
+  
+  .site_wid {
+    width: if($type==sp, ($cont_sp_wid_per/$site_sp_wid*100), $cont_width);
+    max-width: 100%;
+    padding: if($type==sp, 0, 0 10px);
+    @include center;
+  }
+  .site_pc_wid {
+    width: $cont_width;
+    max-width: 100%;
+    @include center;
+  }
   .sec {
     .col_2 {
       @if($type==sp) {
@@ -125,7 +137,8 @@
         }
         .col {
           &:first-child {
-            width: 365px;
+            width: 420px; //デザイン上365pxだが、トップのタイトル「INFORMATION」の誤字の影響でそのままだとレイアウトを保てないため変更 (2018.02.21 by y.ohta)
+            // width: 365px;
           }
         }
       }
@@ -161,23 +174,33 @@
 
         &.en {
           font-family: 'Montserrat', sans-serif;
-          font-size: if($type==sp, (48em/16), (52em/16));
+          font-size: if($type==sp, (48em/11/2), (52em/16));
           font-weight: 800;
         }
         &.ja {
           margin-top: (6.4em/16);
-          font-size: if($type==sp, (22em/16), (16em/16));
+          font-size: if($type==sp, (22em/11/2), (16em/16));
           font-weight: 600;
+        }
+      }
+      
+      //.ttl_en_jaでなおかつ.ttl_dotなタイトルにないしてリセット
+      &.ttl_dot {
+        font-size: 1em;
+        &::after {
+          width: (48em/16);
+          height: (8em/16);
+          margin: (19.2em/16) auto 0;
         }
       }
 		}
 		.btn_more {
       margin-top: (60em/16);
       a {
-        width: if($type==sp, (555%/$sp_wid*100), 353px);
+        width: if($type==sp, (555%/$site_sp_wid*100), 353px);
         @include center;
         padding: (24em/17.6) (24em/17.6) (24em/17.6) (12em/17.6);
-        font-size: if($type==sp, (12.13em/16), (16em/16));
+        font-size: if($type==sp, (12.13em/11/2), (16em/16));
         font-weight: bold;
         color: #fff;
         text-align: center;
@@ -216,54 +239,72 @@
 /*============================
 .list_info
 ============================*/
-  .list_info {
+  .list_info,
+  .article_info {
     ul {
-      margin: (17em/16/2*-1) 0;
-      display: table;
+      display: if($type==sp, inherit, table);
 
       li {
-        display: table-row;
-
+        display: if($type==sp, block, table-row);
+        padding: if($type==sp, (55em/11/2) (50em/11/2), 0);
+        
         span {
-          margin: 0  ;
-          padding: (17em/16/2) (10em/16/2);
+          margin: 0;
+          padding: if($type==sp, 0, (16em/16/2) (20em/16/2));
           line-height: 16px;
-          display: table-cell;
         }
-        .info_date {
-          font-family: 'Montserrat', sans-serif;
-          font-size: (16em/18);
+        .info {
+          &_date {
+            display: if($type==sp, inline-block, table-cell);
+          }
+          &_cat {
+            display: if($type==sp, inline-block, table-cell);
+            margin-left: if($type==sp, 0, 32em/12);
+          }
+          &_desc {
+            margin-top: if($type==sp, (22em/30), 0);
+            display: if($type==sp, block, table-cell);
+          }
+        }
+      }
+    }
+    .info {
+      &_date {
+        width: 5em;
+        font-family: 'Montserrat', sans-serif;
+        font-size: if($type==sp, (19em/11/2),(16em/18));
+        font-weight: 600;
+        word-break: keep-all;
+      }
+      &_cat {
+        width: 6em;
+        font-size: if($type==sp, (24em/11/2), (12em/16));
+        a {
+          padding: (7em/12) (12em/12);
           font-weight: 600;
+          color: #fff;
+          line-height: 1;
+          text-align: center;
+          background-color: $site_blue;
+          display: inline-block;
           word-break: keep-all;
-        }
-        .info_cat {
-          font-size: (12em/16);
-          a {
-            padding: (7em/12) (12em/12);
-            font-weight: 600;
-            color: #fff;
-            line-height: 1;
-            display: block;
-            word-break: keep-all;
 
-            &.cat {
-              &_recruit {
-                background-color: $site_blue;
-              }
+          &.cat {
+            &_recruit {
             }
           }
         }
-        .info_desc {
-          font-size: (13em/18);
-          font-weight: 600;
-          
-          a {
-            font-size: 1em;
-            text-decoration: underline;
+      }
+      &_desc {
+        font-size:  if($type==sp, (30em/11/2),(13em/18));
+        font-weight: 500;
 
-            &:hover {
-              color: #555;
-            }
+        a {
+          font-size: 1em;
+          text-decoration: underline;
+
+          &:hover {
+            color: #555;
           }
         }
       }
@@ -284,7 +325,7 @@
 		.cont {
 			.btns {
         ul {
-          width: if($type==sp, (650%/$sp_wid*100), (969%/$site_wid*100));
+          width: if($type==sp, (650%/$site_sp_wid*100), (969%/$site_wid*100));
           margin: 0 auto;
           display: flex;
           justify-content: center;
@@ -371,7 +412,7 @@
 
           a {
             padding: if($type==sp, (20em/15),  (12em/12));
-            font-size: if($type==sp, (15em/16), (12em/16));
+            font-size: if($type==sp, (15em/11/2), (12em/16));
             font-weight: 600;
             display: block;
             white-space: nowrap;
@@ -483,7 +524,7 @@ a {
 .info_more{
   margin-top:(72em/16) !important;
   a{
-    width: if($type==sp, (655%/$sp_wid*100), 285px);
+    width: if($type==sp, (655%/$site_sp_wid*100), 285px);
     @include center;
       padding: (20em/16) (24em/16) (23.2em/16) (27.2em/16);
       margin: if($type==sp, 0 auto, 0);

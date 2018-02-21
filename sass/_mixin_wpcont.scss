@@ -1,4 +1,9 @@
 @charset "UTF-8";
 
-@mixin wp_cont {
+@mixin wp_cont_mixin {
+  font-size: if($type==sp, (26em/11/2), (16em/16));
+
+  p{
+    line-height: (36/16);
+  }
 }

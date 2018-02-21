@@ -4,8 +4,10 @@
 @import 'mixin';
 @import 'mixin_wpcont';
 @import 'default';
+
+$type: pc;
 body#tinymce {
   &.post-type-post {
-    @include wp_cont;
+    @include wp_cont_mixin;
   }
 }

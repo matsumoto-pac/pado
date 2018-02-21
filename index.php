@@ -25,7 +25,7 @@
     </div>
   </section>
   <section id="sec_01" class="sec">
-    <div class="cont">
+    <div class="cont site_wid">
       <h2 class="ttl_dot">
         結果を出す人の<br>
         メカニズム
