@@ -81,6 +81,20 @@ if ( ! function_exists( 'my_theme_default_setup' ) ) :
 			)
 		);
 
+    //ウィジェット対応
+    function arphabet_widgets_init() {
+
+      register_sidebar( array(
+        'name' => 'SNSエリア',
+        'id' => 'sns',
+        'before_widget' => '<div class="widget_sns">',
+        'after_widget' => '</div>',
+        'before_title' => '<!--',
+        'after_title' => '-->',
+      ) );
+    }
+    add_action( 'widgets_init', 'arphabet_widgets_init' );
+
 		//html5対応
 		add_theme_support( 'html5', array(
 			'search-form',
