@@ -11,23 +11,23 @@ recruit
   background: url("../images/recruit/img_recruit_07.jpg") no-repeat;
     background-position: top center;
     background-size: cover;
-    height:(336em/16);
+    height:if($type==sp, (336em/11/2), (336em/16));
   }
   #sec_02{
-    padding: if($type==sp, (75em/16) 0 0, (75em/16) 0 (169.6em/16));
+    padding: if($type==sp, (118em/11/2) 0 0, (75em/16) 0 (169.6em/16));
   }
   .recruit_area{
     width: if($type==sp, (750%/$site_sp_wid*100), (1100em/16));
     margin: 0 auto;
     .recruit_ttl{
-      font-size:(34em/16);
+      font-size: if($type==sp, (36em/11/2), (32em/16));
       font-weight: bold;
       display: block;
-      margin-bottom: (25em/36);
+      margin-bottom: if($type==sp, (5em/11/2), (25em/32));
       line-height: if($type==sp, 1.6, 1);
     }
     .recruit_cap{
-      font-size:(16em/16);
+      font-size: if($type==sp, (18em/11/2), (16em/16));
       line-height: if($type==sp, 1.6, 1);
     }
     .col_right{
@@ -50,9 +50,9 @@ recruit
           text-align: if($type==sp, (center), left);
           li{
             position:relative;
-            padding: (85em/16) (55em/16) (60em/16);
+            padding:if($type==sp, (70em/11/2) (22em/11) (60em/11/2), (85em/16) (55em/16) (60em/16));
             p{
-              font-size: if($type==sp, (22em/16), (16em/16));
+              font-size: if($type==sp, (19em/11/2), (17em/16));
               width:(118em/16);
               position:absolute;
               top:0;
@@ -68,7 +68,7 @@ recruit
               font-family: 'Montserrat', sans-serif;
               font-weight:bold;
               span{
-                font-size:21px;
+                font-size: if($type==sp, (25.6em/11/2), (23em/16));
                 margin-left: (5em/21);
               }
             }
@@ -76,15 +76,15 @@ recruit
         }
         + figure{
         float:none;
-        width:(136em/16);
+        width: if($type==sp, (136em/11/2), (136em/16));
         margin: if($type==sp, (0 auto  (68em/16)), (540.8em/16) auto (60.8em/16));
       }
       }
       p{
-      font-size: if($type==sp, (22em/16), (15em/16));
-      line-height:2.5;
+      font-size: if($type==sp, (22em/11/2), (15em/16));
+      line-height:if($type==sp, (50/22), 2.5);
       box-sizing:border-box;
-      padding: if($type==sp, ((70em/22) 5% 0 ), (75em/15) (15em/15) 0 (55em/15));
+      padding: if($type==sp, ((100em/22) 5% 0 ), (75em/15) (15em/15) 0 (55em/15));
     }
     }
     .col_left{
@@ -107,9 +107,9 @@ recruit
           text-align: if($type==sp, (center), left);
           li{
             position:relative;
-            padding: (85em/16) (55em/16) (60em/16);
+            padding:if($type==sp, (70em/11/2) (22em/11) (60em/11/2), (85em/16) (55em/16) (60em/16));
             p{
-              font-size: if($type==sp, (22em/16), (16em/16));
+              font-size: if($type==sp, (19em/11/2), (17em/16));
               width:(118em/16);
               position:absolute;
               top:0;
@@ -125,7 +125,7 @@ recruit
               font-family: 'Montserrat', sans-serif;
               font-weight:bold;
               span{
-                font-size:21px;
+                font-size: if($type==sp, (25.6em/11/2), (23em/16));
                 margin-left: (5em/21);
               }
             }
@@ -133,19 +133,19 @@ recruit
         }
         + figure{
         float:none;
-        width:(136em/16);
+        width: if($type==sp, (136em/11/2), (136em/16));
         margin: if($type==sp, (0 auto  (68em/16)), (540.8em/16) auto (60.8em/16));
       }
       }
       p{
-      font-size: if($type==sp, (22em/16), (15em/16));
-      line-height:2.5;
+      font-size: if($type==sp, (22em/11/2), (15em/16));
+      line-height:if($type==sp, (50/22), 2.5);
       box-sizing:border-box;
-      padding: if($type==sp, ((70em/22) 5% 0 ), (65em/15) (51em/15) 0 (22.5em/15));
+      padding: if($type==sp, ((74em/22) 5% 0 ), (65em/15) (51em/15) 0 (22.5em/15));
     }
     + p{
         text-align:right;
-        font-size:12px;
+        font-size: if($type==sp, (16em/11/2), (12em/16));
         margin-top: (25em/12);
         padding: if($type==sp, 0 6.66%, 0);
       }

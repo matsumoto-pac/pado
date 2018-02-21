@@ -11,17 +11,17 @@ business
   background: url("../images/business/img_business_17.jpg") no-repeat;
     background-position: top center;
     background-size: cover;
-    height:(336em/16);
+    height:if($type==sp, (336em/11/2), (336em/16));
   }
   #sec_02{
-    padding: (75em/16) 0 0;
+    padding-top: if($type==sp, (118em/11/2), (75em/16));
   }
   .cont{
     width: if($type==sp, (650%/$site_sp_wid*100), (1100em/16));
     margin:0 auto;
     p{
-      font-size: if($type==sp, (22em/16), (16em/16));
-      line-height:2.6;
+      font-size: if($type==sp, (22em/11/2), (16em/16));
+      line-height:if($type==sp, (50/22), 2.6);
       margin-bottom:(40em/16);
       letter-spacing: if($type==sp, -.03em, -.014em);
       padding: if($type==sp, (0 (95%/16) 0 (95%/16)), 0 0 0 0);
@@ -68,7 +68,7 @@ business
   #sec_04{
     ul{
       width: if($type==sp, (650%/$site_sp_wid*100), (1100em/16));
-      margin: 0 auto (64em/16);
+      margin: if($type==sp, 0 auto 0, 0 auto (64em/16));
       background: #eeeeee;
       box-sizing:border-box;
       padding: if($type==sp, ((51em/16) 0 0), (84.8em/16) 0 0);
@@ -95,10 +95,10 @@ business
         figcaption{
           width: if($type==sp, 100%, (270em/16));
           display:table;
-          height: if($type==sp, (90em/16), (54em/16));
+          height: if($type==sp, (90em/11/2), (54em/16));
           margin-bottom:(12.8em/16);
           span{
-          font-size: if($type==sp, (22em/16), (18em/16));
+          font-size: if($type==sp, (22em/11/2), (18em/16));
           font-weight:bold;
           text-align:center;
           vertical-align:middle;
@@ -107,7 +107,7 @@ business
         }
         }
         p{
-          font-size:14px;
+          font-size: if($type==sp, (18em/11/2), (14em/16));
           line-height:1.8;
         }
       }
@@ -115,7 +115,7 @@ business
   }
 }
 .blue_ttl{
-  font-size: if($type==sp, (34em/16), (29em/16));
+  font-size: if($type==sp, (34em/11/2), (29em/16));
   color: #02abdc;
   line-height: 1;
   font-weight: bold;
@@ -136,9 +136,9 @@ business
         }
         p{
           float: if($type==sp, none, right);
-          font-size:16px;
+          font-size: if($type==sp, (22em/11/2), (16em/16));
           width: if($type==sp, (750%/$site_sp_wid*100), (628em/16));
-          line-height:2.6;
+          line-height:if($type==sp, (50/22), 2.6);
           box-sizing:border-box;
           padding: if($type==sp, (0 (95%/16) 0 (95%/16)), 0 0 0 0);
           margin-bottom: if($type==sp, (45em/16), 0);
@@ -158,9 +158,9 @@ business
         }
         p{
           float: if($type==sp, none, left);
-          font-size:16px;
+          font-size: if($type==sp, (22em/11/2), (16em/16));
           width: if($type==sp, (750%/$site_sp_wid*100), (628em/16));
-          line-height:2.6;
+          line-height:if($type==sp, (50/22), 2.6);
           box-sizing:border-box;
           padding: if($type==sp, (0 (95%/16) 0 (95%/16)), 0 0 0 0);
           margin-bottom: if($type==sp, (45em/16), 0);

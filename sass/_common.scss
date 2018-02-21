@@ -567,25 +567,26 @@ a {
       }
     li{
       font-family: 'Montserrat', sans-serif;
-      font-size: 23.48px;
+      font-size: if($type==sp, (28.18em/11/2), (23.48em/16));
       display:inline-block;
-      width:(50em/23.48);
-      height:(50em/23.48);
+      vertical-align:top;
+      width:if($type==sp, (62em/11/2), (50em/23.48));
+      height:if($type==sp, (62em/11/2), (50em/23.48));
       letter-spacing:0;
-      line-height:2.2;
+      line-height:if($type==sp, 2.8, 2.2);
       border: #000 2px solid;
-      margin: (36em/23.48) (8em/23.48) (100em/23.48);
+      margin: (36em/23.48) (8em/23.48) (28em/23.48);
       background-color:#000;
       color:#fff;
 
       a{
         width:100%;
         height:100%;
+        line-height:if($type==sp, 3.2, 2.6);
         @include center;
         background-color:#000;
         color:#fff;
         display:block;
-        font-size: 23.48px;
         @include trans-animate;
         &:hover{
         background-color: #fff;

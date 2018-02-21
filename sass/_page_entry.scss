@@ -7,26 +7,26 @@ entry
   background:if($type==sp,  url("../images/entry/sp_img_entry_01.jpg") no-repeat, url("../images/entry/img_entry_01.jpg") no-repeat);
     background-position: top center;
     background-size: cover;
-    height:(336em/16);
+    height:if($type==sp, (336em/11/2), (336em/16));
   }
   #sec_02{
-    padding: (75em/16) 0 0;
+    padding-top: if($type==sp, (118em/11/2), (75em/16));
   }
   p{
-    font-size:(16em/16);
+    font-size: if($type==sp, (22em/11/2), (16em/16));
     line-height:2.6;
   }
   .cont{
     width: if($type==sp, (650%/$site_sp_wid*100), (1100em/16));
     margin:(30em/16) auto (39em/16);
-    border-top:solid 2px #000;
-    border-right:solid 2px #000;
-    border-left:solid 2px #000;
+    border-top:solid (2em/20) #000;
+    border-right:solid (2em/20) #000;
+    border-left:solid (2em/20) #000;
     .form-item{
       width:100%;
-      border-bottom:solid 2px #000;
+      border-bottom:solid (2em/20) #000;
       display:table;
-      font-size: if($type==sp, (22em/16), (16em/16));
+      font-size: if($type==sp, (22em/11/2), (16em/16));
       dt{
         width: if($type==sp, (750%/$site_sp_wid*100), (313em/16));
         display: if($type==sp, block, table-cell);
@@ -36,7 +36,7 @@ entry
         position: relative;
         font-weight:bold;
         span{
-          font-size:if($type==sp, (16em/16), (14em/16));
+          font-size: if($type==sp, (16em/11/2), (16em/16));
           position:absolute;
           top:(16em/14);
           right: if($type==sp, (100%/16) , 0);
@@ -73,7 +73,7 @@ entry
           width: if($type==sp, (170%/$site_sp_wid*100), (170em/16));
         }
          .s7{
-          width: if($type==sp, (492%/$site_sp_wid*100), (158em/16));
+          width: if($type==sp, (580%/$site_sp_wid*100), (158em/16));
         }
         .s8{
           width: if($type==sp, (180%/$site_sp_wid*100), (178em/16));
@@ -99,8 +99,8 @@ entry
         }
         input,select,textarea{
           margin:if($type==sp, 0 (4em/22) (20em/22) (6em/22), 0 (9em/16) (20em/16) (12em/16));
-          border-radius:6px;
-          font-size:(16em/16);
+          border-radius:3px;
+          font-size: if($type==sp, (22em/11/2), (16em/16));
           border:solid 1px #bfbfbf;
         }
         input{
@@ -114,6 +114,7 @@ entry
           -moz-appearance:none;
           appearance:none;
           background:url("../images/entry/ico_select.png") no-repeat;
+          background-size:if($type==sp, 1.8em, auto);
           background-position:right center;
         }
         label{
@@ -161,7 +162,7 @@ entry
   }
   .privacyBlock{
     width: if($type==sp, (650%/$site_sp_wid*100), (1100em/14));
-    font-size: if($type==sp, (18em/16), (14em/16));
+    font-size: if($type==sp, (18em/11/2), (14em/16));
     margin:0 auto (39em/16);
     background: #f6f6f6;
     color:#6f6f6f;
@@ -176,7 +177,7 @@ entry
   }
   .btn_form{
     display:block;
-    font-size: if($type==sp, (30em/16), (26em/16));
+    font-size: if($type==sp, (30em/11/2), (26em/16));
     width: if($type==sp, (650%/$site_sp_wid*100), (613em/26));
     margin: if($type==sp, 0 auto 0, 0 auto (279em/26));
     line-height:1;
