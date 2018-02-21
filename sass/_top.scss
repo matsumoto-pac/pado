@@ -26,7 +26,7 @@
 
   p{
     font-size: if($type==sp, (22em/16), (16em/16));
-    padding:if($type==sp, 0 (37.5%/$sp_wid*100) , 0 0);
+    padding:if($type==sp, 0 (37.5%/$site_sp_wid*100) , 0 0);
   }
 
 
@@ -291,7 +291,7 @@
         @include center;
 
         .list_info {
-          width:if($type==sp, 0 (650%/$sp_wid*100), (675em/16));
+          width:if($type==sp, 0 (650%/$site_sp_wid*100), (675em/16));
           margin:if($type==sp, 0 auto, (34em/16) auto 0);
         }
       }

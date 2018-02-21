@@ -17,7 +17,7 @@ business
     padding: (75em/16) 0 0;
   }
   .cont{
-    width: if($type==sp, (650%/$sp_wid*100), (1100em/16));
+    width: if($type==sp, (650%/$site_sp_wid*100), (1100em/16));
     margin:0 auto;
     p{
       font-size: if($type==sp, (22em/16), (16em/16));
@@ -34,7 +34,7 @@ business
     }
     ul{
       letter-spacing: -.4em;
-      width: if($type==sp, (750%/$sp_wid*100), (1100em/16));
+      width: if($type==sp, (750%/$site_sp_wid*100), (1100em/16));
       margin-bottom:(38em/16);
       background: #eeeeee;
       box-sizing:border-box;
@@ -51,7 +51,7 @@ business
       -webkit-align-content:space-between;
       align-content:space-between;
       li{
-        width: if($type==sp, (238%/$sp_wid*100), (285em/16));
+        width: if($type==sp, (238%/$site_sp_wid*100), (285em/16));
         margin-bottom:(22em/16);
         }
     }
@@ -67,7 +67,7 @@ business
   }
   #sec_04{
     ul{
-      width: if($type==sp, (650%/$sp_wid*100), (1100em/16));
+      width: if($type==sp, (650%/$site_sp_wid*100), (1100em/16));
       margin: 0 auto (64em/16);
       background: #eeeeee;
       box-sizing:border-box;
@@ -78,7 +78,7 @@ business
         display:inline-block;
         vertical-align:top;
         margin: if($type==sp, (0 (95%/16) (62em/16) 0), 0 (65em/16) (70em/16) 0);
-        width: if($type==sp, (320%/$sp_wid*100), (270em/16));
+        width: if($type==sp, (320%/$site_sp_wid*100), (270em/16));
         letter-spacing:0;
         &:nth-child(2){
           margin-right: if($type==sp, 0, (65em/16));
@@ -124,20 +124,20 @@ business
   padding: 0 8% 0;
 }
 .col_2-img_l{
-        width: if($type==sp, (650%/$sp_wid*100), (1412em/16));
+        width: if($type==sp, (650%/$site_sp_wid*100), (1412em/16));
         margin:0 auto (71em/16);
         box-sizing:border-box;
         padding-right: if($type==sp, 0, (146em/16));
         figure{
           margin:0;
           padding: 0;
-          width: if($type==sp, (750%/$sp_wid*100), (587em/16));
+          width: if($type==sp, (750%/$site_sp_wid*100), (587em/16));
           float: if($type==sp, none, left);
         }
         p{
           float: if($type==sp, none, right);
           font-size:16px;
-          width: if($type==sp, (750%/$sp_wid*100), (628em/16));
+          width: if($type==sp, (750%/$site_sp_wid*100), (628em/16));
           line-height:2.6;
           box-sizing:border-box;
           padding: if($type==sp, (0 (95%/16) 0 (95%/16)), 0 0 0 0);
@@ -146,20 +146,20 @@ business
         }
       }
       .col_2-img_r{
-        width: if($type==sp, (650%/$sp_wid*100), (1412em/16));
+        width: if($type==sp, (650%/$site_sp_wid*100), (1412em/16));
         margin:0 auto (65em/16);
         box-sizing:border-box;
         padding-left: if($type==sp, 0, (146em/16));
         figure{
           margin:0;
           padding: 0;
-          width: if($type==sp, (750%/$sp_wid*100), (587em/16));
+          width: if($type==sp, (750%/$site_sp_wid*100), (587em/16));
           float: if($type==sp, none, right);
         }
         p{
           float: if($type==sp, none, left);
           font-size:16px;
-          width: if($type==sp, (750%/$sp_wid*100), (628em/16));
+          width: if($type==sp, (750%/$site_sp_wid*100), (628em/16));
           line-height:2.6;
           box-sizing:border-box;
           padding: if($type==sp, (0 (95%/16) 0 (95%/16)), 0 0 0 0);

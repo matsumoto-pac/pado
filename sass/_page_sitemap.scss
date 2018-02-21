@@ -13,7 +13,7 @@ sitemap
     padding: (75em/16) 0 0;
   }
   ul{
-    width: if($type==sp, (550%/$sp_wid*100), (800em/16));
+    width: if($type==sp, (550%/$site_sp_wid*100), (800em/16));
     margin:0 auto;
     li{
       a{
@@ -27,7 +27,7 @@ sitemap
         font-weight:bold;
       }
       ul{
-        width: if($type==sp, (602.8125%/$sp_wid*100), 80.375%);
+        width: if($type==sp, (602.8125%/$site_sp_wid*100), 80.375%);
         margin-left: 19.625%;
         padding-bottom: if($type==sp, (31em/24), (122em/16));
         li{

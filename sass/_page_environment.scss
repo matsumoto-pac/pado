@@ -17,7 +17,7 @@ environment
     padding: (75em/16) 0 0;
   }
   .cont{
-    width: if($type==sp, (650%/$sp_wid*100), (1100em/16));
+    width: if($type==sp, (650%/$site_sp_wid*100), (1100em/16));
     margin: 0 auto;
     text-align:center;
     p{
@@ -26,7 +26,7 @@ environment
       line-height:2.6;
     }
     .environment_area{
-      width: if($type==sp, (750%/$sp_wid*100), (900em/16));
+      width: if($type==sp, (750%/$site_sp_wid*100), (900em/16));
       margin: (50em/16) auto (130em/16);
       h3{
         font-size:16px;
@@ -36,7 +36,7 @@ environment
       }
       .environment_left{
         float: if($type==sp, (none), left);
-        width: if($type==sp, (750%/$sp_wid*100), (650em/16));
+        width: if($type==sp, (750%/$site_sp_wid*100), (650em/16));
         margin-bottom: if($type==sp, (58em/16), 0);
         ul{
           border: solid 2px #000;
@@ -61,7 +61,7 @@ environment
       letter-spacing: -.4em;
       margin: if($type==sp, (20em/16) auto (117em/16), (37em/16) auto (155em/16));
       li{
-        width: if($type==sp, (320%/$sp_wid*100), (198em/16));
+        width: if($type==sp, (320%/$site_sp_wid*100), (198em/16));
         margin-right:(23em/16);
         margin-bottom: if($type==sp, (10em/16), 0);
         display: inline-block;
@@ -99,7 +99,7 @@ environment
     li{
       font-size: if($type==sp, (20em/16), (15em/16));
       letter-spacing:0;
-      width: if($type==sp, (350%/$sp_wid*100), (321em/15));
+      width: if($type==sp, (350%/$site_sp_wid*100), (321em/15));
       margin-bottom:if($type==sp, (46em/20), (46em/14));
 
 
@@ -124,7 +124,7 @@ environment
     align-content:space-between;
     li{
       font-size: if($type==sp, (20em/16), (15em/16));
-      width: if($type==sp, (750%/$sp_wid*100), 46.8%);
+      width: if($type==sp, (750%/$site_sp_wid*100), 46.8%);
       margin-bottom: if($type==sp, (49em/20), (49em/15));
       display: -webkit-box;
       display: -ms-flexbox;
@@ -138,10 +138,10 @@ environment
       -webkit-align-content:space-between;
       align-content:space-between;
       figure{
-        width: if($type==sp, (300%/$sp_wid*100), 42%);
+        width: if($type==sp, (300%/$site_sp_wid*100), 42%);
       }
       div{
-        width: if($type==sp, (425%/$sp_wid*100), 54%);
+        width: if($type==sp, (425%/$site_sp_wid*100), 54%);
         letter-spacing: if($type==sp, -.1em,-.06em);
         h3{
           font-size: if($type==sp, (16em/16), (18em/16));
@@ -172,7 +172,7 @@ environment
     align-content:space-between;
     li{
       font-size: if($type==sp, (20em/16), (15em/16));
-      width: if($type==sp, (650%/$sp_wid*100), (495em/15));
+      width: if($type==sp, (650%/$site_sp_wid*100), (495em/15));
       margin: if($type==sp, 0 auto (120em/20), 0 );
       display: -webkit-box;
       display: -ms-flexbox;

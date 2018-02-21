@@ -17,7 +17,7 @@ recruit
     padding: if($type==sp, (75em/16) 0 0, (75em/16) 0 (169.6em/16));
   }
   .recruit_area{
-    width: if($type==sp, (750%/$sp_wid*100), (1100em/16));
+    width: if($type==sp, (750%/$site_sp_wid*100), (1100em/16));
     margin: 0 auto;
     .recruit_ttl{
       font-size:(34em/16);
@@ -33,14 +33,14 @@ recruit
     .col_right{
       figure{
         float: if($type==sp, (none), right);
-        width: if($type==sp, (750%/$sp_wid*100), (591em/16));
+        width: if($type==sp, (750%/$site_sp_wid*100), (591em/16));
       }
       .mynavi{
         float: if($type==sp, (none), left);
-        width: if($type==sp, (650%/$sp_wid*100), (509em/16));
+        width: if($type==sp, (650%/$site_sp_wid*100), (509em/16));
         margin: if($type==sp, ((-129em/16) auto (35em/16)), auto);
         ul{
-          width: if($type==sp, (750%/$sp_wid*100), (551em/16));
+          width: if($type==sp, (750%/$site_sp_wid*100), (551em/16));
           background:#4ebeee;
           color:#fff;
           line-height:1;
@@ -90,14 +90,14 @@ recruit
     .col_left{
       figure{
         float: if($type==sp, (none), left);
-        width: if($type==sp, (750%/$sp_wid*100), (591em/16));
+        width: if($type==sp, (750%/$site_sp_wid*100), (591em/16));
       }
       .mynavi{
         float: if($type==sp, (none), right);
-        width: if($type==sp, (650%/$sp_wid*100), (509em/16));
+        width: if($type==sp, (650%/$site_sp_wid*100), (509em/16));
         margin: if($type==sp, ((-129em/16) auto (35em/16)), auto);
         ul{
-          width: if($type==sp, (750%/$sp_wid*100), (551em/16));
+          width: if($type==sp, (750%/$site_sp_wid*100), (551em/16));
           background:#4ebeee;
           color:#fff;
           line-height:1;

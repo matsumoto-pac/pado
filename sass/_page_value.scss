@@ -5,7 +5,7 @@ value
 ============================*/
 #value{
   .pado_txt{
-    width: if($type==sp, (552%/$sp_wid*100), (700em/16));
+    width: if($type==sp, (552%/$site_sp_wid*100), (700em/16));
     margin: 0 auto;
     font-size: if($type==sp, (22em/16), (16em/16));
     line-height:2.8;
@@ -20,7 +20,7 @@ value
     padding-top: (75em/16);
   }
   .vision{
-    width: if($type==sp, (650%/$sp_wid*100), (800em/16));
+    width: if($type==sp, (650%/$site_sp_wid*100), (800em/16));
     margin: (116.8em/16) auto (56em/16);
     box-sizing:border-box;
     border: solid 6px #000;
@@ -48,7 +48,7 @@ value
       letter-spacing:.03em;
     }
     + p{
-      width: if($type==sp, (552%/$sp_wid*100), (700em/16));
+      width: if($type==sp, (552%/$site_sp_wid*100), (700em/16));
       font-size: if($type==sp, (22em/16), (18em/16));
       text-align:center;
       font-weight:bold;
@@ -58,7 +58,7 @@ value
   }
   #sec_03{
     ul{
-      width: if($type==sp, (650%/$sp_wid*100), (1100em/16));
+      width: if($type==sp, (650%/$site_sp_wid*100), (1100em/16));
       text-align:center;
       font-weight:bold;
       box-sizing:border-box;
@@ -96,7 +96,7 @@ value
         height:(60em/16);
     }
       li{
-        width: if($type==sp, (517%/$sp_wid*100), (227em/16));
+        width: if($type==sp, (517%/$site_sp_wid*100), (227em/16));
         margin-bottom:  if($type==sp, (35em/16), 0);
         figure{
           width:100%;

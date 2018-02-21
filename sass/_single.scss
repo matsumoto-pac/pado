@@ -41,11 +41,7 @@ info
       }
       .wp_cont {
         margin-top: (38em/16);
-        font-size: if($type==sp, (26em/11/2), (16em/16));
-        
-        p{
-          line-height: (36/16);
-        }
+        @include wp_cont_mixin;
       }
     }
   }

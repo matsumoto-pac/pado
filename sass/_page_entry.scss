@@ -17,7 +17,7 @@ entry
     line-height:2.6;
   }
   .cont{
-    width: if($type==sp, (650%/$sp_wid*100), (1100em/16));
+    width: if($type==sp, (650%/$site_sp_wid*100), (1100em/16));
     margin:(30em/16) auto (39em/16);
     border-top:solid 2px #000;
     border-right:solid 2px #000;
@@ -28,7 +28,7 @@ entry
       display:table;
       font-size: if($type==sp, (22em/16), (16em/16));
       dt{
-        width: if($type==sp, (750%/$sp_wid*100), (313em/16));
+        width: if($type==sp, (750%/$site_sp_wid*100), (313em/16));
         display: if($type==sp, block, table-cell);
         box-sizing:border-box;
         padding: if($type==sp, (35em/22) (100%/22) (35em/22) (100%/22), (25em/16) 0 (35em/16) (35em/16));
@@ -52,50 +52,50 @@ entry
         }
       }
       dd{
-        width: if($type==sp, (750%/$sp_wid*100), (783em/16));
+        width: if($type==sp, (750%/$site_sp_wid*100), (783em/16));
         display: if($type==sp, block, table-cell);
         box-sizing:border-box;
         padding: if($type==sp, (10em/22) (100%/22) (35em/22) (100%/22), (25em/16) 0 (35em/16) (37em/16));
         vertical-align:top;
         .z3{
-          width: if($type==sp, (156%/$sp_wid*100), (97em/16));
+          width: if($type==sp, (156%/$site_sp_wid*100), (97em/16));
         }
         .z4{
-          width: if($type==sp, (222%/$sp_wid*100), (145em/16));
+          width: if($type==sp, (222%/$site_sp_wid*100), (145em/16));
         }
         .s1{
-          width: if($type==sp, (150%/$sp_wid*100), (100em/16));
+          width: if($type==sp, (150%/$site_sp_wid*100), (100em/16));
         }
         .s4{
-          width: if($type==sp, (70%/$sp_wid*100), (70em/16));
+          width: if($type==sp, (70%/$site_sp_wid*100), (70em/16));
         }
         .s5{
-          width: if($type==sp, (170%/$sp_wid*100), (170em/16));
+          width: if($type==sp, (170%/$site_sp_wid*100), (170em/16));
         }
          .s7{
-          width: if($type==sp, (492%/$sp_wid*100), (158em/16));
+          width: if($type==sp, (492%/$site_sp_wid*100), (158em/16));
         }
         .s8{
-          width: if($type==sp, (180%/$sp_wid*100), (178em/16));
+          width: if($type==sp, (180%/$site_sp_wid*100), (178em/16));
         }
         .ss8{
-          width: if($type==sp, (100%/$sp_wid*100), (100em/16));
+          width: if($type==sp, (100%/$site_sp_wid*100), (100em/16));
         }
         .c40{
-          width: if($type==sp, (685%/$sp_wid*100), (683em/16));
+          width: if($type==sp, (685%/$site_sp_wid*100), (683em/16));
           box-sizing:border-box;
           padding: if($type==sp, (8em/16) (16em/16), (15em/16) (25em/16));
         }
         .cc40{
-          width: if($type==sp, (685%/$sp_wid*100), (573em/16));
+          width: if($type==sp, (685%/$site_sp_wid*100), (573em/16));
           box-sizing:border-box;
           padding: (4.8em/16) (8em/16);;
         }
         .s40{
-          width: if($type==sp, (650%/$sp_wid*100), (440em/16));
+          width: if($type==sp, (650%/$site_sp_wid*100), (440em/16));
         }
         .ss40{
-          width: if($type==sp, (440%/$sp_wid*100), (440em/16));
+          width: if($type==sp, (440%/$site_sp_wid*100), (440em/16));
         }
         input,select,textarea{
           margin:if($type==sp, 0 (4em/22) (20em/22) (6em/22), 0 (9em/16) (20em/16) (12em/16));
@@ -160,7 +160,7 @@ entry
     }
   }
   .privacyBlock{
-    width: if($type==sp, (650%/$sp_wid*100), (1100em/14));
+    width: if($type==sp, (650%/$site_sp_wid*100), (1100em/14));
     font-size: if($type==sp, (18em/16), (14em/16));
     margin:0 auto (39em/16);
     background: #f6f6f6;
@@ -177,7 +177,7 @@ entry
   .btn_form{
     display:block;
     font-size: if($type==sp, (30em/16), (26em/16));
-    width: if($type==sp, (650%/$sp_wid*100), (613em/26));
+    width: if($type==sp, (650%/$site_sp_wid*100), (613em/26));
     margin: if($type==sp, 0 auto 0, 0 auto (279em/26));
     line-height:1;
     text-align:center;

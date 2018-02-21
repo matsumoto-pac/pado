@@ -14,7 +14,7 @@ body[class*="joblist"] {
       padding-top: (75em/16);
     }
     .people_area{
-      width: if($type==sp, (710%/$sp_wid*100), (1100em/16));
+      width: if($type==sp, (710%/$site_sp_wid*100), (1100em/16));
       margin: 0 auto;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -28,7 +28,7 @@ body[class*="joblist"] {
       -webkit-align-content:space-between;
       align-content:space-between;
       li{
-        width: if($type==sp, (350%/$sp_wid*100), (346em/16));
+        width: if($type==sp, (350%/$site_sp_wid*100), (346em/16));
         padding-bottom: (20em/16);
         position:relative;
         margin-top: if($type==sp, (40em/16), (58.2em/16));
@@ -55,7 +55,7 @@ body[class*="joblist"] {
             top:0;
             right:0;
             color: #fff;
-            width: if($type==sp, (50em/$sp_wid*100), (96em/12));
+            width: if($type==sp, (50em/$site_sp_wid*100), (96em/12));
             padding:(10em/12) 0;
             line-height:1;
             }
@@ -81,10 +81,10 @@ body[class*="joblist"] {
       height:(603em/16);
     }
     .people_area{
-        width: if($type==sp, (652%/$sp_wid*100), (1100em/16));
+        width: if($type==sp, (652%/$site_sp_wid*100), (1100em/16));
         margin: if($type==sp, (-70em/16) auto (60em/16), (-188.8em/16) auto (24em/16));
         div{
-          width: if($type==sp, (750%/$sp_wid*100), (550em/14));
+          width: if($type==sp, (750%/$site_sp_wid*100), (550em/14));
           color:#fff;
           font-size:14px;
           box-sizing:border-box;
@@ -123,20 +123,20 @@ body[class*="joblist"] {
           margin:if($type==sp, (0 auto 0 !important), 0 auto 0);
         }
         .midashi{
-          width: if($type==sp, (652%/$sp_wid*100), (1100em/22));
+          width: if($type==sp, (652%/$site_sp_wid*100), (1100em/22));
           font-size:(22em/16);
           font-weight:bold;
           margin: if($type==sp, (0 auto (24em/22)), 0 auto);
           display:block;
           + p{
           margin: if($type==sp, ((40em/16) auto 0), (24em/15) auto (45em/15));
-          width: if($type==sp, (652%/$sp_wid*100), (1100em/15));
+          width: if($type==sp, (652%/$site_sp_wid*100), (1100em/15));
           display:block;
         }
         }
 
         .col_2-img_l{
-          width: if($type==sp, (652%/$sp_wid*100), (1412em/16));
+          width: if($type==sp, (652%/$site_sp_wid*100), (1412em/16));
           margin: if($type==sp, 0 auto (35em/16), 0 auto (71em/16));
           box-sizing:border-box;
           padding-right: if($type==sp, (0),  (146em/16));
@@ -147,7 +147,7 @@ body[class*="joblist"] {
           }
           div{
             float: if($type==sp, (none), right);
-            width: if($type==sp, (750%/$sp_wid*100), (582em/15));
+            width: if($type==sp, (750%/$site_sp_wid*100), (582em/15));
           }
           + p{
 
@@ -157,7 +157,7 @@ body[class*="joblist"] {
         }
         }
         .col_2-img_r{
-          width:if($type==sp, (652%/$sp_wid*100), (1412em/16));
+          width:if($type==sp, (652%/$site_sp_wid*100), (1412em/16));
           margin:if($type==sp, (0 auto ), 0 auto (65em/16));
           box-sizing:border-box;
           padding-left: if($type==sp, (0), (146em/16));
@@ -168,11 +168,11 @@ body[class*="joblist"] {
           }
           div{
             float:if($type==sp, (none), left);
-            width: if($type==sp, (750%/$sp_wid*100), (582em/15));
+            width: if($type==sp, (750%/$site_sp_wid*100), (582em/15));
           }
           + p{
             margin:if($type==sp, (0 auto (40em/16)), 0 auto (35em/15));
-            width: if($type==sp, (652%/$sp_wid*100), (1100em/15));
+            width: if($type==sp, (652%/$site_sp_wid*100), (1100em/15));
             display:block;
             padding:0;
         }
@@ -187,7 +187,7 @@ body[class*="joblist"] {
       }
   }
   ul.tag{
-    width: if($type==sp, (710%/$sp_wid*100), (1100em/16));
+    width: if($type==sp, (710%/$site_sp_wid*100), (1100em/16));
     margin: (20em/16) auto (75.2em/16);
     letter-spacing: -.4em;
     text-align:center;
@@ -213,7 +213,7 @@ body[class*="joblist"] {
   }
   .keyword{
     font-size:13px;
-    width: if($type==sp, (652%/$sp_wid*100), (1100em/13));
+    width: if($type==sp, (652%/$site_sp_wid*100), (1100em/13));
     font-weight:bold;
     margin: if($type==sp, ((40em/13) auto (42em/13)), 0 auto (42em/13));
     letter-spacing: -.4em;

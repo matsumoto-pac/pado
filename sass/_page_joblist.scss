@@ -13,7 +13,7 @@ business
     padding-top: (75em/16);
   }
   ul.job_area{
-    width: if($type==sp, (650%/$sp_wid*100), (1100em/16));
+    width: if($type==sp, (650%/$site_sp_wid*100), (1100em/16));
     font-weight:bold;
     margin:(37em/16) auto (36em/16);
     display: -webkit-box;
@@ -26,7 +26,7 @@ business
     -webkit-justify-content: space-between;
     justify-content: space-between;
     li{
-      width: if($type==sp, (750%/$sp_wid*100), (530em/16));
+      width: if($type==sp, (750%/$site_sp_wid*100), (530em/16));
       margin-top:(38em/16);
       box-sizing:border-box;
       border: solid 3px #000;
@@ -61,7 +61,7 @@ business
         }
       }
       figure{
-        width: if($type==sp, (196%/$sp_wid*100), auto);
+        width: if($type==sp, (196%/$site_sp_wid*100), auto);
         position:absolute;
         top:0;
         right: 0;
@@ -88,7 +88,7 @@ business
     }
   }
   dl{
-    width: if($type==sp, (650%/$sp_wid*100), (1100em/14));
+    width: if($type==sp, (650%/$site_sp_wid*100), (1100em/14));
     margin: 0 auto (48em/16);
     box-sizing:border-box;
     border-left: solid 2px #000;
@@ -98,7 +98,7 @@ business
     font-size: if($type==sp, (24em/16), (14em/16));
     line-height:2;
     dt{
-      width: if($type==sp, (750%/$sp_wid*100), 15.5%);
+      width: if($type==sp, (750%/$site_sp_wid*100), 15.5%);
       display:block;
       float: if($type==sp, (none), left);
       clear:left;
@@ -108,7 +108,7 @@ business
       font-weight:bold;
     }
     dd{
-      width: if($type==sp, (750%/$sp_wid*100), 84.5%);
+      width: if($type==sp, (750%/$site_sp_wid*100), 84.5%);
       display:inline-block;
       border-bottom:solid 2px #000;
       background:#fff;
@@ -139,7 +139,7 @@ business
   }
 }
 ul.category{
-    width: if($type==sp, (750%/$sp_wid*100), (1100em/16));
+    width: if($type==sp, (750%/$site_sp_wid*100), (1100em/16));
     font-weight:bold;
     margin:0 auto;
     letter-spacing: -.4em;
@@ -150,7 +150,7 @@ ul.category{
     border-bottom:solid 3px #000;
     border-right: if($type==sp, (none), solid 3px #000);
     li{
-      width: if($type==sp, (150%/$sp_wid*100), (217em/16));
+      width: if($type==sp, (150%/$site_sp_wid*100), (217em/16));
       display:inline-block;
       vertical-align:middle;
       letter-spacing:0;
