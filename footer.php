@@ -55,5 +55,31 @@
     <p id="copy"><small>Copyright(c)&nbsp;Pado&nbsp;Corporation&nbsp;ALL&nbsp;RIGHTS&nbsp;RESERVED.</small></p>
   </footer>
   <?php wp_footer(); ?>
+  <?php if(is_home()): ?>
+  <script type="text/javascript">
+  jQuery(window).load(function($) {
+    setTimeout(function(){
+      jQuery('#mainvis .bg-movie').vide('<?php echo esc_url( get_template_directory_uri() ); ?>/movie/mainvis', {
+        volume: 1,
+        playbackRate: 1,
+        muted: true,
+        loop: true,
+        autoplay: true,
+        position: '50% 50%',
+        posterType: 'detect',
+        resizing: true,
+        bgColor: 'transparent',
+        className: ''
+      });
+       var instance = jQuery('#mainvis .bg-movie').data('vide');
+       if(instance.getVideoObject().play()){
+        jQuery(".content-wrap").addClass('active');
+        jQuery(".loader-wrap").fadeOut('slow');
+        jQuery("#mainvis .bg-movie img").remove();
+       }
+    },1200);
+  });
+  </script>
+  <?php endif; ?>
 </body>
 </html>
