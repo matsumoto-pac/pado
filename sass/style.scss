@@ -7,6 +7,7 @@
 @import "transformicons";
 @import "jquery.slick";
 @import "jquery.slick-theme";
+@import "jquery.ripple";
 
 $type: sp pc;
 @media only screen and (max-width:$bp_sp) {
@@ -20,6 +21,8 @@ $type: sp pc;
 	@import '_page_business';
 	@import '_page_environment';
 	@import '_page_info';
+	@import '_page_sitemap';
+	@import '_page_entry';
 	@import '_404';
 }
 
@@ -34,5 +37,7 @@ $type: sp pc;
   @import '_page_business';
 	@import '_page_environment';
 	@import '_page_info';
+	@import '_page_sitemap';
+	@import '_page_entry';
 	@import '_404';
 }

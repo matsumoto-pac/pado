@@ -30,6 +30,7 @@ Template Name: 募集要項
               <span class="office">品川支店</span>
             </h3>
             <p>勤務地：東京都品川区上大崎2-13-17<span>目黒区東急ビル2F</span></p>
+            <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/joblist/img_joblist_01.jpg" alt=""></figure>
         </a>
       </li>
       <li>
@@ -39,6 +40,7 @@ Template Name: 募集要項
           <span class="office">品川支店</span>
         </h3>
         <p>勤務地：東京都品川区上大崎2-13-17<span>目黒区東急ビル2F</span></p>
+        <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/joblist/img_joblist_01.jpg" alt=""></figure>
         </a>
       </li>
       <li>
@@ -48,6 +50,7 @@ Template Name: 募集要項
           <span class="office">品川支店</span>
         </h3>
         <p>勤務地：東京都品川区上大崎2-13-17<span>目黒区東急ビル2F</span></p>
+        <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/joblist/img_joblist_01.jpg" alt=""></figure>
         </a>
       </li>
       <li>
@@ -57,6 +60,7 @@ Template Name: 募集要項
           <span class="office">品川支店</span>
         </h3>
         <p>勤務地：東京都品川区上大崎2-13-17<span>目黒区東急ビル2F</span></p>
+        <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/joblist/img_joblist_01.jpg" alt=""></figure>
         </a>
       </li>
       <li>
@@ -66,6 +70,7 @@ Template Name: 募集要項
           <span class="office">品川支店</span>
         </h3>
         <p>勤務地：東京都品川区上大崎2-13-17<span>目黒区東急ビル2F</span></p>
+        <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/joblist/img_joblist_01.jpg" alt=""></figure>
         </a>
       </li>
       <li>
@@ -75,6 +80,7 @@ Template Name: 募集要項
           <span class="office">品川支店</span>
         </h3>
         <p>勤務地：東京都品川区上大崎2-13-17<span>目黒区東急ビル2F</span></p>
+        <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/joblist/img_joblist_01.jpg" alt=""></figure>
         </a>
       </li>
       <li>
@@ -84,6 +90,7 @@ Template Name: 募集要項
           <span class="office">品川支店</span>
         </h3>
         <p>勤務地：東京都品川区上大崎2-13-17<span>目黒区東急ビル2F</span></p>
+        <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/joblist/img_joblist_01.jpg" alt=""></figure>
         </a>
       </li>
       <li>
@@ -93,6 +100,7 @@ Template Name: 募集要項
           <span class="office">品川支店</span>
         </h3>
         <p>勤務地：東京都品川区上大崎2-13-17<span>目黒区東急ビル2F</span></p>
+        <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/joblist/img_joblist_01.jpg" alt=""></figure>
         </a>
       </li>
     </ul>

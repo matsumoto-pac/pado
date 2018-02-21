@@ -38,7 +38,7 @@ business
       margin-bottom:(38em/16);
       background: #eeeeee;
       box-sizing:border-box;
-      padding: if($type==sp, ((21em/16) (56%/16) (10em/16) (56%/16)), (37em/16) (91em/16) (19em/16) (96em/16));
+      padding: if($type==sp, ((21em/16) (56%/16) (10em/16) (56%/16)), (37em/16) (90em/16) (19em/16) (95em/16));
       display: -webkit-box;
       display: -ms-flexbox;
       display:flex;
@@ -46,8 +46,8 @@ business
       flex-wrap:wrap;
       -webkit-box-pack:center;
       -ms-flex-pack:center;
-      -webkit-justify-content: space-around;
-      justify-content: space-around;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
       -webkit-align-content:space-between;
       align-content:space-between;
       li{

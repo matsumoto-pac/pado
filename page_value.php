@@ -34,8 +34,8 @@ Template Name: ぱどバリュー
       <div>
         <ul >
           <li><figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/value/img_value_01.png" alt="自主・自律"><figcaption>自ら気づき、自ら考え、<br>自ら行動する</figcaption></figure></li>
-          <li><figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/value/img_value_02.png" alt="信頼・尊敬・感謝"><figcaption>相手に対する信頼・尊敬・<br>感謝を忘れず協力しあう</figcaption></figure></li>
-          <li><figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/value/img_value_03.png" alt="チャレンジ"><figcaption>常に変化を恐れずに挑戦を<br>続け、事業拡大のエンジン<br>となる</figcaption></figure></li>
+          <li><figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/value/img_value_02.png" alt="信頼・尊敬・感謝"><figcaption>相手に対する信頼・尊敬・<br class="sp_br">感謝を<br class="pc_br">忘れず協力しあう</figcaption></figure></li>
+          <li><figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/value/img_value_03.png" alt="チャレンジ"><figcaption>常に変化を恐れずに挑戦を<br class="sp_br">続け、<br class="pc_br">事業拡大のエンジン<br class="sp_br">となる</figcaption></figure></li>
         </ul>
       </div>
     </div>
