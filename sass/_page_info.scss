@@ -13,7 +13,7 @@ info
     padding: (75em/16) 0 0;
   }
   .cont{
-    width: if($type==sp, (750%/$sp_wid*100), (1100em/16));
+    width: if($type==sp, (750%/$site_sp_wid*100), (1100em/16));
     margin:0 auto;
     .list_info{
       ul{
@@ -42,7 +42,7 @@ info
             text-decoration: none;
             display: if($type==sp, block, inline-block);
             box-sizing:border-box;
-            width: if($type==sp, (750%/$sp_wid*100), (850em/16));
+            width: if($type==sp, (750%/$site_sp_wid*100), (850em/16));
             font-weight:500 !important;
           }
         }
@@ -61,17 +61,17 @@ info
     padding: (75em/16) 0 0;
   }
   .cont{
-    width: if($type==sp, (750%/$sp_wid*100), (1100em/16));
+    width: if($type==sp, (750%/$site_sp_wid*100), (1100em/16));
     margin:0 auto;
     margin-top:(-15em/16);
     p{
-      width: if($type==sp, (650%/$sp_wid*100), 100%);
+      width: if($type==sp, (650%/$site_sp_wid*100), 100%);
       font-size: if($type==sp, (20em/16), (16em/16));
       margin: if($type==sp, (48em/16) auto (20em/16), (32em/16) auto (40em/16));
       line-height:2.3;
     }
     .list_info{
-      width: if($type==sp, (650%/$sp_wid*100), (1100em/16));
+      width: if($type==sp, (650%/$site_sp_wid*100), (1100em/16));
       margin: 0 auto;
         ul{
           li{
@@ -106,7 +106,7 @@ info
               text-decoration: none;
               display:block;
               box-sizing:border-box;
-              width: if($type==sp, (750%/$sp_wid*100), 100%);
+              width: if($type==sp, (750%/$site_sp_wid*100), 100%);
               font-weight:500 !important;
               line-height: 1.8;
             }

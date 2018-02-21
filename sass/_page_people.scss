@@ -121,13 +121,9 @@ body[class*="joblist"] {
           margin:if($type==sp, (0 auto 0 !important), 0 auto 0);
         }
         .midashi{
-<<<<<<< HEAD
           width: if($type==sp, (652%/$site_sp_wid*100), (1100em/22));
           font-size:(22em/16);
-=======
-          width: if($type==sp, (652%/$sp_wid*100), (1100em/22));
           font-size:if($type==sp, (28em/11/2), (22em/16));
->>>>>>> origin/matsumoto
           font-weight:bold;
           margin: if($type==sp, (0 auto (24em/28)), 0 auto);
           display:block;
@@ -215,13 +211,8 @@ body[class*="joblist"] {
     }
   }
   .keyword{
-<<<<<<< HEAD
-    font-size:13px;
     width: if($type==sp, (652%/$site_sp_wid*100), (1100em/13));
-=======
-    font-size:if($type==sp, (15.6em/11/2), (13em/16));
-    width: if($type==sp, (652%/$sp_wid*100), (1100em/13));
->>>>>>> origin/matsumoto
+    width: if($type==sp, (652%/$site_sp_wid*100), (1100em/13));
     font-weight:bold;
     margin: if($type==sp, ((40em/15.6) auto (42em/15.6)), 0 auto (42em/13));
     letter-spacing: -.4em;
