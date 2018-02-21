@@ -1,0 +1,34 @@
+
+/*============================
+info
+============================*/
+.page-template-archive {
+  #main {
+    &::before {
+      content: '';
+      height:(336em/16);
+      background:if($type==sp,  url("../images/information/sp_img_info_01.jpg") no-repeat, url("../images/information/img_info_01.jpg") no-repeat);
+      background-position: top center;
+      background-size: cover;
+      display: block;
+    }
+    #sec_01{
+      padding: (75em/16) 0 0;
+    }
+    .cont{
+      .list_info {
+        ul {
+          width: 100%;
+          li {
+            &:nth-child(2n) {
+              background-color: #f7f7f7;
+            }
+            span {
+              padding: if($type==sp, 0, (25em/16) (20em/16));
+            }
+          }
+        }
+      }
+    }
+  }
+}

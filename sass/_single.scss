@@ -1,0 +1,52 @@
+
+/*============================
+info
+============================*/
+.single-post {
+  #main {
+    &::before {
+      content: '';
+      display: block;
+      height:(336em/16);
+      background:if($type==sp,  url("../images/information/sp_img_info_01.jpg") no-repeat, url("../images/information/img_info_01.jpg") no-repeat);
+      background-position: top center;
+      background-size: cover;
+    }
+    #sec_01{
+      padding: (75em/16) 0 0;
+    }
+    .cont{
+      .article_info {
+        .info {
+          &_date {
+            margin-right: (20em/16);
+            font-size: (16em/16);
+            display: inline-block;
+          }
+          &_cat {
+            margin-top: 0;
+            font-size: (12em/16);
+            display: inline-block;
+          }
+          &_desc {
+            margin-top: (22em/22);
+            font-size: (22em/16);
+            font-weight: 500;
+          }
+        }
+      }
+      .article_mv {
+        margin-top: (28em/16);
+        text-align: center;
+      }
+      .wp_cont {
+        margin-top: (38em/16);
+        font-size: if($type==sp, (26em/11/2), (16em/16));
+        
+        p{
+          line-height: (36/16);
+        }
+      }
+    }
+  }
+}
