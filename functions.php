@@ -11,6 +11,7 @@ if ( ! function_exists( 'my_theme_default_setup' ) ) :
       wp_enqueue_script( 'jquery' );
       wp_enqueue_script( 'jquery-slick', get_template_directory_uri() . '/js/jquery.slick.min.js', array(), '20180206', true );
       wp_enqueue_script( 'my-common', get_template_directory_uri() . '/js/common.js', array(), '20180206', true );
+      if(is_home()) wp_enqueue_script( 'video-js', get_template_directory_uri() . '/js/jquery.vide.min.js', array(), '20180221', true );
       wp_enqueue_style( 'noto-sans', 'https://fonts.googleapis.com/css?family=Noto+Sans:400,700', '20180206' );
       wp_enqueue_style( 'montserrat', 'https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800', '20180206' );
       wp_enqueue_style( 'my-style', get_template_directory_uri() . '/css/style.css', "", '20180206' );
@@ -161,7 +162,7 @@ if ( ! function_exists( 'my_theme_default_setup' ) ) :
   function new_excerpt_more($more) {
     return '…';
   }
-  
+
   //Pagenation
   function pagination($pages = '', $range = 10) {
     $showitems = ($range * 2) + 1; //表示するページ数（５ページを表示）
