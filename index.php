@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-  <section id="mainvis">
+  <section id="mainvis" data-vide-bg="<?php echo esc_url( get_template_directory_uri() ); ?>/movie/mainvis">
     <div class="cont">
       <h2 class="ttl">“make a CHALLENGE”</h2>
 <?php if(false): ?>
