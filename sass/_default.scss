@@ -79,7 +79,8 @@ p+p {
  * 2.0 - Clearfix
  */
 
-.cf {
+.cf,
+.clearfix {
 	@include clearfix;
 }
 

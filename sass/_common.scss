@@ -599,3 +599,19 @@ a {
 .align-left{
   text-align: if($type==sp, center, left);
 }
+
+.widget_sns {
+  .sfsi_wDiv {
+    width: if($type==sp, 100% !important, auto !important);
+    position: relative !important;
+    display: flex;
+    justify-content: if($type==sp, center, inherit);
+
+    .sfsi_wicons {
+      display: inherit;
+    }
+  }
+  .sfsi_holders {
+    position: absolute !important;
+  }
+}

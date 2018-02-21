@@ -4,7 +4,7 @@
 </div>
 <div class="content-wrap">
 <section id="mainvis">
-    <div class="bg-movie">&ensp;</div>
+    <div class="bg-movie"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/movie/mainvis.gif" alt=""></div>
     <div class="cont">
         <h2 class="ttl">“make a CHALLENGE”</h2>
         <?php if(false): ?>

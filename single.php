@@ -35,11 +35,14 @@ Template Name: お知らせ（下層）
         <div class="wp_cont site_wid">
           <?php the_content(); ?>
         </div>
-        <p class="info_more site_wid">
-          <a href="./">
-            お知らせ一覧
-          </a>
-        </p>
+        <div class="article_btm site_wid">
+          <?php get_sidebar('sns'); ?>
+          <p class="info_more">
+            <a href="./">
+              お知らせ一覧
+            </a>
+          </p>
+        </div>
       </div>
     </section>
   </article>

@@ -43,6 +43,18 @@ info
         margin-top: (38em/16);
         @include wp_cont_mixin;
       }
+      .article_btm {
+        margin-top: if($type==sp, (82em/11/2), (78em/16));
+        
+        @if($type==sp) {} @else {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row-reverse;
+        }
+        .info_more {
+          margin-top: if($type==sp, (88em/11/2) !important, 0 !important);
+        }
+      }
     }
   }
 }
