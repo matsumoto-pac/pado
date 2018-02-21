@@ -1,0 +1,72 @@
+.page-template-archive-people {
+  #main{
+    .cover{
+    background: if($type==sp, url("../images/people/sp_img_people_05.jpg") no-repeat,  url("../images/people/img_people_05.jpg") no-repeat);
+      background-position: top center;
+      background-size: cover;
+      height:(336em/16);
+    }
+    #sec_02{
+      padding-top: (75em/16);
+    }
+    .people_area{
+      width: if($type==sp, (710%/$site_sp_wid*100), (1100em/16));
+      margin: 0 auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display:flex;
+      -webkit-flex-wrap: wrap;
+      flex-wrap:wrap;
+      -webkit-box-pack:center;
+      -ms-flex-pack:center;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      -webkit-align-content:space-between;
+      align-content:space-between;
+      li{
+        width: if($type==sp, (350%/$site_sp_wid*100), (346em/16));
+        padding-bottom: (20em/16);
+        position:relative;
+        margin-top: if($type==sp, (40em/16), (58.2em/16));
+        &:first-child,&:nth-child(2){
+          margin-top:0;
+        }
+        &:nth-child(3){
+          margin-top: if($type==sp, (40em/16), 0);
+        }
+        figure{
+          width:100%;
+          margin:0;
+          padding:0;
+          figcaption{
+            font-size: if($type==sp, (22em/16), (15em/16));
+            font-weight:500;
+            line-height:1.6;
+            padding: if($type==sp, (15em/22) (35%/22) 0 (25%/22), (14em/15) (30em/15) (1.5em/15) (27em/15));
+          }
+          span{
+            font-size:(12em/16);
+            text-align:center;
+            position: absolute;
+            top:0;
+            right:0;
+            color: #fff;
+            width: if($type==sp, (50em/$site_sp_wid*100), (96em/12));
+            padding:(10em/12) 0;
+            line-height:1;
+            }
+        }
+        .neme{
+          font-size:(26em/16);
+          font-weight: bold;
+          display:block;
+          margin-left: if($type==sp, (27%/26), (27em/26));
+        }
+        .occupations{
+          font-size:(18em/16);
+          margin-left: if($type==sp, (27%/18), (27em/18));
+        }
+      }
+    }
+  }
+}
