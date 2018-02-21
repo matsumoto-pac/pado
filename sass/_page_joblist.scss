@@ -44,7 +44,7 @@ business
         padding: if($type==sp, (43em/16) (200%/16) (43em/16) (28em/16), (40em/16) (200em/16) (45.44em/16) (30em/16));
         display:block;
       h3{
-        font-size: if($type==sp, (24em/16), (20em/16));
+        font-size: if($type==sp, (24em/11/2), (20em/16));
         margin-bottom:if($type==sp, (16em/24), (15.3em/20));
         span{
           display:block;
@@ -53,7 +53,7 @@ business
         }
       }
       p{
-        font-size: if($type==sp, (20em/16), (14.5em/16));
+        font-size: if($type==sp, (20em/11/2), (14.5em/16));
         font-weight:normal;
         line-height:1.7;
         span{
@@ -76,15 +76,15 @@ business
     text-align: center;
     padding: if($type==sp, 0 10%, 0);
     .category{
-      font-size: if($type==sp, (26em/16), (20em/16));
+      font-size: if($type==sp, (26em/11/2), (20em/16));
       font-weight:bold;
       display: block;
       margin-bottom:(20em/16);
     }
     .work_location{
-      font-size: if($type==sp, (20em/16), (13em/16));
+      font-size: if($type==sp, (20em/11/2), (13em/16));
       display:block;
-      margin-bottom:(27em/16);
+      margin-bottom:(27em/13);
     }
   }
   dl{
@@ -95,7 +95,7 @@ business
     border-top: solid 2px #000;
     border-right: solid 2px #000;
     background:#f6f6f6;
-    font-size: if($type==sp, (24em/16), (14em/16));
+    font-size: if($type==sp, (24em/11/2), (14em/16));
     line-height:2;
     dt{
       width: if($type==sp, (750%/$site_sp_wid*100), 15.5%);
@@ -117,7 +117,7 @@ business
       position: relative;
       &::before{
         content:if($type==sp, (none), " ");
-        width:18.5%;
+        width:118.7%;
         display:block;
         border-bottom:solid 2px #000;
         position:absolute;
@@ -129,7 +129,7 @@ business
   .btn_more{
     clear:both;
     margin-bottom: if($type==sp, (58em/24),  (125em/16));
-    font-size: if($type==sp, (24em/16), (16em/16));
+    font-size: if($type==sp, (24em/11/2), (16em/16));
     a{
       &::after{
         content:' ';
@@ -162,7 +162,7 @@ ul.category{
       a{
         line-height:1;
         padding:(17em/15) 0;
-        font-size: if($type==sp, (14.5em/16), (15em/16));
+        font-size: if($type==sp, (16em/11/2), (15em/16));
         letter-spacing:if($type==sp, -.05em, 0);
         word-break: keep-all;
         display:block;
