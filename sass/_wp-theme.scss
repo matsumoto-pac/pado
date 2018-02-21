@@ -1,10 +1,14 @@
 @charset "UTF-8";
 .alignleft {
-	float: left;
+  @if($type==sp) {}@else {
+    float: left;
+  }
 }
 
 .alignright {
-	float: right;
+  @if($type==sp) {}@else {
+    float: right;
+  }
 }
 
 .aligncenter {
@@ -15,27 +19,37 @@
 
 blockquote.alignleft,
 img.alignleft {
-	margin: 7px 24px 7px 0;
+  @if($type==sp) {}@else {
+    margin: 7px 24px 7px 0;
+  }
 }
 
 .wp-caption.alignleft {
-	margin: 7px 14px 7px 0;
+  @if($type==sp) {}@else {
+    margin: 7px 14px 7px 0;
+  }
 }
 
 blockquote.alignright,
 img.alignright {
-	margin: 7px 0 7px 24px;
+  @if($type==sp) {}@else {
+    margin: 7px 0 7px 24px;
+  }
 }
 
 .wp-caption.alignright {
-	margin: 7px 0 7px 14px;
+  @if($type==sp) {}@else {
+    margin: 7px 0 7px 14px;
+  }
 }
 
 blockquote.aligncenter,
 img.aligncenter,
 .wp-caption.aligncenter {
-	margin-top: 7px;
-	margin-bottom: 7px;
+  @if($type==sp) {}@else {
+    margin-top: 7px;
+	   margin-bottom: 7px;
+  }
 }
 
 .site-content blockquote.alignleft,

@@ -6,51 +6,37 @@ Template Name: ぱどの人々（下層）
 <?php get_header(); ?>
 <article id="people_02" class="underlayer">
   <section id="sec_01" class="sec">
-    <div class="cover">
-
-    </div>
+    <?php if(get_field('mainvis')): ?>
+      <i class="cover" style="background-image:url(<?php echo get_field('mainvis'); ?>)"></i>
+    <?php endif; ?>
   </section>
   <section id="sec_02" class="sec">
     <div class="people_area">
         <div class="bg_pp_light_blue">
           <h2>
-            <span class="name">谷口&nbsp;夕貴</span>
-            <span class="name_en">YUKI TANIGUCHI</span>
+            <span class="name"><?php the_title(); ?></span>
+            <span class="name_en"><?php the_field('name_en'); ?></span>
           </h2>
-          <p class="occupations">営業部 / 平成23年4月入社</p>
-          <p>自己紹介文があればはいる自己紹介文があればはいる自己紹介文があればはいる自己紹介文があればはいる自己紹介文があればはいる自己紹介文があればはいる自己紹介文があれば</p>
+          <p class="occupations"><?php the_field('list_text'); ?></p>
+          <p><?php the_field('profile'); ?></p>
         </div>
 
       </div>
-    <h2 class="align_center">
-        <span class="people_ttl">RIZAPグループとなった今も<br class="pc_br">創業当時から<br>変わらないもの</span>
-      </h2>
-
+    <h3 class="align_center people_ttl site_wid">
+      <?php the_field('ttl_comment'); ?>
+    </h3>
   </section>
   <section id="sec_03" class="sec bg_gray_02">
-    <h3 class="midashi">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</h3>
-      <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-      <div class="col_2-img_l clearfix">
-        <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/people/img_people_02.jpg" alt=""></figure>
-        <div>
-          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-        </div>
-      </div>
-      <div class="col_2-img_r clearfix">
-        <div>
-          <h3 class="komidashi">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス</h3>
-        <p>トテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス</p>
-        </div>
-        <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/people/img_people_03.jpg" alt=""></figure>
-      </div>
-      <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-      <div class="keyword">
+    <div class="wp_cont site_wid">
+      <?php the_content(); ?>
+    </div>
+      <div class="keyword site_wid">
         <ul>
-        <li><a href="#">やりがい</a></li>
-        <li><a href="#">新卒</a></li>
-        <li><a href="#">中途</a></li>
-        <li><a href="#">女性</a></li>
-      </ul>
+          <li><a href="#">やりがい</a></li>
+          <li><a href="#">新卒</a></li>
+          <li><a href="#">中途</a></li>
+          <li><a href="#">女性</a></li>
+        </ul>
       </div>
       <ul class="category">
         <li><a href="#">営業</a></li>
@@ -89,6 +75,7 @@ Template Name: ぱどの人々（下層）
         <span class="ja">おすすめの記事</span>
       </h2>
       <div>
+        <?php wp_related_posts()?>
       </div>
     </div>
   </section>

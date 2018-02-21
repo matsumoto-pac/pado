@@ -1,6 +1,6 @@
-.single-post-people {
+.single-people {
   #main {
-    ::before{
+    .cover {
       content: '';
       display: block;
       background: url("../images/people/img_people_04.jpg") no-repeat;
@@ -36,80 +36,16 @@
       }
     }
     .people_ttl{
+      width: if($type==sp, 100%, 820px);
       font-size: if($type==sp, (42em/11/2), (42em/16));
       font-weight: 500;
     }
     #sec_03{
       margin-top:(60em/16);
       padding-top:(48em/16);
-      p{
-        font-size: if($type==sp, (24em/11/2), (15em/16));
-        line-height: if($type==sp, (46/24), 2.4);
-        padding:0;
-        text-align:left;
-        margin:if($type==sp, (0 auto 0 !important), 0 auto 0);
-      }
-      .midashi{
-        width: if($type==sp, (652%/$site_sp_wid*100), (1100em/22));
-        font-size:(22em/16);
-        font-size:if($type==sp, (28em/11/2), (22em/16));
-        font-weight:bold;
-        margin: if($type==sp, (0 auto (24em/28)), 0 auto);
-        display:block;
-        
-        + p{
-          margin: if($type==sp, ((40em/16) auto 0), (24em/15) auto (45em/15));
-          width: if($type==sp, (652%/$site_sp_wid*100), (1100em/15));
-          display:block;
-        }
-      }
-
-      .col_2-img_l{
-        width: if($type==sp, (652%/$site_sp_wid*100), (1412em/16));
-        margin: if($type==sp, 0 auto (35em/16), 0 auto (71em/16));
-        box-sizing:border-box;
-        padding-right: if($type==sp, (0),  (146em/16));
-        
-        figure{
-          margin:if($type==sp, ((40em/16) auto ), 0);
-          padding: 0;
-          float:if($type==sp, (none), left);
-        }
-        div{
-          float: if($type==sp, (none), right);
-          width: if($type==sp, (750%/$site_sp_wid*100), (582em/15));
-        }
-        + p{splay:block;
-          padding:0;
-        }
-      }
-      .col_2-img_r{
-        width:if($type==sp, (652%/$site_sp_wid*100), (1412em/16));
-        margin:if($type==sp, (0 auto ), 0 auto (65em/16));
-        box-sizing:border-box;
-        padding-left: if($type==sp, (0), (146em/16));
-
-        figure{
-          margin:if($type==sp, ((40em/16) auto), 0);
-          padding: 0;
-          float:if($type==sp, (none), right);
-        }
-        div{
-          float:if($type==sp, (none), left);
-          width: if($type==sp, (750%/$site_sp_wid*100), (582em/15));
-        }
-        + p{
-          margin:if($type==sp, (0 auto (40em/16)), 0 auto (35em/15));
-          width: if($type==sp, (652%/$site_sp_wid*100), (1100em/15));
-          display:block;
-          padding:0;
-        }
-      }
-      .komidashi{
-        font-size:if($type==sp, (28em/11/2), (20em/16));
-        font-weight:bold;
-        margin-bottom: if($type==sp, (0), (50em/20));
-        margin: if($type==sp, (0 auto (24em/28)), 0 auto);
+      
+      .wp_cont {
+        @include wp_cont_peope_mixin;
       }
     }
   }

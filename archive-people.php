@@ -4,196 +4,122 @@ Template Name: ぱどの人々
 */
 ?>
 <?php get_header(); ?>
-<article id="people" class="underlayer">
-  <section id="sec_02" class="sec">
-    <h2 class="ttl_en-ja align_center">
+  <?php
+    //カスタムタクソノミー一覧取得
+    $args = array(
+      'post_type' => 'joblist',
+      'taxonomy' => 'cat_joblist',
+      'hide_empty' => false,
+    );
+    $terms_cat = get_categories($args);
+    $args = array(
+      'post_type' => 'people',
+      'taxonomy' => 'cat_people',
+      'hide_empty' => false,
+    );
+    $terms_tag = get_categories($args);
+  ?>
+  <article class="underlayer">
+    <section id="sec_01" class="sec site_wid">
+      <h2 class="ttl_en-ja align_center">
         <span class="en">PADO&nbsp;PEOPLE</span>
         <span class="ja">ぱどの人々</span>
       </h2>
-      <div class="desc align_center">
-      </div>
-
-  </section>
-  <section id="sec_03" class="sec">
-    <ul class="category">
-      <li><a href="#">営業</a></li>
-      <li><a href="#">営業事務</a></li>
-      <li><a href="#">配布スタッフ</a></li>
-      <li><a href="#">編集スタッフ</a></li>
-      <li><a href="#">商材管理</a></li>
-    </ul>
-    <ul class="tag">
-      <li><a href="#">新卒</a></li>
-      <li><a href="#">中途</a></li>
-      <li><a href="#">女性</a></li>
-      <li><a href="#">やりがい</a></li>
-      <li><a href="#">新卒</a></li>
-      <li><a href="#">中途</a></li>
-      <li><a href="#">女性</a></li>
-      <li><a href="#">やりがい</a></li>
-      <li><a href="#">新卒</a></li>
-      <li><a href="#">中途</a></li>
-      <li><a href="#">女性</a></li>
-      <li><a href="#">やりがい</a></li>
-      <li><a href="#">やりがい</a></li>
-      <li><a href="#">新卒</a></li>
-      <li><a href="#">中途</a></li>
-      <li><a href="#">女性</a></li>
-      <li><a href="#">やりがい</a></li>
-      <li><a href="#">新卒</a></li>
-      <li><a href="#">中途</a></li>
-    </ul>
-    <ul class="people_area">
-      <li>
-        <a href="#">
-        <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/people/img_people_01.jpg" alt="">
-          <figcaption class="people_ttl">RIZAPグループとなった今も社員3人の時代から変わらないもの</figcaption>
-          <span class="bg_pp_light_blue">営業</span>
-        </figure>
-        <h3>
-          <span class="neme">谷口&nbsp;夕貴</span>
-          <span class="occupations">営業部/平成23年4月入社</span>
-        </h3>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-        <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/people/img_people_01.jpg" alt="">
-          <figcaption class="people_ttl">RIZAPグループとなった今も社員3人の時代から変わらないもの</figcaption>
-          <span class="bg_pp_yellow">配布スタッフ</span>
-        </figure>
-        <h3>
-          <span class="neme">谷口&nbsp;夕貴</span>
-          <span class="occupations">営業部/平成23年4月入社</span>
-        </h3>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-        <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/people/img_people_01.jpg" alt="">
-          <figcaption class="people_ttl">RIZAPグループとなった今も社員3人の時代から変わらないもの</figcaption>
-          <span class="bg_pp_green">商材管理</span>
-        </figure>
-        <h3>
-          <span class="neme">谷口&nbsp;夕貴</span>
-          <span class="occupations">営業部/平成23年4月入社</span>
-        </h3>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-        <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/people/img_people_01.jpg" alt="">
-          <figcaption class="people_ttl">RIZAPグループとなった今も社員3人の時代から変わらないもの</figcaption>
-          <span class="bg_pp_pink">営業事務</span>
-        </figure>
-        <h3>
-          <span class="neme">谷口&nbsp;夕貴</span>
-          <span class="occupations">営業部/平成23年4月入社</span>
-        </h3>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-        <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/people/img_people_01.jpg" alt="">
-          <figcaption class="people_ttl">RIZAPグループとなった今も社員3人の時代から変わらないもの</figcaption>
-          <span class="bg_pp_yellow">編集スタッフ</span>
-        </figure>
-        <h3>
-          <span class="neme">谷口&nbsp;夕貴</span>
-          <span class="occupations">営業部/平成23年4月入社</span>
-        </h3>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-        <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/people/img_people_01.jpg" alt="">
-          <figcaption class="people_ttl">RIZAPグループとなった今も社員3人の時代から変わらないもの</figcaption>
-          <span class="bg_pp_green">商材管理</span>
-        </figure>
-        <h3>
-          <span class="neme">谷口&nbsp;夕貴</span>
-          <span class="occupations">営業部/平成23年4月入社</span>
-        </h3>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-        <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/people/img_people_01.jpg" alt="">
-          <figcaption class="people_ttl">RIZAPグループとなった今も社員3人の時代から変わらないもの</figcaption>
-          <span class="bg_pp_blue">営業</span>
-        </figure>
-        <h3>
-          <span class="neme">谷口&nbsp;夕貴</span>
-          <span class="occupations">営業部/平成23年4月入社</span>
-        </h3>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-        <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/people/img_people_01.jpg" alt="">
-          <figcaption class="people_ttl">RIZAPグループとなった今も社員3人の時代から変わらないもの</figcaption>
-          <span class="bg_pp_yellow">配布スタッフ</span>
-        </figure>
-        <h3>
-          <span class="neme">谷口&nbsp;夕貴</span>
-          <span class="occupations">営業部/平成23年4月入社</span>
-        </h3>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-        <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/people/img_people_01.jpg" alt="">
-          <figcaption class="people_ttl">RIZAPグループとなった今も社員3人の時代から変わらないもの</figcaption>
-          <span class="bg_pp_green">商材管理</span>
-        </figure>
-        <h3>
-          <span class="neme">谷口&nbsp;夕貴</span>
-          <span class="occupations">営業部/平成23年4月入社</span>
-        </h3>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-        <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/people/img_people_01.jpg" alt="">
-          <figcaption class="people_ttl">RIZAPグループとなった今も社員3人の時代から変わらないもの</figcaption>
-          <span class="bg_pp_blue">営業</span>
-        </figure>
-        <h3>
-          <span class="neme">谷口&nbsp;夕貴</span>
-          <span class="occupations">営業部/平成23年4月入社</span>
-        </h3>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-        <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/people/img_people_01.jpg" alt="">
-          <figcaption class="people_ttl">RIZAPグループとなった今も社員3人の時代から変わらないもの</figcaption>
-          <span class="bg_pp_yellow">配布スタッフ</span>
-        </figure>
-        <h3>
-          <span class="neme">谷口&nbsp;夕貴</span>
-          <span class="occupations">営業部/平成23年4月入社</span>
-        </h3>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-        <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/people/img_people_01.jpg" alt="">
-          <figcaption class="people_ttl">RIZAPグループとなった今も社員3人の時代から変わらないもの</figcaption>
-          <span class="bg_pp_green">商材管理</span>
-        </figure>
-        <h3>
-          <span class="neme">谷口&nbsp;夕貴</span>
-          <span class="occupations">営業部/平成23年4月入社</span>
-        </h3>
-        </a>
-      </li>
-    </ul>
-    <div class="cont">
-      <div>
-      </div>
-    </div>
-  </section>
+    </section>
+    <section id="sec_02" class="sec">
+      <ul class="category">
+        <?php
+          foreach ( $terms_cat as $term ) {
+            echo '<li><a href="?term=' . $term->term_id .'">';
+            echo  esc_html($term->name); // タームタイトル
+            echo '</a></li>';
+          }
+        ?>
+      </ul>
+      <ul class="tag">
+        <?php
+          foreach ( $terms_tag as $term ) {
+            $cat_link = get_category_link( $term );
+            if($_GET['term']) {
+              $cat_link .= '?term=' . $_GET['term'];
+            }
+            echo '<li><a href="' . $cat_link .'">';
+            echo  esc_html($term->name); // タームタイトル
+            echo '</a></li>';
+          }
+        ?>
+      </ul>
+      <?php
+        $query_arg = array(
+          'post_type'	=> 'people',
+          'page' => get_query_var('page'),
+          'paged' => get_query_var('paged'),
+          'posts_per_page' => 12,
+          'tax_query' => array(
+		        'relation' => 'AND',
+          ),
+        );
+      
+        //カテゴリによる絞込
+        $query_object = get_queried_object();
+        $now_cat = $query_object->slug;
+        if ($now_cat) {
+          $marge_arg = array(
+            'taxonomy' => 'cat_people',
+            'field'    => 'slug',
+            'terms'    => $now_cat,
+          );
+          $query_arg['tax_query'][] = $marge_arg;
+        }
+      
+        //タグによる絞込
+        $now_tag = $_GET['term'];
+        if ($now_tag) {
+          $marge_arg = array(
+            'meta_key'		=> 'joblist',
+	          'meta_value'	=> $now_tag
+          );
+          $query_arg = array_merge($query_arg, $marge_arg);
+        }
+        $the_query = new WP_Query($query_arg);
+        set_query_var('the_query', $the_query);
+      ?>
+		  <?php if ( $the_query->have_posts() ) : ?>
+        <ul class="people_area site_wid">
+          <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+            <?php
+              //カテゴリ取得
+              $tag = get_field('joblist');
+            ?>
+            <li>
+              <a href="<?php the_permalink(); ?>">
+                <figure>
+                  <?php the_post_thumbnail(); ?>
+                  <figcaption class="people_ttl"><?php the_field('ttl_comment'); ?></figcaption>
+                  <span class="cat_<?php echo esc_html($tag->slug); ?>" style="background-color: <?php echo esc_html(get_field('color','cat_joblist_'.$tag->term_id)); ?>;">
+                    <?php echo esc_html($tag->name) ?>
+                  </span>
+                </figure>
+                <h3>
+                  <span class="neme"><?php the_title(); ?></span>
+                  <span class="occupations"><?php the_field('list_text'); ?></span>
+                </h3>
+              </a>
+            </li>
+          <?php endwhile;?>
+        </ul>
+        <?php
+          //Pagenation
+          if (function_exists("pagination")) {
+            pagination($the_query->max_num_pages);
+          }
+        ?>
+      <?php
+        else:
+          echo "<p>" . wpautop('投稿が見つかりませんでした。'), "</p>";
+        endif;
+		  ?>
+    </section>
   </article>
   <?php get_template_part( 'template-parts/content-entry' ); ?>
 <?php get_footer(); ?>

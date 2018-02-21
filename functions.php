@@ -306,16 +306,62 @@ if ( ! function_exists( 'my_theme_default_setup' ) ) :
     //「ぱどの人々」
     register_post_type( 'people',
       array(
+		    'label' => __( "ぱどの人々", "" ),
         'labels' => array(
           'name' => __( 'ぱどの人々' ),
           'singular_name' => __( 'ぱどの人々' )
         ),
+		    'description' => '',
         'public' => true,
+		    'publicly_queryable' => true,
         'menu_position' =>5,
+        'show_ui' => true,
+        'show_in_rest' => false,
+        'rest_base' => "",
+        'has_archive' => true,
+        'show_in_menu' => true,
+        'exclude_from_search' => false,
+        'capability_type' => "post",
+        'map_meta_cap' => true,
+        'hierarchical' => false,
+		    'taxonomies' => array( "cat_people" ),
+        'yarpp_support' => true,
       )
     );
   }
   add_action( 'init', 'create_custom_post_type' );
+
+
+
+
+  //募集要項カスタムタクソノミー
+  function create_custom_taxnomy() {
+    $labels = array(
+      "name" => __( "タグ", "" ),
+      "singular_name" => __( "タグ", "" ),
+      "add_new_item" => __( "タグを新規追加", "" ),
+    );
+
+    $args = array(
+      "label" => __( "タグ", "" ),
+      "labels" => $labels,
+      "public" => true,
+      "hierarchical" => true,
+      "label" => "タグ",
+      "show_ui" => true,
+      "show_in_menu" => true,
+      "show_in_nav_menus" => true,
+      "query_var" => true,
+      "rewrite" => array( 'slug' => 'people-category', 'with_front' => false, ),
+      "show_admin_column" => true,
+      "show_in_rest" => false,
+      "rest_base" => "",
+      "show_in_quick_edit" => false,
+    );
+    register_taxonomy( "cat_people", array( "people" ), $args );
+  }
+
+  add_action( 'init', 'create_custom_taxnomy' );
 
   //---------------------
   // バックエンド機能

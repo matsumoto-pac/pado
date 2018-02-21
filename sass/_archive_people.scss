@@ -1,12 +1,15 @@
+.archive.tax-cat_people,
 .page-template-archive-people {
   #main{
-    .cover{
-    background: if($type==sp, url("../images/people/sp_img_people_05.jpg") no-repeat,  url("../images/people/img_people_05.jpg") no-repeat);
+    &::before{
+      content: '';
+      display: block;
+      background: if($type==sp, url("../images/people/sp_img_people_05.jpg") no-repeat,  url("../images/people/img_people_05.jpg") no-repeat);
       background-position: top center;
       background-size: cover;
       height:(336em/16);
     }
-    #sec_02{
+    #sec_01{
       padding-top: (75em/16);
     }
     .people_area{

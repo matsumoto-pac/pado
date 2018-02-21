@@ -7,3 +7,37 @@
     line-height: (36/16);
   }
 }
+@mixin wp_cont_peope_mixin {
+  p{
+    font-size: if($type==sp, (24em/11/2), (15em/16));
+    line-height: if($type==sp, (46/24), 2.4);
+    padding:0;
+    text-align:left;
+    margin:if($type==sp, ((46em/24) auto 0 !important), (20em/15) auto 0);
+    
+    +h4,
+    +h5,
+    +h6 {
+      margin-top: (70em/22);
+    }
+  }
+  h4{
+    margin: if($type==sp, (0 auto (24em/28)), 0 auto);
+    font-size:if($type==sp, (28em/11/2), (22em/16));
+    font-weight: 600;
+  }
+  h5,h6 {
+    margin-bottom: if($type==sp, (24em/28), (50em/20));
+    font-size:if($type==sp, (28em/11/2), (20em/16));
+    font-weight: 600;
+  }
+  img {
+    &.alignleft {
+      cont: $type;
+      margin-left: if($type==sp, 0, (156%/$site_wid*100*-1));
+    }
+    &.alignright {
+      margin-right: if($type==sp, 0, (156%/$site_wid*100*-1));
+    }
+  }
+}

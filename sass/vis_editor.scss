@@ -10,4 +10,7 @@ body#tinymce {
   &.post-type-post {
     @include wp_cont_mixin;
   }
+  &.post-type-people {
+    @include wp_cont_peope_mixin;
+  }
 }
