@@ -33,6 +33,7 @@ $cat_all = get_categories($args);
 						<?php while (have_posts()): the_post();?>
 						<li>
 								<a href="<?php echo get_permalink(); ?>">
+										<span class="col-h3p">
 										<h3>
 										<span class="category_ttl"><?php the_title();?></span>
 										<!-- <span class="office">品川支店</span> -->
@@ -40,7 +41,12 @@ $cat_all = get_categories($args);
 										<p>勤務地：
 												<?php echo get_field("location"); ?>
 										</p>
-										<figure>
+										</span>
+										<?php
+											$thumbnail_id = get_post_thumbnail_id();
+											$tg_img = wp_get_attachment_image_src( $thumbnail_id , 'joblist_thumbnail' );
+										 ?>
+										<figure style="background-image: url('<?php echo $tg_img[0]; ?>')">
 												<?php the_post_thumbnail("joblist_thumbnail");?>
 										</figure>
 								</a>
