@@ -72,7 +72,7 @@ if ( ! function_exists( 'my_theme_default_setup' ) ) :
 		add_theme_support( 'title-tag' );
 
 		//アイキャッチをサポート
-		add_theme_support( 'post-thumbnails', array('post','people','joblist'));
+    add_theme_support( 'post-thumbnails', array('post','people','joblist'));
 		register_post_type(
 			'people',
 			array(
