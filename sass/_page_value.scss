@@ -7,23 +7,23 @@ value
   .pado_txt{
     width: if($type==sp, (552%/$sp_wid*100), (700em/16));
     margin: 0 auto;
-    font-size: if($type==sp, (22em/16), (16em/16));
-    line-height:2.8;
+    font-size: if($type==sp, (22em/11/2), (16em/16));
+    line-height:if($type==sp, (55/22), 2.8);
   }
   .cover{
     background: if($type==sp, (url("../images/value/sp_img_value_04.jpg")), url("../images/value/img_value_04.jpg") no-repeat);
     background-position: top center;
     background-size: cover;
-    height:(336em/16);
+    height:if($type==sp, (336em/11/2), (336em/16));
   }
   #sec_02{
-    padding-top: (75em/16);
+    padding-top: if($type==sp, (118em/11/2), (75em/16));
   }
   .vision{
     width: if($type==sp, (650%/$sp_wid*100), (800em/16));
     margin: (116.8em/16) auto (56em/16);
     box-sizing:border-box;
-    border: solid 6px #000;
+    border: solid (6em/20) #000;
     position: relative;
     text-align: center;
     font-weight:bold;
@@ -33,23 +33,23 @@ value
     &::before{
       content:"VISION";
       font-family: 'Montserrat', sans-serif;
-      font-size: if($type==sp, (30em/16), (20em/16));
+      font-size: if($type==sp, (30em/11/2), (20em/16));
       font-weight:800;
       position: absolute;
       left: (14em/20);
       top: (-42em/20);
     }
     p{
-      font-size: if($type==sp, (38em/16), (30em/16));
+      font-size: if($type==sp, (38em/11/2), (30em/16));
       margin-bottom:0;
     }
     p + p{
-      font-size: if($type==sp, (19.2em/16), (16em/16));
+      font-size: if($type==sp, (19.2em/11/2), (16em/16));
       letter-spacing:.03em;
     }
     + p{
       width: if($type==sp, (552%/$sp_wid*100), (700em/16));
-      font-size: if($type==sp, (22em/16), (18em/16));
+      font-size: if($type==sp, (22em/11/2), (18em/16));
       text-align:center;
       font-weight:bold;
       margin:0 auto (54.4em/16);
@@ -62,7 +62,7 @@ value
       text-align:center;
       font-weight:bold;
       box-sizing:border-box;
-      margin: 0 auto (155em/16);
+      margin: if($type==sp,  0 auto (140em/11/2), 0 auto (155em/16));
       padding: if($type==sp,(98em/16) (153%/16) (60.8em/16), (81em/16) (128em/16) (68.8em/16) (136em/16));
       display: -webkit-box;
       display: -ms-flexbox;
@@ -77,10 +77,10 @@ value
       &::before{
         content:"VALUE";
         font-family: 'Montserrat', sans-serif;
-        font-size: if($type==sp, (30em/16), (20em/16));
+        font-size: if($type==sp, (30em/11/2), (20em/16));
         font-weight:800;
         position: absolute;
-        left: if($type==sp, (32em/16), (136em/16));
+        left: if($type==sp, (32em/30), (136em/16));
         top: (16em/16);
       }
       &::after{
@@ -96,19 +96,20 @@ value
         height:(60em/16);
     }
       li{
-        width: if($type==sp, (517%/$sp_wid*100), (227em/16));
+        width: if($type==sp, (520%/$sp_wid*100), (227em/16));
         margin-bottom:  if($type==sp, (35em/16), 0);
+        &:last-child{
+          margin-bottom:  if($type==sp, 0, 0);
+        }
         figure{
           width:100%;
           margin:0;
           padding: 0;
           figcaption{
             margin-top:(11.2em/16);
-            font-size: if($type==sp, (24em/16), (16em/16));
+            font-size: if($type==sp, (24em/11/2), (16em/16));
+            letter-spacing:if($type==sp, -.15em, 0)
           }
-        }
-        br{
-          display: if($type==sp, (none), block);
         }
       }
     }
@@ -116,14 +117,14 @@ value
 }
 .underlayer{
   #sec_01{
-    margin-top: if($type==sp, (57em/16), 0);
+    margin-top: if($type==sp, (47em/12), 0);
   }
   #sec_01,#sec_02,#sec_03,#sec_04{
     padding:0;
     background:none;
   }
   .ttl_en-ja{
-      margin-bottom: (75em/16) !important;
+      margin-bottom: if($type==sp, (86em/11/2), (75em/16) !important);
       color: #000;
 
       span {
@@ -132,12 +133,12 @@ value
 
         &.en {
           font-family: 'Montserrat', sans-serif;
-          font-size: if($type==sp, (48em/16), (55.94em/16)) !important;
+          font-size: if($type==sp, (52em/11/2), (55.94em/16)) !important;
           font-weight: 800;
         }
         &.ja {
           margin-top: (6em/16) !important;
-          font-size: if($type==sp, (22em/16), (16em/16));
+          font-size: if($type==sp, (15.98em/11/2), (16em/16))  !important;
           font-weight: 600;
         }
       }
@@ -156,9 +157,9 @@ value
   }
 }
 .sp_br{
-  display: if($type==sp, (none), block);
+  display: if($type==sp, none, block);
 }
 .pc_br{
-  display: if($type==sp, (block), none);
+  display: if($type==sp, block, none);
 }
 }

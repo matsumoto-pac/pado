@@ -10,7 +10,7 @@ info
     height:(336em/16);
   }
   #sec_02{
-    padding: (75em/16) 0 0;
+    padding-top: if($type==sp, (118em/11/2), (75em/16));
   }
   .cont{
     width: if($type==sp, (750%/$sp_wid*100), (1100em/16));
@@ -69,7 +69,7 @@ info
     height:(336em/16);
   }
   #sec_02{
-    padding: (75em/16) 0 0;
+    padding-top: if($type==sp, (118em/11/2), (75em/16));
   }
   .cont{
     width: if($type==sp, (750%/$sp_wid*100), (1100em/16));

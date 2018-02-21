@@ -1,0 +1,41 @@
+
+/*============================
+sitemap
+============================*/
+#sitemap{
+  .cover{
+  background:if($type==sp,  url("../images/sitemap/sp_img_sitemap_01.jpg") no-repeat, url("../images/sitemap/img_sitemap_01.jpg") no-repeat);
+    background-position: top center;
+    background-size: cover;
+    height:if($type==sp, (336em/11/2), (336em/16));
+  }
+  #sec_02{
+    padding-top: if($type==sp, (118em/11/2), (75em/16));
+  }
+  ul{
+    width: if($type==sp, (550%/$sp_wid*100), (800em/16));
+    margin:0 auto;
+    li{
+      a{
+        display: block;
+        width:100%;
+        border-bottom: solid (2em/20) #000;
+        line-height: 1;
+        font-size: if($type==sp, (24em/11/2), (16em/16));
+        box-sizing:border-box;
+        padding: if($type==sp, 0 (20em/24) (26em/24), 0 (15em/16) (26em/16));
+        font-weight:bold;
+      }
+      ul{
+        width: if($type==sp, (602.8125%/$sp_wid*100), 80.375%);
+        margin-left: 19.625%;
+        li{
+          a{
+            padding: if($type==sp, (24em/24) (20em/24) (26em/24), (24em/16) (15em/16) (26em/16));
+          }
+        }
+      }
+    }
+    }
+}
+
