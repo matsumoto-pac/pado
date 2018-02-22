@@ -8,20 +8,6 @@
   <link rel="shortcut icon" href="<?php echo esc_url( get_template_directory_uri() ); ?>/images/common/favicon.ico">
   <?php the_seo($post); ?>
   <?php wp_head(); ?>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script type="text/javascript">
-$(function() {
-  var topBtn = $('#page-top');
-  topBtn.hide();
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 400) {
-      topBtn.fadeIn();
-    } else {
-      topBtn.fadeOut();
-    }
-  });
-});
-</script>
 </head>
 <body <?php body_class(); ?>>
   <header id="header" class="sb-slidebar sb-right sb-style-overlay">

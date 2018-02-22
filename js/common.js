@@ -14,6 +14,17 @@
 		return false;
 	});
   
+  // go to top btn
+  var topBtn = $('#page-top');
+  topBtn.hide();
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 400) {
+      topBtn.fadeIn();
+    } else {
+      topBtn.fadeOut();
+    }
+  });
+  
   //slick slider
   $('.list_people ul').slick({
     infinite: true,
