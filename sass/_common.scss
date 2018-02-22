@@ -23,7 +23,7 @@
     padding: 0 (20em/16);
     display: flex;
     align-items: center;
-    
+
     a {
       height: 100%;
       display: flex;
@@ -70,7 +70,7 @@
               @include link_hov_bdr;
               color: $site_blue_deep;
             }
-            
+
             &.current {
               @include link_bdr;
               @include link_hov_bdr;
@@ -112,7 +112,7 @@
 ============================*/
 #main {
   overflow: hidden;
-  
+
   .site_wid {
     width: if($type==sp, ($cont_sp_wid_per/$site_sp_wid*100), $cont_width);
     max-width: 100%;
@@ -183,7 +183,7 @@
           font-weight: 600;
         }
       }
-      
+
       //.ttl_en_jaでなおかつ.ttl_dotなタイトルにないしてリセット
       &.ttl_dot {
         font-size: 1em;
@@ -247,7 +247,7 @@
       li {
         display: if($type==sp, block, table-row);
         padding: if($type==sp, (55em/11/2) (50em/11/2), 0);
-        
+
         span {
           margin: 0;
           padding: if($type==sp, 0, (16em/16/2) (20em/16/2));
@@ -615,4 +615,16 @@ a {
   .sfsi_holders {
     position: absolute !important;
   }
+}
+#page-top {
+  position: fixed;
+  bottom: 153px;
+  right: 20px;
+  width: if($type==sp, (60em/11/2), (60em/16));
+  z-index:200;
+}
+#page-top a:hover {
+  filter:alpha(opacity=50);
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }

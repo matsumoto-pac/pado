@@ -44,8 +44,8 @@ environment
           text-align:left;
           li{
             background: url("../images/environment/bg_environment_01.png") no-repeat;
-            background-position:left 8px;
-            background-size:if($type==sp, 7px, 10px);
+            background-position:if($type==sp, left 7px, left 8px);
+            background-size:if($type==sp, 5px, 10px);
             line-height:if($type==sp, (38/22), (25/14));
             padding-left: if($type==sp, (30em/11/2), (20em/14));
             font-size: if($type==sp, (22em/11/2), (16em/16));
@@ -199,7 +199,7 @@ environment
       }
         p{
           line-height:2.1;
-          font-size: if($type==sp, (16em/11/2), (15em/16));
+          font-size: if($type==sp, (20em/11/2), (15em/16));
         }
     }
   }

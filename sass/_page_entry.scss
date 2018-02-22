@@ -12,7 +12,7 @@ entry
   #sec_02{
     padding-top: if($type==sp, (118em/11/2), (75em/16));
   }
-  p{
+ p{
     font-size: if($type==sp, (22em/11/2), (16em/16));
     line-height:2.6;
   }
@@ -161,8 +161,8 @@ entry
     }
   }
   .privacyBlock{
-    width: if($type==sp, (650%/$site_sp_wid*100), (1100em/14));
     font-size: if($type==sp, (18em/11/2), (14em/16));
+    width: if($type==sp, (650%/$site_sp_wid*100), (1100em/14));
     margin:0 auto (39em/16);
     background: #f6f6f6;
     color:#6f6f6f;
@@ -191,4 +191,3 @@ entry
     }
   }
 }
-

@@ -29,6 +29,7 @@ sitemap
       ul{
         width: if($type==sp, (602.8125%/$site_sp_wid*100), 80.375%);
         margin-left: 19.625%;
+        padding-bottom: if($type==sp, 0, (122em/16));
         li{
           a{
             padding: if($type==sp, (24em/24) (20em/24) (26em/24), (24em/16) (15em/16) (26em/16));

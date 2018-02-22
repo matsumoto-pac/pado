@@ -1,173 +1,187 @@
-
 /*============================
 business
 ============================*/
-#joblist{
-  .cover{
-  background: if($type==sp, url("../images/joblist/sp_img_joblist_02.jpg"), url("../images/joblist/img_joblist_02.jpg") no-repeat);
-    background-position: top center;
-    background-size: cover;
-    height:if($type==sp, (336em/11/2), (336em/16));
+#joblist {
+		.cover {
+				background: if($type==sp, url("../images/joblist/sp_img_joblist_02.jpg"), url("../images/joblist/img_joblist_02.jpg") no-repeat);
+				background-position: top center;
+				background-size: cover;
+				height:if($type==sp, (336em/11/2), (336em/16));
   }
   #sec_02{
     padding-top: if($type==sp, (118em/11/2), (75em/16));
   }
-  ul.job_area{
-    width: if($type==sp, (650%/$site_sp_wid*100), (1100em/16));
-    font-weight:bold;
-    margin:(37em/16) auto (36em/16);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display:flex;
-    -webkit-flex-wrap: wrap;
-    flex-wrap:wrap;
-    -webkit-box-pack:center;
-    -ms-flex-pack:center;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-    li{
-      width: if($type==sp, (750%/$site_sp_wid*100), (530em/16));
-      margin-top:(38em/16);
-      box-sizing:border-box;
-      border: solid (3em/20) #000;
-      position:relative;
-      &:first-child{
-        margin-top:0;
-      }
-      &:nth-child(2){
-        margin-top: if($type==sp, (47em/16), (0));
-      }
-      a{
-        padding: if($type==sp, (28em/11/2) (200%/11/2) (28em/11/2) (60%/11/2), (40em/16) (200em/16) (45.44em/16) (30em/16));
-        display:block;
-      h3{
-        margin-bottom:if($type==sp, (16em/11/2), (15.3em/20));
-        span{
-          display:block;
-          font-weight:bold;
-          line-height:1.8;
-          font-size: if($type==sp, (26em/11/2), (20em/16));
-          letter-spacing:if($type==sp, -.02em, 0);
-        }
-      }
-      p{
-        font-size: if($type==sp, (20em/11/2), (14.5em/16));
-        font-weight:500;
-        line-height:1.7;
-        span{
-          display:block;
-        }
-      }
-      figure{
-        width: if($type==sp, (196%/$site_sp_wid*100), auto);
-        position:absolute;
-        top:0;
-        right: 0;
-        margin: 0;
-        padding: 0;
-      }
-      }
-    }
-  }
-  .joblist_ttl{
-    line-height: if($type==sp, 1.6, 1);
-    text-align: center;
-    padding: if($type==sp, 0 10%, 0);
-    .category{
-      font-size: if($type==sp, (26em/11/2), (20em/16));
-      font-weight:bold;
-      display: block;
-      margin-bottom: if($type==sp, (8em/26), (20em/16));
-    }
-    .work_location{
-      font-size: if($type==sp, (20em/11/2), (13em/16));
-      display:block;
-      margin-bottom:(27em/13);
-    }
-  }
-  dl{
-    width: if($type==sp, (650%/$site_sp_wid*100), (1100em/14));
-    margin: 0 auto (48em/16);
-    box-sizing:border-box;
-    border-left: if($type==sp, solid (2em/16) #000, solid 2px #000);
+		ul.job_area {
+				width: if($type==sp, (650%/$site_sp_wid*100), (1100em/16));
+				font-weight: bold;
+				margin: (37em/16) auto (36em/16);
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: if($type==sp, block, flex);
+				-webkit-flex-wrap: wrap;
+				flex-wrap: wrap;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: space-between;
+				justify-content: space-between;
+				li {
+						width: if($type==sp, (750%/$site_sp_wid*100), (530em/16));
+						margin-top: if($type==sp, (38em/22), (38em/16));
+						box-sizing: border-box;
+						border: if($type==sp, solid (3em/20) #000, solid 3px #000);
+						position: relative;
+						overflow: hidden;
+						&:first-child {
+								margin-top: 0;
+						}
+						&:nth-child(2) {
+								margin-top: if($type==sp, (47em/16), (0));
+						}
+						a {
+								display: table;
+								width: 100%;
+
+								h3 {
+										font-size: if($type==sp, (24em/10/2), (17em/14));
+										margin-bottom: if($type==sp, (16em/24), (15em/17));
+										span {
+												display: block;
+												font-weight: bold;
+												line-height: if($type==sp, (35/24), 1.8);
+										}
+								}
+								p {
+										font-size: if($type==sp, (20em/10/2), (13em/14));
+										font-weight: normal;
+										line-height: if($type==sp, (32/20), 1.7);
+										span {
+												display: block;
+										}
+								}
+								.col-h3p {
+										display: table-cell;
+										vertical-align: top;
+										padding: if($type==sp, (19em/16) (25em/16) (19em/16) (25em/16), (40em/16) (30em/16) (45em/16) (30em/16));
+								}
+								figure {
+										display: table-cell;
+										vertical-align: middle;
+										width: if($type==sp, (140.56em/16), percentage(170/524)); // min-height: if($type==sp, 100px, 194px);
+										background-size: cover;
+										img {
+												// max-height: if($type==sp, 100px, 194px);
+												// max-width: if($type==sp, 88.4px, 170px);0.52
+												width: 100%;
+												height: auto;
+												// top: 50%;
+												// transform: translateY(-50%);
+												position: relative;
+												z-index: -1;
+										}
+								}
+						}
+				}
+		}
+		.joblist_ttl {
+				line-height: if($type==sp, 1.6, 1);
+				text-align: center;
+				padding: if($type==sp, 0 10%, 0);
+				.category {
+						font-size: if($type==sp, (26em/11/2), (20em/16));
+						font-weight: bold;
+						display: block;
+						margin-bottom: if($type==sp, (8em/26), (20em/16));
+				}
+				.work_location {
+						font-size: if($type==sp, (20em/11/2), (13em/16));
+						display: block;
+						margin-bottom: (27em/13);
+				}
+		}
+		dl {
+				width: if($type==sp, (650%/$site_sp_wid*100), (1100em/14));
+				margin: 0 auto (48em/16);
+				box-sizing: border-box;
+				border-left: if($type==sp, solid (2em/16) #000, solid 2px #000);
     border-top: if($type==sp, solid (2em/16) #000, solid 2px #000);
     border-right: if($type==sp, solid (2em/16) #000, solid 2px #000);
-    background:#f6f6f6;
-    font-size: if($type==sp, (24em/11/2), (14em/16));
-    line-height:2;
-    dt{
-      width: if($type==sp, (750%/$site_sp_wid*100), 15.5%);
-      display:block;
-      float: if($type==sp, (none), left);
-      clear:left;
-      background:#f6f6f6;
-      box-sizing:border-box;
-      padding: if($type==sp, ((14em/24) 5% (17em/24)), (14em/14) 0 (17em/14) (30em/14));
-      font-weight:bold;
-    }
-    dd{
-      width: if($type==sp, (750%/$site_sp_wid*100), 84.5%);
-      display:inline-block;
-      border-bottom: if($type==sp, solid (2em/16) #000, solid 2px #000);
-      background:#fff;
-      box-sizing:border-box;
-      padding: if($type==sp, ((14em/24) 5% (30em/24)), (14em/14) (200em/14) (17em/14) (28em/14));
-      position: relative;
-      &::before{
-        content:if($type==sp, (none), " ");
-        width:118.7%;
-        display:block;
-        border-bottom:if($type==sp, solid (2em/16) #000, solid 2px #000);
-        position:absolute;
-        left:-18.5%;
-        bottom: -2px;
-      }
-    }
-  }
-  .btn_more{
-    clear:both;
-    margin-bottom: if($type==sp, (58em/24),  (125em/16));
-    font-size: if($type==sp, (24em/11/2), (16em/16));
-    a{
-      &::after{
-        content:' ';
-        right: if($type==sp, (64em/24) !important, (33.44em/16) !important);
-      }
-    }
-  }
+				background: #f6f6f6;
+				font-size: if($type==sp, (24em/11/2), (14em/16));
+				line-height: 2;
+				dt {
+						width: if($type==sp, (750%/$site_sp_wid*100), 15.5%);
+						display: block;
+						float: if($type==sp, (none), left);
+						clear: left;
+						background: #f6f6f6;
+						box-sizing: border-box;
+						padding: if($type==sp, ((14em/24) 6% (17em/24)), (14em/14) 0 (17em/14) (30em/14));
+						font-weight: bold;
+				}
+				dd {
+						width: if($type==sp, (750%/$site_sp_wid*100), 84.5%);
+						display: inline-block;
+						border-bottom: if($type==sp, solid (2em/16) #000, solid 2px #000);
+						background: #fff;
+						box-sizing: border-box;
+						padding: if($type==sp, ((14em/24) 6% (17em/24)), (14em/14) (200em/14) (17em/14) (28em/14));
+						position: relative;
+						&::before {
+								content: if($type==sp, (none), " ");
+								width: 118.7%;
+								display: block;
+								border-bottom:if($type==sp, solid (2em/16) #000, solid 2px #000);
+								position: absolute;
+								left: -18.5%;
+								bottom: -2px;
+						}
+				}
+		}
+		.btn_more {
+				clear: both;
+				margin-bottom: if($type==sp, (58em/24), (125em/16));
+				font-size: if($type==sp, (24em/11/2), (16em/16));
+				a {
+						&::after {
+								content: ' ';
+								right: if($type==sp, (64em/24) !important, (33.44em/16) !important);
+						}
+				}
+		}
 }
-ul.category{
-    width: if($type==sp, (750%/$site_sp_wid*100), (1100em/16));
-    font-weight:bold;
-    margin:0 auto;
-    letter-spacing: -.4em;
-    text-align:left;
-    box-sizing:border-box;
-    border-left: if($type==sp, (none), solid (3em/20) #000);
-    li{
-      width: if($type==sp, (150%/$site_sp_wid*100), (219em/16));
-      display:inline-block;
-      vertical-align:middle;
-      text-align:center;
-      letter-spacing:0;
-      box-sizing:border-box;
-      border-top:solid (3em/20) #000;
-      border-right: solid (3em/20) #000;
-      border-bottom:solid (3em/20) #000;
-      &:nth-child(5){
-        border-right:if($type==sp, none, solid  (3em/20) #000);
-      }
-      &:nth-child(n+6){
-        border-top:none;
-      }
-      a{
-        line-height:1;
-        padding:(17em/15) 0;
-        font-size: if($type==sp, (16em/11/2), (15em/16));
-        letter-spacing:if($type==sp, -.05em, 0);
-        word-break: keep-all;
-        display:block;
-        width:100%;
-      }
-    }
-  }
+
+ul.category {
+		width: if($type==sp, (750%/$site_sp_wid*100), (1100em/16));
+		font-weight: bold;
+		margin: 0 auto;
+		letter-spacing: -.4em;
+		text-align: left;
+		box-sizing: border-box;
+		border-left: if($type==sp, (none), solid (3em/20) #000);
+		li {
+				width: if($type==sp, (150%/$site_sp_wid*100), (219em/16));
+				display: inline-block;
+				vertical-align: middle;
+				text-align:center;
+				letter-spacing: 0;
+				box-sizing: border-box;
+				border-top:solid (3em/20) #000;
+				border-right: solid (3em/20) #000;
+				border-bottom:solid (3em/20) #000;
+				&:nth-child(5){
+		      border-right:if($type==sp, none, solid  (3em/20) #000);
+		    }
+		    &:nth-child(n+6){
+		      border-top:none;
+		    }
+				a {
+						line-height: 1;
+						padding: (17em/15) 0;
+						font-size: if($type==sp, (16em/11/2), (15em/16));
+						letter-spacing: if($type==sp, -.05em, 0);
+						word-break: keep-all;
+						display: block;
+						width: 100%;
+				}
+		}
+}

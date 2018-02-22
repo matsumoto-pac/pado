@@ -9,6 +9,7 @@ value
     margin: 0 auto;
     font-size: if($type==sp, (22em/11/2), (16em/16));
     line-height:if($type==sp, (55/22), 2.8);
+
   }
   .cover{
     background: if($type==sp, (url("../images/value/sp_img_value_04.jpg")), url("../images/value/img_value_04.jpg") no-repeat);
@@ -48,6 +49,7 @@ value
       letter-spacing:.03em;
     }
     + p{
+
       width: if($type==sp, (552%/$site_sp_wid*100), (700em/16));
       font-size: if($type==sp, (22em/11/2), (18em/16));
       text-align:center;
@@ -92,11 +94,12 @@ value
         left:0;
         right:0;
         margin:0 auto;
-        width: (116em/16);
-        height:(60em/16);
+        width: if($type==sp, (110em/11/2), (116em/16));
+        height:if($type==sp, (50em/11/2), (60em/16));
+        background-size:contain;
     }
       li{
-        width: if($type==sp, (520%/$site_sp_wid*100), (227em/16));
+        width: if($type==sp, (517%/$site_sp_wid*100), (227em/16));
         margin-bottom:  if($type==sp, (35em/16), 0);
         &:last-child{
           margin-bottom:  if($type==sp, 0, 0);
@@ -138,7 +141,7 @@ value
         }
         &.ja {
           margin-top: (6em/16) !important;
-          font-size: if($type==sp, (15.98em/11/2), (16em/16))  !important;
+          font-size: if($type==sp, (20em/11/2), (16em/16));
           font-weight: 600;
         }
       }
