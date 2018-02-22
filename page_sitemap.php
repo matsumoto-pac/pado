@@ -16,18 +16,18 @@ Template Name: サイトマップ
         <span class="ja">サイトマップ</span>
       </h2>
       <ul>
-        <li><a href="#">ホーム</a>
+        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">ホーム</a>
           <ul>
-            <li><a href="#">ぱどバリュー</a></li>
-            <li><a href="#">事業内容</a></li>
-            <li><a href="#">働く環境</a></li>
-            <li><a href="#">ぱどの人々</a></li>
-            <li><a href="#">新卒採用情報</a></li>
-            <li><a href="#">中途募集要項</a></li>
-            <li><a href="#">お知らせ</a></li>
-            <li><a href="#">新卒エントリー</a></li>
-            <li><a href="#">中途エントリー</a></li>
-            <li><a href="#">サイトマップ</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/value/' ) ); ?>">ぱどバリュー</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/business/' ) ); ?>">事業内容</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/environment/' ) ); ?>">働く環境</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/people/' ) ); ?>">ぱどの人々</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/recruit/' ) ); ?>">新卒採用情報</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/joblist/' ) ); ?>">中途募集要項</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/info/' ) ); ?>">お知らせ</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">新卒エントリー</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">中途エントリー</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/sitemap/' ) ); ?>">サイトマップ</a></li>
           </ul>
         </li>
       </ul>

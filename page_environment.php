@@ -93,7 +93,7 @@ Template Name: 働く環境
           </li>
           <li>
             <figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/environment/img_environment_11.jpg" alt="">
-              <figcaption>飲みにケーション補助制度（3部門以上が集まった飲み会・ランチ代の補助）</figcaption>
+              <figcaption>締め会補助制度</figcaption>
             </figure>
           </li>
           <li>
