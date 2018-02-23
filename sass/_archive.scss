@@ -7,14 +7,16 @@ info
   #main {
     &::before {
       content: '';
-      height:(336em/16);
+      height:if($type==sp, (336em/11/2), (336em/16));
       background:if($type==sp,  url("../images/information/sp_img_info_01.jpg") no-repeat, url("../images/information/img_info_01.jpg") no-repeat);
       background-position: top center;
       background-size: cover;
       display: block;
+      margin-top: if($type==sp, (47em/12), 0);
     }
     #sec_01{
-      padding: (75em/16) 0 0;
+      padding-top: if($type==sp, (118em/11/2), (75em/16));
+      margin-top:0;
     }
     .cont{
       .list_info {

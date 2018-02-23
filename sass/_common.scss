@@ -6,7 +6,7 @@
   justify-content: space-between;
   background-color: #fff;
   z-index: 9999;
-  
+
   &.h_clone {
     width: 100% !important;
     position: fixed !important;
@@ -15,7 +15,7 @@
     transform: translateY(-100%);
     transition-duration: .2s;
   }
-  
+
   @if($type==sp) {
     width: 100%;
     position: fixed !important;
@@ -37,7 +37,7 @@
       height: 100%;
       display: flex;
       align-items: center;
-      
+
       img {
         &.img_top {
           display: none;
@@ -325,7 +325,7 @@
       }
     }
   }
-  
+
 
 /*============================
 .list_people
@@ -578,6 +578,9 @@
   &_right {
     text-align: if($type==sp, center !important,  right !important);
   }
+  &_left {
+    text-align: if($type==sp, center !important, left !important);
+  }
 }
 
 //color
@@ -694,9 +697,6 @@ a {
       }
     }
   }
-}
-.align-left{
-  text-align: if($type==sp, center, left);
 }
 
 .widget_sns {

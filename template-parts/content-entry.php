@@ -16,11 +16,11 @@
     <div class="btns">
       <ul>
         <li>
-          <a href="" class="bc_blue_deep_alpha">
+          <a href="https://job.mynavi.jp/19/pc/search/corp222996/outline.html" class="bc_blue_deep_alpha">
             新卒エントリー
           </a>
         </li><li>
-          <a href="" class="bc_blue_alpha">
+          <a href="<?php echo esc_url( home_url( '/entry/' ) ); ?>" class="bc_blue_alpha">
             中途エントリー
           </a>
         </li>

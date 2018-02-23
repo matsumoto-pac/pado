@@ -7,10 +7,12 @@
       background: if($type==sp, url("../images/people/sp_img_people_05.jpg") no-repeat,  url("../images/people/img_people_05.jpg") no-repeat);
       background-position: top center;
       background-size: cover;
-      height:(336em/16);
+      height:if($type==sp, (336em/11/2), (336em/16));
+      margin-top: if($type==sp, (47em/12), 0);
     }
     #sec_01{
-      padding-top: (75em/16);
+      padding-top: if($type==sp, (118em/11/2), (75em/16));
+      margin-top:0;
     }
     .people_area{
       width: if($type==sp, (710%/$site_sp_wid*100), (1100em/16));

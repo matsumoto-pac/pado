@@ -87,7 +87,7 @@ Template Name: ぱどの人々（下層）
     <div class="cont">
       <h2 class="ttl_en-ja align_center">
         <span class="en sr_bottom">RECOMMEND</span>
-        <span class="ja sr_bottomv">おすすめの記事</span>
+        <span class="ja sr_bottom">おすすめの記事</span>
       </h2>
       <div>
         <?php
