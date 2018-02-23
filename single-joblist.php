@@ -30,7 +30,7 @@ $ele_array = array("job","form","compensation","table_location","benefits","hour
 						<?php endforeach; ?>
 				</dl>
 				<p class="btn_more">
-						<a href="">エントリーする</a>
+						<a href="<?php echo esc_url( home_url( '/entry/' ) ); ?>">エントリーする</a>
 				</p>
 		</section>
 </article>

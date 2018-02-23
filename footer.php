@@ -41,7 +41,7 @@
               サイトマップ
             </a>
           </li><li>
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site_link">
+            <a href="https://www.pado.co.jp/" target="_blank" class="site_link">
               ぱど企業サイト
             </a>
           </li>

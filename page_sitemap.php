@@ -25,8 +25,8 @@ Template Name: サイトマップ
             <li><a href="<?php echo esc_url( home_url( '/recruit/' ) ); ?>">新卒採用情報</a></li>
             <li><a href="<?php echo esc_url( home_url( '/joblist/' ) ); ?>">中途募集要項</a></li>
             <li><a href="<?php echo esc_url( home_url( '/info/' ) ); ?>">お知らせ</a></li>
-            <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">新卒エントリー</a></li>
-            <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">中途エントリー</a></li>
+            <li><a href="https://job.mynavi.jp/19/pc/search/corp222996/outline.html">新卒エントリー</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/entry/' ) ); ?>">中途エントリー</a></li>
             <li><a href="<?php echo esc_url( home_url( '/sitemap/' ) ); ?>">サイトマップ</a></li>
           </ul>
         </li>
