@@ -14,8 +14,8 @@ $ele_array = array("job","form","compensation","table_location","benefits","hour
 		</section>
 		<section id="sec_02" class="sec">
 				<h2 class="ttl_en-ja align_center">
-		<span class="en">JOBLIST</span>
-		<span class="ja">募集要項</span>
+		<span class="en sr_bottom">JOBLIST</span>
+		<span class="ja sr_bottom">募集要項</span>
 	</h2>
 	<h3 class="joblist_ttl">
 		<span class="category"><?php the_title(); ?></span>

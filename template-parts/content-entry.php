@@ -10,8 +10,8 @@
 <section id="sec_entry" class="sec">
   <div class="cont">
     <h3 class="ttl_en-ja align_center color_white">
-      <span class="en">ENTRY</span>
-      <span class="ja">エントリー</span>
+      <span class="en sr_bottom">ENTRY</span>
+      <span class="ja sr_bottom">エントリー</span>
     </h3>
     <div class="btns">
       <ul>

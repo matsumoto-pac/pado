@@ -12,8 +12,8 @@ Template Name: 募集要項
   </section>
   <section id="sec_02" class="sec">
     <h2 class="ttl_en-ja align_center">
-        <span class="en">JOBLIST</span>
-        <span class="ja">募集要項</span>
+        <span class="en sr_bottom">JOBLIST</span>
+        <span class="ja sr_bottom">募集要項</span>
       </h2>
     <ul class="category">
       <li><a href="#">営業</a></li>

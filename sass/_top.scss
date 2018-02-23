@@ -4,15 +4,29 @@
   ============================*/
   #header {
     width: 100%;
-    position: absolute;
     z-index: 999;
-    background-color: inherit;
+    
+    &:not(.h_clone) {
+      position: absolute;
+      background-color: inherit;
+      
+      #h_logo {
+        a {
+          img {
+            display: none;
+            &.img_top {
+              display: inherit;
+            }
+          }
+        }
+      }
 
-    .h_nav {
-      .g_nav{
-        li {
-          a {
-            color: #fff;
+      .h_nav {
+        .g_nav{
+          li {
+            a {
+              color: #fff;
+            }
           }
         }
       }
@@ -174,87 +188,6 @@
     #sec_02 {
       padding-top: (87em/16);
       background-color: $site_blue;
-
-      .cont {
-        .list_people {
-          padding-bottom: (100em/16);
-          background-color: #fff;
-
-          .slick {
-            &-prev,
-            &-next {
-              &::before {
-                content: '';
-              }
-            }
-            &-prev {
-              left: 23px;
-
-            }
-            &-next {
-              right:23px;
-            }
-          }
-
-          ul {
-            position: relative;
-            z-index: 9;
-
-            .slick-list {
-              max-width: 1290px;
-              @include center;
-            }
-
-            li {
-              margin: 0 (53em/16/2);
-              a {
-                position: relative;
-                display: block;
-
-                .img {
-                  text-align: center;
-
-                  img {
-                    display: inline;
-                  }
-                }
-                .text {
-                  margin-top: (18em/16);
-                  font-size: 1em;
-                  text-align: center;
-                  display: block;
-
-                  span {
-                    font-weight: 600;
-                    display: block;
-
-                    &.date {
-                      font-size: (13em/16);
-                    }
-                    &.name {
-                      font-size: (18em/16);
-                    }
-                  }
-                }
-              }
-            }
-
-            //上半分の背景を青に
-            &:after {
-              content: '';
-              width: 100%;
-              height: 50%;
-              display: block;
-              background-color: $site_blue;
-              position: absolute;
-              top: 0;
-              left: 0;
-              z-index: -1;
-            }
-
-          }
-        }
-      }
     }
 
   /*============================

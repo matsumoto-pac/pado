@@ -12,8 +12,8 @@ Template Name: サイトマップ
   </section>
   <section id="sec_02" class="sec">
     <h2 class="ttl_en-ja align_center">
-        <span class="en">SITEMAP</span>
-        <span class="ja">サイトマップ</span>
+        <span class="en sr_bottom">SITEMAP</span>
+        <span class="ja sr_bottom">サイトマップ</span>
       </h2>
       <ul>
         <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">ホーム</a>

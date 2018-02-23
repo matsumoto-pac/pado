@@ -10,6 +10,7 @@ if ( ! function_exists( 'my_theme_default_setup' ) ) :
     function my_include_files() {
       wp_enqueue_script( 'jquery' );
       wp_enqueue_script( 'jquery-slick', get_template_directory_uri() . '/js/jquery.slick.min.js', array(), '20180206', true );
+      wp_enqueue_script( 'jquery-scrollreveal', get_template_directory_uri() . '/js/jquery.scrollreveal.min.js', array(), '20180222', true );
       wp_enqueue_script( 'my-common', get_template_directory_uri() . '/js/common.js', array(), '20180206', true );
       if(is_home()) wp_enqueue_script( 'video-js', get_template_directory_uri() . '/js/jquery.vide.min.js', array(), '20180221', true );
       wp_enqueue_style( 'noto-sans', 'https://fonts.googleapis.com/css?family=Noto+Sans:400,700', '20180206' );
@@ -357,6 +358,7 @@ if ( ! function_exists( 'my_theme_default_setup' ) ) :
       "show_in_rest" => false,
       "rest_base" => "",
       "show_in_quick_edit" => false,
+      'yarpp_support' => true,
     );
     register_taxonomy( "cat_people", array( "people" ), $args );
   }

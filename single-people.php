@@ -30,52 +30,70 @@ Template Name: ぱどの人々（下層）
     <div class="wp_cont site_wid">
       <?php the_content(); ?>
     </div>
-      <div class="keyword site_wid">
-        <ul>
-          <li><a href="#">やりがい</a></li>
-          <li><a href="#">新卒</a></li>
-          <li><a href="#">中途</a></li>
-          <li><a href="#">女性</a></li>
-        </ul>
-      </div>
-      <ul class="category">
-        <li><a href="#">営業</a></li>
-        <li><a href="#">営業事務</a></li>
-        <li><a href="#">配布スタッフ</a></li>
-        <li><a href="#">編集スタッフ</a></li>
-        <li><a href="#">商材管理</a></li>
+    <?php get_sidebar('sns'); ?>
+    <?php
+      $post_terms_tag = get_the_terms($post->ID, 'cat_people');
+    ?>
+    <div class="keyword site_wid">
+      <ul>
+      <?php
+        foreach ( $post_terms_tag as $term ) {
+          $cat_link = get_category_link( $term );
+          echo '<li><a href="' . $cat_link .'">';
+          echo  esc_html($term->name); // タームタイトル
+          echo '</a></li>';
+        }
+      ?>
       </ul>
-      <ul class="tag">
-      <li><a href="#">新卒</a></li>
-      <li><a href="#">中途</a></li>
-      <li><a href="#">女性</a></li>
-      <li><a href="#">やりがい</a></li>
-      <li><a href="#">新卒</a></li>
-      <li><a href="#">中途</a></li>
-      <li><a href="#">女性</a></li>
-      <li><a href="#">やりがい</a></li>
-      <li><a href="#">新卒</a></li>
-      <li><a href="#">中途</a></li>
-      <li><a href="#">女性</a></li>
-      <li><a href="#">やりがい</a></li>
-      <li><a href="#">やりがい</a></li>
-      <li><a href="#">新卒</a></li>
-      <li><a href="#">中途</a></li>
-      <li><a href="#">女性</a></li>
-      <li><a href="#">やりがい</a></li>
-      <li><a href="#">新卒</a></li>
-      <li><a href="#">中途</a></li>
+    </div>
+    
+    <?php
+      //カスタムタクソノミー一覧取得
+      $args = array(
+        'post_type' => 'joblist',
+        'taxonomy' => 'cat_joblist',
+        'hide_empty' => false,
+      );
+      $terms_cat = get_categories($args);
+      $args = array(
+        'post_type' => 'people',
+        'taxonomy' => 'cat_people',
+        'hide_empty' => false,
+      );
+      $terms_tag = get_categories($args);
+    ?>
+    
+    <ul class="category">
+      <?php
+        foreach ( $terms_cat as $term ) {
+          echo '<li><a href="?term=' . $term->term_id .'">';
+          echo  esc_html($term->name); // タームタイトル
+          echo '</a></li>';
+        }
+      ?>
     </ul>
-
+    <ul class="tag">
+      <?php
+        foreach ( $terms_tag as $term ) {
+          $cat_link = get_category_link( $term );
+          echo '<li><a href="' . $cat_link .'">';
+          echo  esc_html($term->name); // タームタイトル
+          echo '</a></li>';
+        }
+      ?>
+    </ul>
   </section>
   <section id="sec_04" class="sec">
     <div class="cont">
       <h2 class="ttl_en-ja align_center">
-        <span class="en">RECOMMEND</span>
-        <span class="ja">おすすめの記事</span>
+        <span class="en sr_bottom">RECOMMEND</span>
+        <span class="ja sr_bottomv">おすすめの記事</span>
       </h2>
       <div>
-        <?php wp_related_posts()?>
+        <?php
+          yarpp_related(array(
+            'post_type' => 'people'
+          )); ?>
       </div>
     </div>
   </section>

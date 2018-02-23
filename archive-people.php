@@ -22,8 +22,8 @@ Template Name: ぱどの人々
   <article class="underlayer">
     <section id="sec_01" class="sec site_wid">
       <h2 class="ttl_en-ja align_center">
-        <span class="en">PADO&nbsp;PEOPLE</span>
-        <span class="ja">ぱどの人々</span>
+        <span class="en sr_bottom">PADO&nbsp;PEOPLE</span>
+        <span class="ja sr_bottom">ぱどの人々</span>
       </h2>
     </section>
     <section id="sec_02" class="sec">
@@ -91,7 +91,7 @@ Template Name: ぱどの人々
               //カテゴリ取得
               $tag = get_field('joblist');
             ?>
-            <li>
+            <li class="sr_bottom_delay">
               <a href="<?php the_permalink(); ?>">
                 <figure>
                   <?php the_post_thumbnail(); ?>

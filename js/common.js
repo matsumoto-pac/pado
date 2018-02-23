@@ -25,6 +25,17 @@
     }
   });
   
+  //scrollrevealv
+  window.sr = ScrollReveal();
+  sr.reveal('.sr_bottom', {
+    duration: 700,
+    delay: 600,
+    scale: 1,
+  });
+  sr.reveal('.sr_bottom_delay', {
+    duration: 1000
+  }, 600);
+  
   //slick slider
   $('.list_people ul').slick({
     infinite: true,

@@ -12,8 +12,8 @@ Template Name: 応募フォーム
   </section>
   <section id="sec_02" class="sec">
     <h2 class="ttl_en-ja align_center">
-        <span class="en">ENTRY</span>
-        <span class="ja">中途エントリー</span>
+        <span class="en sr_bottom">ENTRY</span>
+        <span class="ja sr_bottom">中途エントリー</span>
       </h2>
       <p class="align_center">こちらは中途採用の応募フォームになります。<br>
         以下の項目を入力後、エントリーボタンを押してください。</p>

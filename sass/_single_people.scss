@@ -47,6 +47,23 @@
       .wp_cont {
         @include wp_cont_peope_mixin;
       }
+      .tag {
+        margin-bottom: 0;
+      }
+    }
+    #sec_04{
+      padding-top: (87em/16);
+      background-color: $site_blue;
+    }
+    .widget_sns {
+      .sfsi_widget {
+        display: flex;
+        
+        .norm_row {
+          margin: 0 auto;
+          position: relative !important;
+        }
+      }
     }
   }
 }

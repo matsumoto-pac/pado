@@ -14,8 +14,8 @@ Template Name: お知らせ（下層）
   <article class="underlayer">
     <section id="sec_01" class="sec">
       <h2 class="ttl_en-ja ttl_dot align_center">
-        <span class="en">INFORMATION</span>
-        <span class="ja">お知らせ</span>
+        <span class="en sr_bottom">INFORMATION</span>
+        <span class="ja sr_bottom">お知らせ</span>
       </h2>
       <div class="cont">
         <div class="article_info site_wid">
