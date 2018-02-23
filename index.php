@@ -70,7 +70,7 @@
                   <br> 結果にコミットしたら、方法を考え抜き、やりきる人。
               </p>
               <p class="sr_bottom">
-                  結果を出す人のまわりには笑顔が集まり、感動が溢れている。
+                  結果を出す人のまわりには笑顔が集まり、感動が溢れている。</p>
           </div>
       </div>
   </section>
@@ -131,7 +131,7 @@
   <section id="sec_04" class="sec">
       <div class="cont col_2">
           <div class="col">
-            <h3 class="ttl_en-ja align_right">
+            <h3 class="ttl_en-ja align_left">
               <span class="en sr_bottom">INFORMATION</span>
               <span class="ja sr_bottom">お知らせ</span>
             </h3>
@@ -162,11 +162,11 @@
     var $sec02 = $('#sec_02');
     var now_y = $win.scrollTop();
     var disp_y; //ヘッダを表示し始めるy座標
-    
+
     //ヘッダーをクローンした後にclass付与して画像差し替え
     $('#header').clone().appendTo('body').addClass('h_clone');
-    
-    
+
+
     //画面リサイズ時動作
     $win.load(function () {
       resize_func();
@@ -180,12 +180,12 @@
         resize_func();
       });
     });
-    
+
     //スクロール時の動作
     $win.scroll(function () {
       now_y = $win.scrollTop();
         //console.log(disp_y + ' ' + now_y);
-      
+
       if(disp_y < now_y) {
         $body.addClass('hc_active');
       } else {
